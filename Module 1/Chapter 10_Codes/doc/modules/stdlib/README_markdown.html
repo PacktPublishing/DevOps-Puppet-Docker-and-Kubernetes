@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README.markdown - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-Puppet+Labs+Standard+Library">Puppet Labs Standard Library</a>
+      <li><a href="#label-Versions">Versions</a>
+      <li><a href="#label-Compatibility">Compatibility</a>
+      <li><a href="#label-stdlib+2.x">stdlib 2.x</a>
+      <li><a href="#label-stdlib+3.x">stdlib 3.x</a>
+      <li><a href="#label-stdlib+4.x">stdlib 4.x</a>
+      <li><a href="#label-Functions">Functions</a>
+      <li><a href="#label-abs">abs</a>
+      <li><a href="#label-any2array">any2array</a>
+      <li><a href="#label-base64">base64</a>
+      <li><a href="#label-bool2num">bool2num</a>
+      <li><a href="#label-capitalize">capitalize</a>
+      <li><a href="#label-chomp">chomp</a>
+      <li><a href="#label-chop">chop</a>
+      <li><a href="#label-concat">concat</a>
+      <li><a href="#label-count">count</a>
+      <li><a href="#label-defined_with_params">defined_with_params</a>
+      <li><a href="#label-delete">delete</a>
+      <li><a href="#label-delete_at">delete_at</a>
+      <li><a href="#label-delete_values">delete_values</a>
+      <li><a href="#label-delete_undef_values">delete_undef_values</a>
+      <li><a href="#label-difference">difference</a>
+      <li><a href="#label-dirname">dirname</a>
+      <li><a href="#label-downcase">downcase</a>
+      <li><a href="#label-empty">empty</a>
+      <li><a href="#label-ensure_packages">ensure_packages</a>
+      <li><a href="#label-ensure_resource">ensure_resource</a>
+      <li><a href="#label-file_line">file_line</a>
+      <li><a href="#label-flatten">flatten</a>
+      <li><a href="#label-floor">floor</a>
+      <li><a href="#label-fqdn_rotate">fqdn_rotate</a>
+      <li><a href="#label-get_module_path">get_module_path</a>
+      <li><a href="#label-getparam">getparam</a>
+      <li><a href="#label-getvar">getvar</a>
+      <li><a href="#label-grep">grep</a>
+      <li><a href="#label-has_interface_with">has_interface_with</a>
+      <li><a href="#label-has_ip_address">has_ip_address</a>
+      <li><a href="#label-has_ip_network">has_ip_network</a>
+      <li><a href="#label-has_key">has_key</a>
+      <li><a href="#label-hash">hash</a>
+      <li><a href="#label-intersection">intersection</a>
+      <li><a href="#label-is_array">is_array</a>
+      <li><a href="#label-is_bool">is_bool</a>
+      <li><a href="#label-is_domain_name">is_domain_name</a>
+      <li><a href="#label-is_float">is_float</a>
+      <li><a href="#label-is_function_available">is_function_available</a>
+      <li><a href="#label-is_hash">is_hash</a>
+      <li><a href="#label-is_integer">is_integer</a>
+      <li><a href="#label-is_ip_address">is_ip_address</a>
+      <li><a href="#label-is_mac_address">is_mac_address</a>
+      <li><a href="#label-is_numeric">is_numeric</a>
+      <li><a href="#label-is_string">is_string</a>
+      <li><a href="#label-join">join</a>
+      <li><a href="#label-join_keys_to_values">join_keys_to_values</a>
+      <li><a href="#label-keys">keys</a>
+      <li><a href="#label-loadyaml">loadyaml</a>
+      <li><a href="#label-lstrip">lstrip</a>
+      <li><a href="#label-max">max</a>
+      <li><a href="#label-member">member</a>
+      <li><a href="#label-merge">merge</a>
+      <li><a href="#label-min">min</a>
+      <li><a href="#label-num2bool">num2bool</a>
+      <li><a href="#label-parsejson">parsejson</a>
+      <li><a href="#label-parseyaml">parseyaml</a>
+      <li><a href="#label-pick">pick</a>
+      <li><a href="#label-prefix">prefix</a>
+      <li><a href="#label-range">range</a>
+      <li><a href="#label-reject">reject</a>
+      <li><a href="#label-reverse">reverse</a>
+      <li><a href="#label-rstrip">rstrip</a>
+      <li><a href="#label-shuffle">shuffle</a>
+      <li><a href="#label-size">size</a>
+      <li><a href="#label-sort">sort</a>
+      <li><a href="#label-squeeze">squeeze</a>
+      <li><a href="#label-str2bool">str2bool</a>
+      <li><a href="#label-str2saltedsha512">str2saltedsha512</a>
+      <li><a href="#label-strftime">strftime</a>
+      <li><a href="#label-strip">strip</a>
+      <li><a href="#label-suffix">suffix</a>
+      <li><a href="#label-swapcase">swapcase</a>
+      <li><a href="#label-time">time</a>
+      <li><a href="#label-to_bytes">to_bytes</a>
+      <li><a href="#label-type">type</a>
+      <li><a href="#label-union">union</a>
+      <li><a href="#label-unique">unique</a>
+      <li><a href="#label-upcase">upcase</a>
+      <li><a href="#label-uriescape">uriescape</a>
+      <li><a href="#label-validate_absolute_path">validate_absolute_path</a>
+      <li><a href="#label-validate_array">validate_array</a>
+      <li><a href="#label-validate_augeas">validate_augeas</a>
+      <li><a href="#label-validate_bool">validate_bool</a>
+      <li><a href="#label-validate_cmd">validate_cmd</a>
+      <li><a href="#label-validate_hash">validate_hash</a>
+      <li><a href="#label-validate_re">validate_re</a>
+      <li><a href="#label-validate_slength">validate_slength</a>
+      <li><a href="#label-validate_string">validate_string</a>
+      <li><a href="#label-values">values</a>
+      <li><a href="#label-values_at">values_at</a>
+      <li><a href="#label-zip">zip</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-Puppet+Labs+Standard+Library">Puppet Labs Standard Library<span><a href="#label-Puppet+Labs+Standard+Library">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p><a
+href="https://travis-ci.org/puppetlabs/puppetlabs-stdlib.png?branch=master">{Build
+Status</a>]</p>
+
+<p>This module provides a “standard library” of resources for developing
+Puppet Modules. This modules will include the following additions to Puppet</p>
+<ul><li>
+<p>Stages</p>
+</li><li>
+<p>Facts</p>
+</li><li>
+<p>Functions</p>
+</li><li>
+<p>Defined resource types</p>
+</li><li>
+<p>Types</p>
+</li><li>
+<p>Providers</p>
+</li></ul>
+
+<p>This module is officially curated and provided by Puppet Labs. The modules
+Puppet Labs writes and distributes will make heavy use of this standard
+library.</p>
+
+<p>To report or research a bug with any part of this module, please go to <a
+href="http://tickets.puppetlabs.com/browse/PUP">tickets.puppetlabs.com/browse/PUP</a></p>
+
+<h1 id="label-Versions">Versions<span><a href="#label-Versions">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>This module follows semver.org (v1.0.0) versioning guidelines. The standard
+library module is released as part of <a
+href="http://puppetlabs.com/puppet/puppet-enterprise/">Puppet
+Enterprise</a> and as a result older versions of Puppet Enterprise that
+Puppet Labs still supports will have bugfix maintenance branches
+periodically “merged up” into master. The current list of integration
+branches are:</p>
+<ul><li>
+<p>v2.1.x (v2.1.1 released in PE 1)</p>
+</li><li>
+<p>v2.2.x (Never released as part of PE, only to the Forge)</p>
+</li><li>
+<p>v2.3.x (Released in PE 2)</p>
+</li><li>
+<p>v3.0.x (Released in PE 3)</p>
+</li><li>
+<p>v4.0.x (Maintains compatibility with v3.x despite the major semantic
+version bump. Compatible with Puppet 2.7.x)</p>
+</li><li>
+<p>v5.x (To be released when stdlib can drop support for Puppet 2.7.x. Please
+see <a
+href="https://github.com/puppetlabs/puppetlabs-stdlib/pull/176#issuecomment-30251414">this
+discussion</a>)</p>
+</li><li>
+<p>master (mainline development branch)</p>
+</li></ul>
+
+<p>The first Puppet Enterprise version including the stdlib module is Puppet
+Enterprise 1.2.</p>
+
+<h1 id="label-Compatibility">Compatibility<span><a href="#label-Compatibility">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>Puppet Versions | &lt; 2.6 | 2.6 | 2.7 | 3.x | :—————|:—–:|:—:|:—:|:—-:
+<strong>stdlib 2.x</strong> | no | <strong>yes</strong> |
+<strong>yes</strong> | no <strong>stdlib 3.x</strong> | no | no |
+<strong>yes</strong> | <strong>yes</strong> <strong>stdlib 4.x</strong> |
+no | no | <strong>yes</strong> | <strong>yes</strong></p>
+
+<p>The stdlib module does not work with Puppet versions released prior to
+Puppet 2.6.0.</p>
+
+<h2 id="label-stdlib+2.x">stdlib 2.x<span><a href="#label-stdlib+2.x">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>All stdlib releases in the 2.0 major version support Puppet 2.6 and Puppet
+2.7.</p>
+
+<h2 id="label-stdlib+3.x">stdlib 3.x<span><a href="#label-stdlib+3.x">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>The 3.0 major release of stdlib drops support for Puppet 2.6. Stdlib 3.x
+supports Puppet 2 and Puppet 3.</p>
+
+<h2 id="label-stdlib+4.x">stdlib 4.x<span><a href="#label-stdlib+4.x">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>The 4.0 major release of stdlib was intended to drop support for Puppet
+2.7, but the impact on end users was too high. The decision was made to
+treat stdlib 4.x as a continuation of stdlib 3.x support. Stdlib 4.x
+supports Puppet 2.7 and 3. Notably, ruby 1.8.5 is no longer supported
+though ruby 1.8.7, 1.9.3, and 2.0.0 are fully supported.</p>
+
+<h1 id="label-Functions">Functions<span><a href="#label-Functions">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<h2 id="label-abs">abs<span><a href="#label-abs">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the absolute value of a number, for example -34.56 becomes 34.56.
+Takes a single integer and float value as an argument.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-any2array">any2array<span><a href="#label-any2array">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This converts any object to an array containing that object. Empty argument
+lists are converted to an empty array. Arrays are left untouched. Hashes
+are converted to arrays of alternating keys and values.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-base64">base64<span><a href="#label-base64">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Converts a string to and from base64 encoding. Requires an action
+[&#39;encode&#39;,&#39;decode&#39;] and either a plain or base64 encoded
+string</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-bool2num">bool2num<span><a href="#label-bool2num">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Converts a boolean to a number. Converts the values: false, f, 0, n, and no
+to 0 true, t, 1, y, and yes to 1  Requires a single boolean or string as an
+input.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-capitalize">capitalize<span><a href="#label-capitalize">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Capitalizes the first letter of a string or array of strings. Requires
+either a single string or an array as an input.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-chomp">chomp<span><a href="#label-chomp">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Removes the record separator from the end of a string or an array of
+strings, for example <code>hello\n</code> becomes <code>hello</code>.
+Requires a single string or array as an input.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-chop">chop<span><a href="#label-chop">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns a new string with the last character removed. If the string ends
+with <code>\r\n</code>, both characters are removed. Applying chop to an
+empty string returns an empty string. If you wish to merely remove record
+separators then you should use the <code>chomp</code> function. Requires a
+string or array of strings as input.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-concat">concat<span><a href="#label-concat">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Appends the contents of array 2 onto array 1.</p>
+
+<p><em>Example:</em></p>
+
+<pre>concat([&#39;1&#39;,&#39;2&#39;,&#39;3&#39;],[&#39;4&#39;,&#39;5&#39;,&#39;6&#39;])</pre>
+
+<p>Would result in:</p>
+
+<p>[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;]</p>
+
+<p><a href="http://'1','2','3'">concat(</a>,&#39;4&#39;)</p>
+
+<p>Would result in:</p>
+
+<p>[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-count">count<span><a href="#label-count">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes an array as first argument and an optional second argument. Count the
+number of elements in array that matches second argument. If called with
+only an array it counts the number of elements that are not nil/undef.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-defined_with_params">defined_with_params<span><a href="#label-defined_with_params">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes a resource reference and an optional hash of attributes.</p>
+
+<p>Returns true if a resource with the specified attributes has already been
+added to the catalog, and false otherwise.</p>
+
+<pre class="ruby"><span class="ruby-identifier">user</span> { <span class="ruby-string">&#39;dan&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>,
+}
+
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span> <span class="ruby-identifier">defined_with_params</span>(<span class="ruby-constant">User</span>[<span class="ruby-identifier">dan</span>], {<span class="ruby-string">&#39;ensure&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;present&#39;</span> }) {
+  <span class="ruby-identifier">user</span> { <span class="ruby-string">&#39;dan&#39;</span><span class="ruby-operator">:</span> <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>, }
+}
+</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-delete">delete<span><a href="#label-delete">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Deletes all instances of a given element from an array, substring from a
+string, or key from a hash.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">delete</span>([<span class="ruby-string">&#39;a&#39;</span>,<span class="ruby-string">&#39;b&#39;</span>,<span class="ruby-string">&#39;c&#39;</span>,<span class="ruby-string">&#39;b&#39;</span>], <span class="ruby-string">&#39;b&#39;</span>)
+<span class="ruby-constant">Would</span> <span class="ruby-keyword">return</span><span class="ruby-operator">:</span> [<span class="ruby-string">&#39;a&#39;</span>,<span class="ruby-string">&#39;c&#39;</span>]
+
+<span class="ruby-identifier">delete</span>({<span class="ruby-string">&#39;a&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>,<span class="ruby-string">&#39;b&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">2</span>,<span class="ruby-string">&#39;c&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">3</span>}, <span class="ruby-string">&#39;b&#39;</span>)
+<span class="ruby-constant">Would</span> <span class="ruby-keyword">return</span><span class="ruby-operator">:</span> {<span class="ruby-string">&#39;a&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>,<span class="ruby-string">&#39;c&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">3</span>}
+
+<span class="ruby-identifier">delete</span>(<span class="ruby-string">&#39;abracadabra&#39;</span>, <span class="ruby-string">&#39;bra&#39;</span>)
+<span class="ruby-constant">Would</span> <span class="ruby-keyword">return</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;acada&#39;</span>
+</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-delete_at">delete_at<span><a href="#label-delete_at">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Deletes a determined indexed value from an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>delete_at([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], 1)</pre>
+
+<p>Would return: [&#39;a&#39;,&#39;c&#39;]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-delete_values">delete_values<span><a href="#label-delete_values">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Deletes all instances of a given value from a hash.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">delete_values</span>({<span class="ruby-string">&#39;a&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;A&#39;</span>,<span class="ruby-string">&#39;b&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;B&#39;</span>,<span class="ruby-string">&#39;c&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;C&#39;</span>,<span class="ruby-string">&#39;B&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;D&#39;</span>}, <span class="ruby-string">&#39;B&#39;</span>)
+</pre>
+
+<p>Would return:
+{&#39;a&#39;=&gt;&#39;A&#39;,&#39;c&#39;=&gt;&#39;C&#39;,&#39;B&#39;=&gt;&#39;D&#39;}</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-delete_undef_values">delete_undef_values<span><a href="#label-delete_undef_values">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Deletes all instances of the undef value from an array or hash.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">$hash</span> = <span class="ruby-identifier">delete_undef_values</span>({<span class="ruby-identifier">a</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;A&#39;</span>, <span class="ruby-identifier">b</span>=<span class="ruby-operator">&gt;</span><span class="ruby-string">&#39;&#39;</span>, <span class="ruby-identifier">c</span>=<span class="ruby-operator">&gt;</span><span class="ruby-keyword">undef</span>, <span class="ruby-identifier">d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>})
+</pre>
+
+<p>Would return: {a =&gt; &#39;A&#39;, b =&gt; &#39;&#39;, d =&gt; false}</p>
+
+<pre>$array = delete_undef_values([&#39;A&#39;,&#39;&#39;,undef,false])</pre>
+
+<p>Would return: [&#39;A&#39;,&#39;&#39;,false]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-difference">difference<span><a href="#label-difference">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function returns the difference between two arrays. The returned array
+is a copy of the original array, removing any items that also appear in the
+second array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>difference([&quot;a&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;c&quot;,&quot;d&quot;])</pre>
+
+<p>Would return: [“a”]</p>
+
+<h2 id="label-dirname">dirname<span><a href="#label-dirname">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the <code>dirname</code> of a path.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>dirname(&#39;/path/to/a/file.ext&#39;)</pre>
+
+<p>Would return: &#39;/path/to/a&#39;</p>
+
+<h2 id="label-downcase">downcase<span><a href="#label-downcase">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Converts the case of a string or all strings in an array to lower case.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-empty">empty<span><a href="#label-empty">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable is empty.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-ensure_packages">ensure_packages<span><a href="#label-ensure_packages">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes a list of packages and only installs them if they don&#39;t already
+exist. It optionally takes a hash as a second parameter that will be passed
+as the third argument to the ensure_resource() function.</p>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-ensure_resource">ensure_resource<span><a href="#label-ensure_resource">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes a resource type, title, and a list of attributes that describe a
+resource.</p>
+
+<pre class="ruby"><span class="ruby-identifier">user</span> { <span class="ruby-string">&#39;dan&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>,
+}
+</pre>
+
+<p>This example only creates the resource if it does not already exist:</p>
+
+<pre class="ruby"><span class="ruby-identifier">ensure_resource</span>(<span class="ruby-string">&#39;user&#39;</span>, <span class="ruby-string">&#39;dan&#39;</span>, {<span class="ruby-string">&#39;ensure&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;present&#39;</span> })
+</pre>
+
+<p>If the resource already exists but does not match the specified parameters,
+this function will attempt to recreate the resource leading to a duplicate
+resource definition error.</p>
+
+<p>An array of resources can also be passed in and each will be created with
+the type and parameters specified if it doesn&#39;t already exist.</p>
+
+<pre class="ruby"><span class="ruby-identifier">ensure_resource</span>(<span class="ruby-string">&#39;user&#39;</span>, [<span class="ruby-string">&#39;dan&#39;</span>,<span class="ruby-string">&#39;alex&#39;</span>], {<span class="ruby-string">&#39;ensure&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;present&#39;</span>})
+</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-file_line">file_line<span><a href="#label-file_line">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This resource ensures that a given line is contained within a file. You can
+also use “match” to replace existing lines.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">file_line</span> { <span class="ruby-string">&#39;sudo_rule&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">path</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/etc/sudoers&#39;</span>,
+  <span class="ruby-identifier">line</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;%sudo ALL=(ALL) ALL&#39;</span>,
+}
+
+<span class="ruby-identifier">file_line</span> { <span class="ruby-string">&#39;change_mount&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">path</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/etc/fstab&#39;</span>,
+  <span class="ruby-identifier">line</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;10.0.0.1:/vol/data /opt/data nfs defaults 0 0&#39;</span>,
+  <span class="ruby-identifier">match</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;^172.16.17.2:/vol/old&#39;</span>,
+}
+</pre>
+<ul><li>
+<p><em>Type</em>: resource</p>
+</li></ul>
+
+<h2 id="label-flatten">flatten<span><a href="#label-flatten">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function flattens any deeply nested arrays and returns a single flat
+array as a result.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>flatten([&#39;a&#39;, [&#39;b&#39;, [&#39;c&#39;]]])</pre>
+
+<p>Would return: [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-floor">floor<span><a href="#label-floor">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the largest integer less or equal to the argument. Takes a single
+numeric value as an argument.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-fqdn_rotate">fqdn_rotate<span><a href="#label-fqdn_rotate">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Rotates an array a random number of times based on a nodes fqdn.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-get_module_path">get_module_path<span><a href="#label-get_module_path">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the absolute path of the specified module for the current
+environment.</p>
+
+<p>Example:  $module_path = get_module_path(&#39;stdlib&#39;)</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-getparam">getparam<span><a href="#label-getparam">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes a resource reference and name of the parameter and returns value of
+resource&#39;s parameter.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">define</span> <span class="ruby-identifier">example_resource</span>(<span class="ruby-identifier">$param</span>) {
+}
+
+<span class="ruby-identifier">example_resource</span> { <span class="ruby-string">&quot;example_resource_instance&quot;</span><span class="ruby-operator">:</span>
+    <span class="ruby-identifier">param</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;param_value&quot;</span>
+}
+
+<span class="ruby-identifier">getparam</span>(<span class="ruby-constant">Example_resource</span>[<span class="ruby-string">&quot;example_resource_instance&quot;</span>], <span class="ruby-string">&quot;param&quot;</span>)
+</pre>
+
+<p>Would return: param_value</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-getvar">getvar<span><a href="#label-getvar">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Lookup a variable in a remote namespace.</p>
+
+<p>For example:</p>
+
+<pre>$foo = getvar(&#39;site::data::foo&#39;)
+# Equivalent to $foo = $site::data::foo</pre>
+
+<p>This is useful if the namespace itself is stored in a string:</p>
+
+<pre>$datalocation = &#39;site::data&#39;
+$bar = getvar(&quot;${datalocation}::bar&quot;)
+# Equivalent to $bar = $site::data::bar</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-grep">grep<span><a href="#label-grep">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function searches through an array and returns any elements that match
+the provided regular expression.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>grep([&#39;aaa&#39;,&#39;bbb&#39;,&#39;ccc&#39;,&#39;aaaddd&#39;], &#39;aaa&#39;)</pre>
+
+<p>Would return:</p>
+
+<pre>[&#39;aaa&#39;,&#39;aaaddd&#39;]</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-has_interface_with">has_interface_with<span><a href="#label-has_interface_with">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns boolean based on kind and value: * macaddress * netmask * ipaddress
+* network</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">has_interface_with</span>(<span class="ruby-string">&quot;macaddress&quot;</span>, <span class="ruby-string">&quot;x:x:x:x:x:x&quot;</span>)
+<span class="ruby-identifier">has_interface_with</span>(<span class="ruby-string">&quot;ipaddress&quot;</span>, <span class="ruby-string">&quot;127.0.0.1&quot;</span>)    =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+</pre>
+
+<p>etc.</p>
+
+<p>If no “kind” is given, then the presence of the interface is checked:</p>
+
+<pre class="ruby"><span class="ruby-identifier">has_interface_with</span>(<span class="ruby-string">&quot;lo&quot;</span>)                        =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-has_ip_address">has_ip_address<span><a href="#label-has_ip_address">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the client has the requested IP address on some interface.</p>
+
+<p>This function iterates through the &#39;interfaces&#39; fact and checks the
+&#39;ipaddress_IFACE&#39; facts, performing a simple string comparison.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-has_ip_network">has_ip_network<span><a href="#label-has_ip_network">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the client has an IP address within the requested network.</p>
+
+<p>This function iterates through the &#39;interfaces&#39; fact and checks the
+&#39;network_IFACE&#39; facts, performing a simple string comparision.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-has_key">has_key<span><a href="#label-has_key">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Determine if a hash has a certain key value.</p>
+
+<p>Example:</p>
+
+<pre class="ruby"><span class="ruby-identifier">$my_hash</span> = {<span class="ruby-string">&#39;key_one&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;value_one&#39;</span>}
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">has_key</span>(<span class="ruby-identifier">$my_hash</span>, <span class="ruby-string">&#39;key_two&#39;</span>) {
+  <span class="ruby-identifier">notice</span>(<span class="ruby-string">&#39;we will not reach here&#39;</span>)
+}
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">has_key</span>(<span class="ruby-identifier">$my_hash</span>, <span class="ruby-string">&#39;key_one&#39;</span>) {
+  <span class="ruby-identifier">notice</span>(<span class="ruby-string">&#39;this will be printed&#39;</span>)
+}
+</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-hash">hash<span><a href="#label-hash">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function converts an array into a hash.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>hash([&#39;a&#39;,1,&#39;b&#39;,2,&#39;c&#39;,3])</pre>
+
+<p>Would return: {&#39;a&#39;=&gt;1,&#39;b&#39;=&gt;2,&#39;c&#39;=&gt;3}</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-intersection">intersection<span><a href="#label-intersection">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function returns an array an intersection of two.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>intersection([&quot;a&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;c&quot;,&quot;d&quot;])</pre>
+
+<p>Would return: [“b”,“c”]</p>
+
+<h2 id="label-is_array">is_array<span><a href="#label-is_array">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is an array.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_bool">is_bool<span><a href="#label-is_bool">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is a boolean.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_domain_name">is_domain_name<span><a href="#label-is_domain_name">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the string passed to this function is a syntactically
+correct domain name.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_float">is_float<span><a href="#label-is_float">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is a float.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_function_available">is_function_available<span><a href="#label-is_function_available">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function accepts a string as an argument, determines whether the
+Puppet runtime has access to a function by that name. It returns a true if
+the function exists, false if not.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_hash">is_hash<span><a href="#label-is_hash">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is a hash.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_integer">is_integer<span><a href="#label-is_integer">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable returned to this string is an integer.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_ip_address">is_ip_address<span><a href="#label-is_ip_address">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the string passed to this function is a valid IP address.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_mac_address">is_mac_address<span><a href="#label-is_mac_address">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the string passed to this function is a valid mac address.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_numeric">is_numeric<span><a href="#label-is_numeric">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is a number.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-is_string">is_string<span><a href="#label-is_string">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns true if the variable passed to this function is a string.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-join">join<span><a href="#label-join">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function joins an array into a string using a separator.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>join([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], &quot;,&quot;)</pre>
+
+<p>Would result in: “a,b,c”</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-join_keys_to_values">join_keys_to_values<span><a href="#label-join_keys_to_values">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function joins each key of a hash to that key&#39;s corresponding
+value with a separator. Keys and values are cast to strings. The return
+value is an array in which each element is one joined key/value pair.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">join_keys_to_values</span>({<span class="ruby-string">&#39;a&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>,<span class="ruby-string">&#39;b&#39;</span>=<span class="ruby-operator">&gt;</span><span class="ruby-value">2</span>}, <span class="ruby-string">&quot; is &quot;</span>)
+</pre>
+
+<p>Would result in: [“a is 1”,“b is 2”]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-keys">keys<span><a href="#label-keys">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the keys of a hash as an array.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-loadyaml">loadyaml<span><a href="#label-loadyaml">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Load a YAML file containing an array, string, or hash, and return the data
+in the corresponding native data type.</p>
+
+<p>For example:</p>
+
+<pre>$myhash = loadyaml(&#39;/etc/puppet/data/myhash.yaml&#39;)</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-lstrip">lstrip<span><a href="#label-lstrip">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Strips leading spaces to the left of a string.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-max">max<span><a href="#label-max">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the highest value of all arguments. Requires at least one argument.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-member">member<span><a href="#label-member">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function determines if a variable is a member of an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>member([&#39;a&#39;,&#39;b&#39;], &#39;b&#39;)</pre>
+
+<p>Would return: true</p>
+
+<pre>member([&#39;a&#39;,&#39;b&#39;], &#39;c&#39;)</pre>
+
+<p>Would return: false</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-merge">merge<span><a href="#label-merge">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Merges two or more hashes together and returns the resulting hash.</p>
+
+<p>For example:</p>
+
+<pre class="ruby"><span class="ruby-identifier">$hash1</span> = {<span class="ruby-string">&#39;one&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, <span class="ruby-string">&#39;two&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2</span>}
+<span class="ruby-identifier">$hash2</span> = {<span class="ruby-string">&#39;two&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;dos&#39;</span>, <span class="ruby-string">&#39;three&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;tres&#39;</span>}
+<span class="ruby-identifier">$merged_hash</span> = <span class="ruby-identifier">merge</span>(<span class="ruby-identifier">$hash1</span>, <span class="ruby-identifier">$hash2</span>)
+<span class="ruby-comment"># The resulting hash is equivalent to:</span>
+<span class="ruby-comment"># $merged_hash =  {&#39;one&#39; =&gt; 1, &#39;two&#39; =&gt; &#39;dos&#39;, &#39;three&#39; =&gt; &#39;tres&#39;}</span>
+</pre>
+
+<p>When there is a duplicate key, the key in the rightmost hash will “win.”</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-min">min<span><a href="#label-min">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the lowest value of all arguments. Requires at least one argument.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-num2bool">num2bool<span><a href="#label-num2bool">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function converts a number or a string representation of a number into
+a true boolean. Zero or anything non-numeric becomes false. Numbers higher
+then 0 become true.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-parsejson">parsejson<span><a href="#label-parsejson">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function accepts JSON as a string and converts into the correct Puppet
+structure.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-parseyaml">parseyaml<span><a href="#label-parseyaml">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function accepts YAML as a string and converts it into the correct
+Puppet structure.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-pick">pick<span><a href="#label-pick">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function is similar to a coalesce function in SQL in that it will
+return the first value in a list of values that is not undefined or an
+empty string (two things in Puppet that will return a boolean false value).
+Typically, this function is used to check for a value in the Puppet
+Dashboard/Enterprise Console, and failover to a default value like the
+following:</p>
+
+<pre>$real_jenkins_version = pick($::jenkins_version, &#39;1.449&#39;)</pre>
+
+<p>The value of $real_jenkins_version will first look for a top-scope variable
+called &#39;jenkins_version&#39; (note that parameters set in the Puppet
+Dashboard/ Enterprise Console are brought into Puppet as top-scope
+variables), and, failing that, will use a default value of 1.449.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-prefix">prefix<span><a href="#label-prefix">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function applies a prefix to all elements in an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>prefix([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], &#39;p&#39;)</pre>
+
+<p>Will return: [&#39;pa&#39;,&#39;pb&#39;,&#39;pc&#39;]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-range">range<span><a href="#label-range">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>When given range in the form of (start, stop) it will extrapolate a range
+as an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>range(&quot;0&quot;, &quot;9&quot;)</pre>
+
+<p>Will return: [0,1,2,3,4,5,6,7,8,9]</p>
+
+<pre>range(&quot;00&quot;, &quot;09&quot;)</pre>
+
+<p>Will return: [0,1,2,3,4,5,6,7,8,9] - Zero padded strings are converted to
+integers automatically</p>
+
+<pre>range(&quot;a&quot;, &quot;c&quot;)</pre>
+
+<p>Will return: [“a”,“b”,“c”]</p>
+
+<pre>range(&quot;host01&quot;, &quot;host10&quot;)</pre>
+
+<p>Will return: [“host01”, “host02”, …, “host09”, “host10”]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-reject">reject<span><a href="#label-reject">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function searches through an array and rejects all elements that match
+the provided regular expression.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>reject([&#39;aaa&#39;,&#39;bbb&#39;,&#39;ccc&#39;,&#39;aaaddd&#39;], &#39;aaa&#39;)</pre>
+
+<p>Would return:</p>
+
+<pre>[&#39;bbb&#39;,&#39;ccc&#39;]</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-reverse">reverse<span><a href="#label-reverse">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Reverses the order of a string or array.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-rstrip">rstrip<span><a href="#label-rstrip">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Strips leading spaces to the right of the string.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-shuffle">shuffle<span><a href="#label-shuffle">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Randomizes the order of a string or array elements.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-size">size<span><a href="#label-size">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the number of elements in a string or array.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-sort">sort<span><a href="#label-sort">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Sorts strings and arrays lexically.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-squeeze">squeeze<span><a href="#label-squeeze">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns a new string where runs of the same character that occur in this
+set are replaced by a single character.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-str2bool">str2bool<span><a href="#label-str2bool">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This converts a string to a boolean. This attempts to convert strings that
+contain things like: y, 1, t, true to &#39;true&#39; and strings that
+contain things like: 0, f, n, false, no to &#39;false&#39;.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-str2saltedsha512">str2saltedsha512<span><a href="#label-str2saltedsha512">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This converts a string to a salted-SHA512 password hash (which is used for
+OS X versions &gt;= 10.7). Given any simple string, you will get a hex
+version of a salted-SHA512 password hash that can be inserted into your
+Puppet manifests as a valid password attribute.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-strftime">strftime<span><a href="#label-strftime">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function returns formatted time.</p>
+
+<p><em>Examples:</em></p>
+
+<p>To return the time since epoch:</p>
+
+<pre>strftime(&quot;%s&quot;)</pre>
+
+<p>To return the date:</p>
+
+<pre>strftime(&quot;%Y-%m-%d&quot;)</pre>
+
+<p><em>Format meaning:</em></p>
+
+<pre>%a - The abbreviated weekday name (``Sun&#39;&#39;)
+%A - The  full  weekday  name (``Sunday&#39;&#39;)
+%b - The abbreviated month name (``Jan&#39;&#39;)
+%B - The  full  month  name (``January&#39;&#39;)
+%c - The preferred local date and time representation
+%C - Century (20 in 2009)
+%d - Day of the month (01..31)
+%D - Date (%m/%d/%y)
+%e - Day of the month, blank-padded ( 1..31)
+%F - Equivalent to %Y-%m-%d (the ISO 8601 date format)
+%h - Equivalent to %b
+%H - Hour of the day, 24-hour clock (00..23)
+%I - Hour of the day, 12-hour clock (01..12)
+%j - Day of the year (001..366)
+%k - hour, 24-hour clock, blank-padded ( 0..23)
+%l - hour, 12-hour clock, blank-padded ( 0..12)
+%L - Millisecond of the second (000..999)
+%m - Month of the year (01..12)
+%M - Minute of the hour (00..59)
+%n - Newline (\n)
+%N - Fractional seconds digits, default is 9 digits (nanosecond)
+        %3N  millisecond (3 digits)
+        %6N  microsecond (6 digits)
+        %9N  nanosecond (9 digits)
+%p - Meridian indicator (``AM&#39;&#39;  or  ``PM&#39;&#39;)
+%P - Meridian indicator (``am&#39;&#39;  or  ``pm&#39;&#39;)
+%r - time, 12-hour (same as %I:%M:%S %p)
+%R - time, 24-hour (%H:%M)
+%s - Number of seconds since 1970-01-01 00:00:00 UTC.
+%S - Second of the minute (00..60)
+%t - Tab character (        )
+%T - time, 24-hour (%H:%M:%S)
+%u - Day of the week as a decimal, Monday being 1. (1..7)
+%U - Week  number  of the current year,
+        starting with the first Sunday as the first
+        day of the first week (00..53)
+%v - VMS date (%e-%b-%Y)
+%V - Week number of year according to ISO 8601 (01..53)
+%W - Week  number  of the current year,
+        starting with the first Monday as the first
+        day of the first week (00..53)
+%w - Day of the week (Sunday is 0, 0..6)
+%x - Preferred representation for the date alone, no time
+%X - Preferred representation for the time alone, no date
+%y - Year without a century (00..99)
+%Y - Year with century
+%z - Time zone as  hour offset from UTC (e.g. +0900)
+%Z - Time zone name
+%% - Literal ``%&#39;&#39; character</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-strip">strip<span><a href="#label-strip">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function removes leading and trailing whitespace from a string or from
+every string inside an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>strip(&quot;    aaa   &quot;)</pre>
+
+<p>Would result in: “aaa”</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-suffix">suffix<span><a href="#label-suffix">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function applies a suffix to all elements in an array.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>suffix([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], &#39;p&#39;)</pre>
+
+<p>Will return: [&#39;ap&#39;,&#39;bp&#39;,&#39;cp&#39;]</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-swapcase">swapcase<span><a href="#label-swapcase">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function will swap the existing case of a string.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>swapcase(&quot;aBcD&quot;)</pre>
+
+<p>Would result in: “AbCd”</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-time">time<span><a href="#label-time">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function will return the current time since epoch as an integer.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>time()</pre>
+
+<p>Will return something like: 1311972653</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-to_bytes">to_bytes<span><a href="#label-to_bytes">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Converts the argument into bytes, for example 4 kB becomes 4096. Takes a
+single string value as an argument.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-type">type<span><a href="#label-type">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Returns the type when passed a variable. Type can be one of:</p>
+<ul><li>
+<p>string</p>
+</li><li>
+<p>array</p>
+</li><li>
+<p>hash</p>
+</li><li>
+<p>float</p>
+</li><li>
+<p>integer</p>
+</li><li>
+<p>boolean</p>
+</li><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-union">union<span><a href="#label-union">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function returns a union of two arrays.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>union([&quot;a&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;c&quot;,&quot;d&quot;])</pre>
+
+<p>Would return: [“a”,“b”,“c”,“d”]</p>
+
+<h2 id="label-unique">unique<span><a href="#label-unique">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This function will remove duplicates from strings and arrays.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>unique(&quot;aabbcc&quot;)</pre>
+
+<p>Will return:</p>
+
+<pre>abc</pre>
+
+<p>You can also use this with arrays:</p>
+
+<pre>unique([&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;,&quot;c&quot;])</pre>
+
+<p>This returns:</p>
+
+<pre>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-upcase">upcase<span><a href="#label-upcase">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Converts a string or an array of strings to uppercase.</p>
+
+<p><em>Examples:</em></p>
+
+<pre>upcase(&quot;abcd&quot;)</pre>
+
+<p>Will return:</p>
+
+<pre>ABCD</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-uriescape">uriescape<span><a href="#label-uriescape">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Urlencodes a string or array of strings. Requires either a single string or
+an array as an input.</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-validate_absolute_path">validate_absolute_path<span><a href="#label-validate_absolute_path">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate the string represents an absolute path in the filesystem. This
+function works for windows and unix style paths.</p>
+
+<p>The following values will pass:</p>
+
+<pre>$my_path = &quot;C:/Program Files (x86)/Puppet Labs/Puppet&quot;
+validate_absolute_path($my_path)
+$my_path2 = &quot;/var/lib/puppet&quot;
+validate_absolute_path($my_path2)</pre>
+
+<p>The following values will fail, causing compilation to abort:</p>
+
+<pre>validate_absolute_path(true)
+validate_absolute_path([ &#39;var/lib/puppet&#39;, &#39;/var/foo&#39; ])
+validate_absolute_path([ &#39;/var/lib/puppet&#39;, &#39;var/foo&#39; ])
+$undefined = undef
+validate_absolute_path($undefined)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_array">validate_array<span><a href="#label-validate_array">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate that all passed values are array data structures. Abort catalog
+compilation if any value fails this check.</p>
+
+<p>The following values will pass:</p>
+
+<pre>$my_array = [ &#39;one&#39;, &#39;two&#39; ]
+validate_array($my_array)</pre>
+
+<p>The following values will fail, causing compilation to abort:</p>
+
+<pre>validate_array(true)
+validate_array(&#39;some_string&#39;)
+$undefined = undef
+validate_array($undefined)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_augeas">validate_augeas<span><a href="#label-validate_augeas">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Perform validation of a string using an Augeas lens The first argument of
+this function should be a string to test, and the second argument should be
+the name of the Augeas lens to use. If Augeas fails to parse the string
+with the lens, the compilation will abort with a parse error.</p>
+
+<p>A third argument can be specified, listing paths which should not be found
+in the file. The <code>$file</code> variable points to the location of the
+temporary file being tested in the Augeas tree.</p>
+
+<p>For example, if you want to make sure your passwd content never contains a
+user <code>foo</code>, you could write:</p>
+
+<pre>validate_augeas($passwdcontent, &#39;Passwd.lns&#39;, [&#39;$file/foo&#39;])</pre>
+
+<p>Or if you wanted to ensure that no users used the &#39;/bin/barsh&#39;
+shell, you could use:</p>
+
+<pre>validate_augeas($passwdcontent, &#39;Passwd.lns&#39;, [&#39;$file/*[shell=&quot;/bin/barsh&quot;]&#39;]</pre>
+
+<p>If a fourth argument is specified, this will be the error message raised
+and seen by the user.</p>
+
+<p>A helpful error message can be returned like this:</p>
+
+<pre>validate_augeas($sudoerscontent, &#39;Sudoers.lns&#39;, [], &#39;Failed to validate sudoers content with Augeas&#39;)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_bool">validate_bool<span><a href="#label-validate_bool">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate that all passed values are either true or false. Abort catalog
+compilation if any value fails this check.</p>
+
+<p>The following values will pass:</p>
+
+<pre>$iamtrue = true
+validate_bool(true)
+validate_bool(true, true, false, $iamtrue)</pre>
+
+<p>The following values will fail, causing compilation to abort:</p>
+
+<pre>$some_array = [ true ]
+validate_bool(&quot;false&quot;)
+validate_bool(&quot;true&quot;)
+validate_bool($some_array)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_cmd">validate_cmd<span><a href="#label-validate_cmd">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Perform validation of a string with an external command. The first argument
+of this function should be a string to test, and the second argument should
+be a path to a test command taking a file as last argument. If the command,
+launched against a tempfile containing the passed string, returns a
+non-null value, compilation will abort with a parse error.</p>
+
+<p>If a third argument is specified, this will be the error message raised and
+seen by the user.</p>
+
+<p>A helpful error message can be returned like this:</p>
+
+<p>Example:</p>
+
+<pre>validate_cmd($sudoerscontent, &#39;/usr/sbin/visudo -c -f&#39;, &#39;Visudo failed to validate sudoers content&#39;)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_hash">validate_hash<span><a href="#label-validate_hash">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate that all passed values are hash data structures. Abort catalog
+compilation if any value fails this check.</p>
+
+<p>The following values will pass:</p>
+
+<pre class="ruby"><span class="ruby-identifier">$my_hash</span> = { <span class="ruby-string">&#39;one&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;two&#39;</span> }
+<span class="ruby-identifier">validate_hash</span>(<span class="ruby-identifier">$my_hash</span>)
+</pre>
+
+<p>The following values will fail, causing compilation to abort:</p>
+
+<pre>validate_hash(true)
+validate_hash(&#39;some_string&#39;)
+$undefined = undef
+validate_hash($undefined)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_re">validate_re<span><a href="#label-validate_re">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Perform simple validation of a string against one or more regular
+expressions. The first argument of this function should be a string to
+test, and the second argument should be a stringified regular expression
+(without the // delimiters) or an array of regular expressions. If none of
+the regular expressions match the string passed in, compilation will abort
+with a parse error.</p>
+
+<p>If a third argument is specified, this will be the error message raised and
+seen by the user.</p>
+
+<p>The following strings will validate against the regular expressions:</p>
+
+<pre>validate_re(&#39;one&#39;, &#39;^one$&#39;)
+validate_re(&#39;one&#39;, [ &#39;^one&#39;, &#39;^two&#39; ])</pre>
+
+<p>The following strings will fail to validate, causing compilation to abort:</p>
+
+<pre>validate_re(&#39;one&#39;, [ &#39;^two&#39;, &#39;^three&#39; ])</pre>
+
+<p>A helpful error message can be returned like this:</p>
+
+<pre>validate_re($::puppetversion, &#39;^2.7&#39;, &#39;The $puppetversion fact value does not match 2.7&#39;)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_slength">validate_slength<span><a href="#label-validate_slength">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate that the first argument is a string (or an array of strings), and
+less/equal to than the length of the second argument. It fails if the first
+argument is not a string or array of strings, and if arg 2 is not
+convertable to a number.</p>
+
+<p>The following values will pass:</p>
+
+<pre>validate_slength(&quot;discombobulate&quot;,17)
+validate_slength([&quot;discombobulate&quot;,&quot;moo&quot;],17)</pre>
+
+<p>The following values will not:</p>
+
+<pre>validate_slength(&quot;discombobulate&quot;,1)
+validate_slength([&quot;discombobulate&quot;,&quot;thermometer&quot;],5)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-validate_string">validate_string<span><a href="#label-validate_string">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Validate that all passed values are string data structures. Abort catalog
+compilation if any value fails this check.</p>
+
+<p>The following values will pass:</p>
+
+<pre>$my_string = &quot;one two&quot;
+validate_string($my_string, &#39;three&#39;)</pre>
+
+<p>The following values will fail, causing compilation to abort:</p>
+
+<pre>validate_string(true)
+validate_string([ &#39;some&#39;, &#39;array&#39; ])
+$undefined = undef
+validate_string($undefined)</pre>
+<ul><li>
+<p><em>Type</em>: statement</p>
+</li></ul>
+
+<h2 id="label-values">values<span><a href="#label-values">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>When given a hash this function will return the values of that hash.</p>
+
+<p><em>Examples:</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">$hash</span> = {
+  <span class="ruby-string">&#39;a&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>,
+  <span class="ruby-string">&#39;b&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2</span>,
+  <span class="ruby-string">&#39;c&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">3</span>,
+}
+<span class="ruby-identifier">values</span>(<span class="ruby-identifier">$hash</span>)
+</pre>
+
+<p>This example would return:</p>
+
+<pre>[1,2,3]</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-values_at">values_at<span><a href="#label-values_at">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Finds value inside an array based on location.</p>
+
+<p>The first argument is the array you want to analyze, and the second element
+can be a combination of:</p>
+<ul><li>
+<p>A single numeric index</p>
+</li><li>
+<p>A range in the form of &#39;start-stop&#39; (eg. 4-9)</p>
+</li><li>
+<p>An array combining the above</p>
+</li></ul>
+
+<p><em>Examples</em>:</p>
+
+<pre>values_at([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], 2)</pre>
+
+<p>Would return [&#39;c&#39;].</p>
+
+<pre>values_at([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;], [&quot;0-1&quot;])</pre>
+
+<p>Would return [&#39;a&#39;,&#39;b&#39;].</p>
+
+<pre>values_at([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;], [0, &quot;2-3&quot;])</pre>
+
+<p>Would return [&#39;a&#39;,&#39;c&#39;,&#39;d&#39;].</p>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<h2 id="label-zip">zip<span><a href="#label-zip">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Takes one element from first array and merges corresponding elements from
+second array. This generates a sequence of n-element arrays, where n is one
+more than the count of arguments.</p>
+
+<p><em>Example:</em></p>
+
+<pre>zip([&#39;1&#39;,&#39;2&#39;,&#39;3&#39;],[&#39;4&#39;,&#39;5&#39;,&#39;6&#39;])</pre>
+
+<p>Would result in:</p>
+
+<pre>[&quot;1&quot;, &quot;4&quot;], [&quot;2&quot;, &quot;5&quot;], [&quot;3&quot;, &quot;6&quot;]</pre>
+<ul><li>
+<p><em>Type</em>: rvalue</p>
+</li></ul>
+
+<p><em>This page autogenerated on 2013-04-11 13:54:25 -0700</em></p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,30 @@
+SSH = 'ssh -A -i ~/.ssh/cookbook.pem -l thomas'
+SCP = 'scp -i ~/.ssh/cookbook.pem'
+REPO = 'git@git.example.com:repos/puppet.git'
+
+desc "Run Puppet on ENV['CLIENT']"
+task :apply do
+    client = ENV['CLIENT']
+      sh "git push"
+        sh "#{SSH} #{client} pull-updates"
+end
+desc "Bootstrap Puppet on ENV['CLIENT'] with
+  hostname ENV['HOSTNAME']"
+task :bootstrap do
+  client = ENV['CLIENT']
+  hostname = ENV['HOSTNAME'] || client
+  bootstrap = 'manifests/bootstrap.pp'
+  commands = <<BOOTSTRAP
+sudo hostname #{hostname} && \
+(echo #{hostname} | sudo tee /etc/hostname) && \
+wget http://apt.puppetlabs.com/puppetlabs-release-wheezy.deb && \
+sudo dpkg -i puppetlabs-release-wheezy.deb && \
+sudo apt-get update && sudo apt-get -y install git puppet && \
+sudo puppet apply bootstrap.pp && \
+sudo puppet apply --modulepath /etc/puppet/cookbook/modules \
+ /etc/puppet/cookbook/manifests/site.pp
+BOOTSTRAP
+  sh "#{SCP} #{bootstrap} thomas@#{client}:"
+  sh "#{SSH} #{client} '#{commands}'"
+end
+

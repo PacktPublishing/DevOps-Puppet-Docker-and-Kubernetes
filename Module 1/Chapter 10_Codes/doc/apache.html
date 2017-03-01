@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module apache - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>modules/apache/lib/puppet/provider/a2mod.rb
+    <li>modules/apache/lib/puppet/provider/a2mod/a2mod.rb
+    <li>modules/apache/lib/puppet/provider/a2mod/gentoo.rb
+    <li>modules/apache/lib/puppet/provider/a2mod/modfix.rb
+    <li>modules/apache/lib/puppet/provider/a2mod/redhat.rb
+    <li>modules/apache/lib/puppet/type/a2mod.rb
+    <li>modules/apache/manifests/balancer.pp
+    <li>modules/apache/manifests/balancermember.pp
+    <li>modules/apache/manifests/confd/no_accf.pp
+    <li>modules/apache/manifests/default_confd_files.pp
+    <li>modules/apache/manifests/default_mods.pp
+    <li>modules/apache/manifests/default_mods/load.pp
+    <li>modules/apache/manifests/dev.pp
+    <li>modules/apache/manifests/init.pp
+    <li>modules/apache/manifests/listen.pp
+    <li>modules/apache/manifests/mod.pp
+    <li>modules/apache/manifests/mod/actions.pp
+    <li>modules/apache/manifests/mod/alias.pp
+    <li>modules/apache/manifests/mod/auth_basic.pp
+    <li>modules/apache/manifests/mod/auth_kerb.pp
+    <li>modules/apache/manifests/mod/authnz_ldap.pp
+    <li>modules/apache/manifests/mod/autoindex.pp
+    <li>modules/apache/manifests/mod/cache.pp
+    <li>modules/apache/manifests/mod/cgi.pp
+    <li>modules/apache/manifests/mod/cgid.pp
+    <li>modules/apache/manifests/mod/dav.pp
+    <li>modules/apache/manifests/mod/dav_fs.pp
+    <li>modules/apache/manifests/mod/dav_svn.pp
+    <li>modules/apache/manifests/mod/deflate.pp
+    <li>modules/apache/manifests/mod/dev.pp
+    <li>modules/apache/manifests/mod/dir.pp
+    <li>modules/apache/manifests/mod/disk_cache.pp
+    <li>modules/apache/manifests/mod/event.pp
+    <li>modules/apache/manifests/mod/expires.pp
+    <li>modules/apache/manifests/mod/fastcgi.pp
+    <li>modules/apache/manifests/mod/fcgid.pp
+    <li>modules/apache/manifests/mod/headers.pp
+    <li>modules/apache/manifests/mod/include.pp
+    <li>modules/apache/manifests/mod/info.pp
+    <li>modules/apache/manifests/mod/itk.pp
+    <li>modules/apache/manifests/mod/ldap.pp
+    <li>modules/apache/manifests/mod/mime.pp
+    <li>modules/apache/manifests/mod/mime_magic.pp
+    <li>modules/apache/manifests/mod/negotiation.pp
+    <li>modules/apache/manifests/mod/nss.pp
+    <li>modules/apache/manifests/mod/pagespeed.pp
+    <li>modules/apache/manifests/mod/passenger.pp
+    <li>modules/apache/manifests/mod/perl.pp
+    <li>modules/apache/manifests/mod/peruser.pp
+    <li>modules/apache/manifests/mod/php.pp
+    <li>modules/apache/manifests/mod/prefork.pp
+    <li>modules/apache/manifests/mod/proxy.pp
+    <li>modules/apache/manifests/mod/proxy_ajp.pp
+    <li>modules/apache/manifests/mod/proxy_balancer.pp
+    <li>modules/apache/manifests/mod/proxy_html.pp
+    <li>modules/apache/manifests/mod/proxy_http.pp
+    <li>modules/apache/manifests/mod/python.pp
+    <li>modules/apache/manifests/mod/reqtimeout.pp
+    <li>modules/apache/manifests/mod/rewrite.pp
+    <li>modules/apache/manifests/mod/rpaf.pp
+    <li>modules/apache/manifests/mod/setenvif.pp
+    <li>modules/apache/manifests/mod/speling.pp
+    <li>modules/apache/manifests/mod/ssl.pp
+    <li>modules/apache/manifests/mod/status.pp
+    <li>modules/apache/manifests/mod/suexec.pp
+    <li>modules/apache/manifests/mod/suphp.pp
+    <li>modules/apache/manifests/mod/userdir.pp
+    <li>modules/apache/manifests/mod/vhost_alias.pp
+    <li>modules/apache/manifests/mod/worker.pp
+    <li>modules/apache/manifests/mod/wsgi.pp
+    <li>modules/apache/manifests/mod/xsendfile.pp
+    <li>modules/apache/manifests/mpm.pp
+    <li>modules/apache/manifests/namevirtualhost.pp
+    <li>modules/apache/manifests/package.pp
+    <li>modules/apache/manifests/params.pp
+    <li>modules/apache/manifests/peruser/multiplexer.pp
+    <li>modules/apache/manifests/peruser/processor.pp
+    <li>modules/apache/manifests/php.pp
+    <li>modules/apache/manifests/proxy.pp
+    <li>modules/apache/manifests/python.pp
+    <li>modules/apache/manifests/service.pp
+    <li>modules/apache/manifests/ssl.pp
+    <li>modules/apache/manifests/version.pp
+    <li>modules/apache/manifests/vhost.pp
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-i-balancer">#balancer</a>
+    
+    <li ><a href="#method-i-balancermember">#balancermember</a>
+    
+    <li ><a href="#method-i-listen">#listen</a>
+    
+    <li ><a href="#method-i-mod">#mod</a>
+    
+    <li ><a href="#method-i-mpm">#mpm</a>
+    
+    <li ><a href="#method-i-namevirtualhost">#namevirtualhost</a>
+    
+    <li ><a href="#method-i-vhost">#vhost</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="./modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="./modules/base/README.html">README</a>
+  
+    <li class="file"><a href="./modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="./modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="./modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="./modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="./modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="./modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="./modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="./modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="./modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="./modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="./modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="./modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="./modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="./modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="./modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="./modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="./modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="./modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="./modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./__site__.html">__site__</a>
+  
+    <li><a href="./admin.html">admin</a>
+  
+    <li><a href="./admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="./admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="./admin/stages.html">admin::stages</a>
+  
+    <li><a href="./admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="./admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="./admin_user.html">admin_user</a>
+  
+    <li><a href="./apache.html">apache</a>
+  
+    <li><a href="./apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="./apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="./apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="./apache/confd.html">apache::confd</a>
+  
+    <li><a href="./apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="./apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="./apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="./apache/dev.html">apache::dev</a>
+  
+    <li><a href="./apache/mod.html">apache::mod</a>
+  
+    <li><a href="./apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="./apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="./apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="./apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="./apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="./apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="./apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="./apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="./apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="./apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="./apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="./apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="./apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="./apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="./apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="./apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="./apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="./apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="./apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="./apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="./apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="./apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="./apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="./apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="./apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="./apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="./apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="./apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="./apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="./apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="./apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="./apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="./apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="./apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="./apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="./apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="./apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="./apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="./apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="./apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="./apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="./apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="./apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="./apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="./apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="./apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="./apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="./apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="./apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="./apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="./apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="./apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="./apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="./apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="./apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="./apache/package.html">apache::package</a>
+  
+    <li><a href="./apache/params.html">apache::params</a>
+  
+    <li><a href="./apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="./apache/php.html">apache::php</a>
+  
+    <li><a href="./apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="./apache/python.html">apache::python</a>
+  
+    <li><a href="./apache/service.html">apache::service</a>
+  
+    <li><a href="./apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="./apache/version.html">apache::version</a>
+  
+    <li><a href="./apt.html">apt</a>
+  
+    <li><a href="./apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="./apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="./apt/apt.html">apt::apt</a>
+  
+    <li><a href="./apt/backports.html">apt::backports</a>
+  
+    <li><a href="./apt/debian.html">apt::debian</a>
+  
+    <li><a href="./apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="./apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="./apt/params.html">apt::params</a>
+  
+    <li><a href="./apt/release.html">apt::release</a>
+  
+    <li><a href="./apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="./apt/update.html">apt::update</a>
+  
+    <li><a href="./base.html">base</a>
+  
+    <li><a href="./base/base.html">base::base</a>
+  
+    <li><a href="./base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="./concat.html">concat</a>
+  
+    <li><a href="./concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="./concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="./concat/setup.html">concat::setup</a>
+  
+    <li><a href="./cookbook.html">cookbook</a>
+  
+    <li><a href="./cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="./cron.html">cron</a>
+  
+    <li><a href="./cron/cron.html">cron::cron</a>
+  
+    <li><a href="./db.html">db</a>
+  
+    <li><a href="./db/client.html">db::client</a>
+  
+    <li><a href="./db/server.html">db::server</a>
+  
+    <li><a href="./debug.html">debug</a>
+  
+    <li><a href="./debug/debug.html">debug::debug</a>
+  
+    <li><a href="./drupal.html">drupal</a>
+  
+    <li><a href="./drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="./enc.html">enc</a>
+  
+    <li><a href="./enc/enc.html">enc::enc</a>
+  
+    <li><a href="./facts.html">facts</a>
+  
+    <li><a href="./firewall.html">firewall</a>
+  
+    <li><a href="./firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="./firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="./firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="./firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="./firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="./firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="./greeting.html">greeting</a>
+  
+    <li><a href="./greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="./haproxy.html">haproxy</a>
+  
+    <li><a href="./haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="./haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="./haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="./heartbeat.html">heartbeat</a>
+  
+    <li><a href="./heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="./heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="./jumpbox.html">jumpbox</a>
+  
+    <li><a href="./jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="./lisa.html">lisa</a>
+  
+    <li><a href="./module_data.html">module_data</a>
+  
+    <li><a href="./myfw.html">myfw</a>
+  
+    <li><a href="./myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="./myfw/post.html">myfw::post</a>
+  
+    <li><a href="./myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="./mysql.html">mysql</a>
+  
+    <li><a href="./mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="./mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="./mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="./mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="./mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="./mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="./mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="./mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="./mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="./mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="./mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="./mysql/client.html">mysql::client</a>
+  
+    <li><a href="./mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="./mysql/params.html">mysql::params</a>
+  
+    <li><a href="./mysql/server.html">mysql::server</a>
+  
+    <li><a href="./mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="./mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="./mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="./mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="./mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="./mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="./mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="./mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="./mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="./nfs.html">nfs</a>
+  
+    <li><a href="./nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="./nfs/server.html">nfs::server</a>
+  
+    <li><a href="./nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="./nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="./nginx.html">nginx</a>
+  
+    <li><a href="./nginx/config.html">nginx::config</a>
+  
+    <li><a href="./nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="./nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="./nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="./nginx/package.html">nginx::package</a>
+  
+    <li><a href="./nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="./nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="./nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="./nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="./nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="./nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="./nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="./nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="./nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="./nginx/service.html">nginx::service</a>
+  
+    <li><a href="./nothing.html">nothing</a>
+  
+    <li><a href="./nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="./one.html">one</a>
+  
+    <li><a href="./one/one.html">one::one</a>
+  
+    <li><a href="./profiles.html">profiles</a>
+  
+    <li><a href="./profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="./profiles/base.html">profiles::base</a>
+  
+    <li><a href="./profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="./puppet.html">puppet</a>
+  
+    <li><a href="./puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="./roles.html">roles</a>
+  
+    <li><a href="./roles/roles.html">roles::roles</a>
+  
+    <li><a href="./roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="./ssh_user.html">ssh_user</a>
+  
+    <li><a href="./stdlib.html">stdlib</a>
+  
+    <li><a href="./stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="./stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="./stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="./stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="./stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="./thing.html">thing</a>
+  
+    <li><a href="./thing/thing.html">thing::thing</a>
+  
+    <li><a href="./thomas-base.html">thomas-base</a>
+  
+    <li><a href="./thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="./thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="./two.html">two</a>
+  
+    <li><a href="./two/two.html">two::two</a>
+  
+    <li><a href="./user.html">user</a>
+  
+    <li><a href="./user/developers.html">user::developers</a>
+  
+    <li><a href="./user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="./user/virtual.html">user::virtual</a>
+  
+    <li><a href="./virtual.html">virtual</a>
+  
+    <li><a href="./virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="./wordpress.html">wordpress</a>
+  
+    <li><a href="./wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module apache</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-balancer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">balancer</span><span
+            class="method-args">( $proxy_set => '{}', $collect_exported => 'true' )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-balancer-label-Define+Resource+Type%3A+apache%3A%3Abalancer">Define Resource Type: apache::balancer<span><a href="#method-i-balancer-label-Define+Resource+Type%3A+apache%3A%3Abalancer">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This type will create an apache balancer cluster file inside the conf.d
+directory. Each balancer cluster needs one or more balancer members (that
+can be declared with the apache::balancermember defined resource type).
+Using storeconfigs, you can export the apache::balancermember resources on
+all balancer members, and then collect them on a single apache load
+balancer server.</p>
+
+<h3 id="method-i-balancer-label-Requirement%2FDependencies%3A">Requirement/Dependencies:<span><a href="#method-i-balancer-label-Requirement%2FDependencies%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Currently requires the puppetlabs/concat module on the Puppet Forge and
+uses storeconfigs on the Puppet Master to export/collect resources from all
+balancer members.</p>
+
+<h3 id="method-i-balancer-label-Parameters">Parameters<span><a href="#method-i-balancer-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<dl class="rdoc-list label-list"><dt><strong>name</strong>
+<dd>
+<p>The namevar of the defined resource type is the balancer clusters name.
+This name is also used in the name of the conf.d file</p>
+<dl class="rdoc-list label-list"><dt><strong>proxy_set</strong>
+<dd>
+<p>Hash, default empty. If given, each key-value pair will be used as a
+ProxySet line in the configuration.</p>
+<dl class="rdoc-list label-list"><dt><strong>collect_exported</strong>
+<dd>
+<p>Boolean, default &#39;true&#39;. True means &#39;collect exported
+@@balancermember resources&#39; (for the case when every balancermember
+node exports itself), false means &#39;rely on the existing declared
+balancermember resources&#39; (for the case when you know the full set of
+balancermembers in advance and use apache::balancermember with array
+arguments, which allows you to deploy everything in 1 run)</p>
+
+<h3 id="method-i-balancer-label-Examples">Examples<span><a href="#method-i-balancer-label-Examples">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Exporting the resource for a balancer member:</p>
+
+<p>apache::balancer { &#39;puppet00&#39;: }</p>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- balancer-method -->
+
+    
+      <div id="method-i-balancermember" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">balancermember</span><span
+            class="method-args">( $balancer_cluster, $url => '[( Puppet::Parser::AST::String "http://" nil ), ( Puppet::Parser::AST::Variable $::fqdn nil ), ( Puppet::Parser::AST::String "/" nil )]', $options => [] )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-balancermember-label-Define+Resource+Type%3A+apache%3A%3Abalancermember">Define Resource Type: apache::balancermember<span><a href="#method-i-balancermember-label-Define+Resource+Type%3A+apache%3A%3Abalancermember">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This type will setup a balancer member inside a listening service
+configuration block in /etc/apache/apache.cfg on the load balancer.
+currently it only has the ability to specify the instance name, url and an
+array of options. More features can be added as needed. The best way to
+implement this is to export this resource for all apache balancer member
+servers, and then collect them on the main apache load balancer.</p>
+
+<h3 id="method-i-balancermember-label-Requirement%2FDependencies%3A">Requirement/Dependencies:<span><a href="#method-i-balancermember-label-Requirement%2FDependencies%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Currently requires the puppetlabs/concat module on the Puppet Forge and
+uses storeconfigs on the Puppet Master to export/collect resources from all
+balancer members.</p>
+
+<h3 id="method-i-balancermember-label-Parameters">Parameters<span><a href="#method-i-balancermember-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<dl class="rdoc-list label-list"><dt><strong>name</strong>
+<dd>
+<p>The title of the resource is arbitrary and only utilized in the concat
+fragment name.</p>
+<dl class="rdoc-list label-list"><dt><strong>balancer_cluster</strong>
+<dd>
+<p>The apache service&#39;s instance name (or, the title of the
+apache::balancer resource). This must match up with a declared
+apache::balancer resource.</p>
+<dl class="rdoc-list label-list"><dt><strong>url</strong>
+<dd>
+<p>The url used to contact the balancer member server.</p>
+<dl class="rdoc-list label-list"><dt><strong>options</strong>
+<dd>
+<p>An array of options to be specified after the url.</p>
+
+<h3 id="method-i-balancermember-label-Examples">Examples<span><a href="#method-i-balancermember-label-Examples">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Exporting the resource for a balancer member:</p>
+
+<p>@@apache::balancermember { &#39;apache&#39;:</p>
+
+<pre class="ruby"><span class="ruby-identifier">balancer_cluster</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;puppet00&#39;</span>,
+<span class="ruby-identifier">url</span>              =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;ajp://${::fqdn}:8009&quot;</span>
+<span class="ruby-identifier">options</span>          =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&#39;ping=5&#39;</span>, <span class="ruby-string">&#39;disablereuse=on&#39;</span>, <span class="ruby-string">&#39;retry=5&#39;</span>, <span class="ruby-string">&#39;ttl=120&#39;</span>],
+</pre>
+
+<p>}</p>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- balancermember-method -->
+
+    
+      <div id="method-i-listen" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">listen</span><span
+            class="method-args">( )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- listen-method -->
+
+    
+      <div id="method-i-mod" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mod</span><span
+            class="method-args">( $package => 'undef', $package_ensure => 'present', $lib => 'undef', $lib_path => '::apache::params::lib_path', $id => 'undef', $path => 'undef', $loadfiles => 'undef' )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- mod-method -->
+
+    
+      <div id="method-i-mpm" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mpm</span><span
+            class="method-args">( $lib_path => '::apache::params::lib_path', $apache_version => '::apache::apache_version' )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- mpm-method -->
+
+    
+      <div id="method-i-namevirtualhost" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">namevirtualhost</span><span
+            class="method-args">( )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- namevirtualhost-method -->
+
+    
+      <div id="method-i-vhost" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">vhost</span><span
+            class="method-args">( $docroot, $virtual_docroot => 'false', $port => 'undef', $ip => 'undef', $ip_based => 'false', $add_listen => 'true', $docroot_owner => 'root', $docroot_group => '::apache::params::root_group', $docroot_mode => 'undef', $serveradmin => 'undef', $ssl => 'false', $ssl_cert => '::apache::default_ssl_cert', $ssl_key => '::apache::default_ssl_key', $ssl_chain => '::apache::default_ssl_chain', $ssl_ca => '::apache::default_ssl_ca', $ssl_crl_path => '::apache::default_ssl_crl_path', $ssl_crl => '::apache::default_ssl_crl', $ssl_certs_dir => '::apache::params::ssl_certs_dir', $ssl_protocol => 'undef', $ssl_cipher => 'undef', $ssl_honorcipherorder => 'undef', $ssl_verify_client => 'undef', $ssl_verify_depth => 'undef', $ssl_options => 'undef', $ssl_proxyengine => 'false', $priority => 'undef', $default_vhost => 'false', $servername => 'name', $serveraliases => [], $options => ["Indexes", "FollowSymLinks", "MultiViews"], $override => ["None"], $directoryindex => '', $vhost_name => '*', $logroot => '::apache::logroot', $log_level => 'undef', $access_log => 'true', $access_log_file => 'undef', $access_log_pipe => 'undef', $access_log_syslog => 'undef', $access_log_format => 'undef', $access_log_env_var => 'undef', $aliases => 'undef', $directories => 'undef', $error_log => 'true', $error_log_file => 'undef', $error_log_pipe => 'undef', $error_log_syslog => 'undef', $error_documents => [], $fallbackresource => 'undef', $scriptalias => 'undef', $scriptaliases => [], $proxy_dest => 'undef', $proxy_pass => 'undef', $suphp_addhandler => '::apache::params::suphp_addhandler', $suphp_engine => '::apache::params::suphp_engine', $suphp_configpath => '::apache::params::suphp_configpath', $php_admin_flags => [], $php_admin_values => [], $no_proxy_uris => [], $redirect_source => '/', $redirect_dest => 'undef', $redirect_status => 'undef', $redirectmatch_status => 'undef', $redirectmatch_regexp => 'undef', $rack_base_uris => 'undef', $headers => 'undef', $request_headers => 'undef', $rewrites => 'undef', $rewrite_base => 'undef', $rewrite_rule => 'undef', $rewrite_cond => 'undef', $setenv => [], $setenvif => [], $block => [], $ensure => 'present', $wsgi_application_group => 'undef', $wsgi_daemon_process => 'undef', $wsgi_daemon_process_options => 'undef', $wsgi_import_script => 'undef', $wsgi_import_script_options => 'undef', $wsgi_process_group => 'undef', $wsgi_script_aliases => 'undef', $custom_fragment => 'undef', $itk => 'undef', $action => 'undef', $fastcgi_server => 'undef', $fastcgi_socket => 'undef', $fastcgi_dir => 'undef', $additional_includes => [], $apache_version => '::apache::apache_version', $suexec_user_group => 'undef' )</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Definition: apache::vhost</p>
+
+<p>This class installs Apache Virtual Hosts</p>
+
+<p>Parameters:</p>
+<ul><li>
+<p>The $port to configure the host on</p>
+</li><li>
+<p>The $docroot provides the DocumentRoot variable</p>
+</li><li>
+<p>The $virtual_docroot provides VirtualDocumentationRoot variable</p>
+</li><li>
+<p>The $serveradmin will specify an email address for Apache that it will
+display when it renders one of it&#39;s error pages</p>
+</li><li>
+<p>The $ssl option is set true or false to enable SSL for this Virtual Host</p>
+</li><li>
+<p>The $priority of the site</p>
+</li><li>
+<p>The $servername is the primary name of the virtual host</p>
+</li><li>
+<p>The $serveraliases of the site</p>
+</li><li>
+<p>The $ip to configure the host on, defaulting to *</p>
+</li><li>
+<p>The $options for the given vhost</p>
+</li><li>
+<p>The $override for the given vhost (list of AllowOverride arguments)</p>
+</li><li>
+<p>The $vhost_name for name based virtualhosting, defaulting to *</p>
+</li><li>
+<p>The $logroot specifies the location of the virtual hosts logfiles, default
+to /var/log/&lt;apache log location&gt;/</p>
+</li><li>
+<p>The $log_level specifies the verbosity of the error log for this vhost. Not
+set by default for the vhost, instead the global server configuration
+default of &#39;warn&#39; is used.</p>
+</li><li>
+<p>The $access_log specifies if *_access.log directives should be configured.</p>
+</li><li>
+<p>The $ensure specifies if vhost file is present or absent.</p>
+</li><li>
+<p>The $headers is a list of Header statement strings as per <a
+href="http://httpd.apache.org/docs/2.2/mod/mod_headers.html#header">httpd.apache.org/docs/2.2/mod/mod_headers.html#header</a></p>
+</li><li>
+<p>The $request_headers is a list of RequestHeader statement strings as per <a
+href="http://httpd.apache.org/docs/2.2/mod/mod_headers.html#requestheader">httpd.apache.org/docs/2.2/mod/mod_headers.html#requestheader</a></p>
+</li><li>
+<p>$aliases is a list of Alias hashes for mod_alias as per <a
+href="http://httpd.apache.org/docs/current/mod/mod_alias.html">httpd.apache.org/docs/current/mod/mod_alias.html</a>
+each statement is a hash in the form of { alias =&gt; &#39;/alias&#39;,
+path =&gt; &#39;/real/path/to/directory&#39; }</p>
+</li><li>
+<p>$directories is a lost of hashes for creating &lt;Directory&gt; statements
+as per <a
+href="http://httpd.apache.org/docs/2.2/mod/core.html#directory">httpd.apache.org/docs/2.2/mod/core.html#directory</a>
+each statement is a hash in the form of { path =&gt;
+&#39;/path/to/directory&#39;, &lt;directive&gt; =&gt; &lt;value&gt;} see
+README.md for list of supported directives.</p>
+</li></ul>
+
+<p>Actions:</p>
+<ul><li>
+<p>Install Apache Virtual Hosts</p>
+</li></ul>
+
+<p>Requires:</p>
+<ul><li>
+<p>The apache class</p>
+</li></ul>
+
+<p>Sample Usage:</p>
+
+<pre class="ruby"><span class="ruby-comment"># Simple vhost definition:</span>
+<span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">vhost</span> { <span class="ruby-string">&#39;site.name.fqdn&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;80&#39;</span>,
+  <span class="ruby-identifier">docroot</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/path/to/docroot&#39;</span>,
+}
+
+<span class="ruby-comment"># Multiple Mod Rewrites:</span>
+<span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">vhost</span> { <span class="ruby-string">&#39;site.name.fqdn&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;80&#39;</span>,
+  <span class="ruby-identifier">docroot</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/path/to/docroot&#39;</span>,
+  <span class="ruby-identifier">rewrites</span> =<span class="ruby-operator">&gt;</span> [
+    {
+      <span class="ruby-identifier">comment</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;force www domain&#39;</span>,
+      <span class="ruby-identifier">rewrite_cond</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&#39;%{HTTP_HOST} ^([a-z.]+)?example.com$ [NC]&#39;</span>, <span class="ruby-string">&#39;%{HTTP_HOST} !^www. [NC]&#39;</span>],
+      <span class="ruby-identifier">rewrite_rule</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&#39;.? http://www.%1example.com%{REQUEST_URI} [R=301,L]&#39;</span>]
+    },
+    {
+      <span class="ruby-identifier">comment</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;prevent image hotlinking&#39;</span>,
+      <span class="ruby-identifier">rewrite_cond</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&#39;%{HTTP_REFERER} !^$&#39;</span>, <span class="ruby-string">&#39;%{HTTP_REFERER} !^http://(www.)?example.com/ [NC]&#39;</span>],
+      <span class="ruby-identifier">rewrite_rule</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&#39;.(gif|jpg|png)$ - [F]&#39;</span>]
+    },
+  ]
+}
+
+<span class="ruby-comment"># SSL vhost with non-SSL rewrite:</span>
+<span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">vhost</span> { <span class="ruby-string">&#39;site.name.fqdn&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;443&#39;</span>,
+  <span class="ruby-identifier">ssl</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>,
+  <span class="ruby-identifier">docroot</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/path/to/docroot&#39;</span>,
+}
+<span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">vhost</span> { <span class="ruby-string">&#39;site.name.fqdn&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span>            =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;80&#39;</span>,
+  <span class="ruby-identifier">docroot</span>         =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/path/to/other_docroot&#39;</span>,
+  <span class="ruby-identifier">custom_fragment</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">template</span>(<span class="ruby-string">&quot;${module_name}/my_fragment.erb&quot;</span>),
+}
+</pre>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- vhost-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

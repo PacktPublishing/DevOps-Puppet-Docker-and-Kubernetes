@@ -1,0 +1,7 @@
+#!/bin/sh
+
+read oldrev newrev refname
+branch=${refname#*\/*\/}
+
+git push puppetmaster $branch
+ssh puppet@puppet.example.com "if [ ! -d /etc/puppet/environments/$branch ]; then git clone /etc/puppet/environments/puppet.git /etc/puppet/environments/$branch; fi; cd /etc/puppet/environments/$branch; git checkout $branch; git pull"

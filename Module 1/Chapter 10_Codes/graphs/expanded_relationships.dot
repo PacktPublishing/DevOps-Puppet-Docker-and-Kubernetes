@@ -1,0 +1,161 @@
+digraph Expanded_relationships {
+    label = "Expanded_relationships"
+    "Package[ntp]" [
+        fontsize = 8,
+        label = "Package[ntp]"
+    ]
+
+    "Service[ntp]" [
+        fontsize = 8,
+        label = "Service[ntp]"
+    ]
+
+    "File[/etc/ntp.conf]" [
+        fontsize = 8,
+        label = "File[/etc/ntp.conf]"
+    ]
+
+    "Schedule[puppet]" [
+        fontsize = 8,
+        label = "Schedule[puppet]"
+    ]
+
+    "Schedule[hourly]" [
+        fontsize = 8,
+        label = "Schedule[hourly]"
+    ]
+
+    "Schedule[daily]" [
+        fontsize = 8,
+        label = "Schedule[daily]"
+    ]
+
+    "Schedule[weekly]" [
+        fontsize = 8,
+        label = "Schedule[weekly]"
+    ]
+
+    "Schedule[monthly]" [
+        fontsize = 8,
+        label = "Schedule[monthly]"
+    ]
+
+    "Schedule[never]" [
+        fontsize = 8,
+        label = "Schedule[never]"
+    ]
+
+    "Filebucket[puppet]" [
+        fontsize = 8,
+        label = "Filebucket[puppet]"
+    ]
+
+    "Stage[main]" [
+        fontsize = 8,
+        label = "Stage[main]"
+    ]
+
+    "Stage[main]" [
+        fontsize = 8,
+        label = "Stage[main]"
+    ]
+
+    "Class[Settings]" [
+        fontsize = 8,
+        label = "Class[Settings]"
+    ]
+
+    "Class[Settings]" [
+        fontsize = 8,
+        label = "Class[Settings]"
+    ]
+
+    "Class[Main]" [
+        fontsize = 8,
+        label = "Class[Main]"
+    ]
+
+    "Class[Main]" [
+        fontsize = 8,
+        label = "Class[Main]"
+    ]
+
+    "Class[Trifecta]" [
+        fontsize = 8,
+        label = "Class[Trifecta]"
+    ]
+
+    "Class[Trifecta]" [
+        fontsize = 8,
+        label = "Class[Trifecta]"
+    ]
+
+    "Class[Trifecta]" -> "Package[ntp]" [
+        fontsize = 8
+    ]
+
+    "Package[ntp]" -> "Service[ntp]" [
+        fontsize = 8
+    ]
+
+    "File[/etc/ntp.conf]" -> "Service[ntp]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "Service[ntp]" [
+        fontsize = 8
+    ]
+
+    "Package[ntp]" -> "File[/etc/ntp.conf]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "File[/etc/ntp.conf]" [
+        fontsize = 8
+    ]
+
+    "Class[Settings]" -> "Stage[main]" [
+        fontsize = 8
+    ]
+
+    "Class[Main]" -> "Stage[main]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "Stage[main]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Settings]" [
+        fontsize = 8
+    ]
+
+    "Class[Settings]" -> "Class[Settings]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Main]" [
+        fontsize = 8
+    ]
+
+    "Class[Main]" -> "Class[Main]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Trifecta]" [
+        fontsize = 8
+    ]
+
+    "Package[ntp]" -> "Class[Trifecta]" [
+        fontsize = 8
+    ]
+
+    "Service[ntp]" -> "Class[Trifecta]" [
+        fontsize = 8
+    ]
+
+    "File[/etc/ntp.conf]" -> "Class[Trifecta]" [
+        fontsize = 8
+    ]
+
+}

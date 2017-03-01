@@ -1,0 +1,97 @@
+digraph Resources {
+    label = "Resources"
+    "Stage[main]" [
+        fontsize = 8,
+        label = "Stage[main]"
+    ]
+
+    "Class[Settings]" [
+        fontsize = 8,
+        label = "Class[Settings]"
+    ]
+
+    "Class[Main]" [
+        fontsize = 8,
+        label = "Class[Main]"
+    ]
+
+    "Class[Trifecta]" [
+        fontsize = 8,
+        label = "Class[Trifecta]"
+    ]
+
+    "Package[ntp]" [
+        fontsize = 8,
+        label = "Package[ntp]"
+    ]
+
+    "Service[ntp]" [
+        fontsize = 8,
+        label = "Service[ntp]"
+    ]
+
+    "File[/etc/ntp.conf]" [
+        fontsize = 8,
+        label = "File[/etc/ntp.conf]"
+    ]
+
+    "Schedule[puppet]" [
+        fontsize = 8,
+        label = "Schedule[puppet]"
+    ]
+
+    "Schedule[hourly]" [
+        fontsize = 8,
+        label = "Schedule[hourly]"
+    ]
+
+    "Schedule[daily]" [
+        fontsize = 8,
+        label = "Schedule[daily]"
+    ]
+
+    "Schedule[weekly]" [
+        fontsize = 8,
+        label = "Schedule[weekly]"
+    ]
+
+    "Schedule[monthly]" [
+        fontsize = 8,
+        label = "Schedule[monthly]"
+    ]
+
+    "Schedule[never]" [
+        fontsize = 8,
+        label = "Schedule[never]"
+    ]
+
+    "Filebucket[puppet]" [
+        fontsize = 8,
+        label = "Filebucket[puppet]"
+    ]
+
+    "Stage[main]" -> "Class[Settings]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Main]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Trifecta]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "Package[ntp]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "Service[ntp]" [
+        fontsize = 8
+    ]
+
+    "Class[Trifecta]" -> "File[/etc/ntp.conf]" [
+        fontsize = 8
+    ]
+
+}

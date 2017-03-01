@@ -1,0 +1,2893 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module stdlib::__functions__ - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-i-abs">#abs</a>
+    
+    <li ><a href="#method-i-any2array">#any2array</a>
+    
+    <li ><a href="#method-i-base64">#base64</a>
+    
+    <li ><a href="#method-i-bool2num">#bool2num</a>
+    
+    <li ><a href="#method-i-bool2str">#bool2str</a>
+    
+    <li ><a href="#method-i-camelcase">#camelcase</a>
+    
+    <li ><a href="#method-i-capitalize">#capitalize</a>
+    
+    <li ><a href="#method-i-chomp">#chomp</a>
+    
+    <li ><a href="#method-i-chop">#chop</a>
+    
+    <li ><a href="#method-i-concat">#concat</a>
+    
+    <li ><a href="#method-i-count">#count</a>
+    
+    <li ><a href="#method-i-deep_merge">#deep_merge</a>
+    
+    <li ><a href="#method-i-delete">#delete</a>
+    
+    <li ><a href="#method-i-delete_at">#delete_at</a>
+    
+    <li ><a href="#method-i-delete_undef_values">#delete_undef_values</a>
+    
+    <li ><a href="#method-i-delete_values">#delete_values</a>
+    
+    <li ><a href="#method-i-difference">#difference</a>
+    
+    <li ><a href="#method-i-dirname">#dirname</a>
+    
+    <li ><a href="#method-i-downcase">#downcase</a>
+    
+    <li ><a href="#method-i-empty">#empty</a>
+    
+    <li ><a href="#method-i-flatten">#flatten</a>
+    
+    <li ><a href="#method-i-floor">#floor</a>
+    
+    <li ><a href="#method-i-fqdn_rotate">#fqdn_rotate</a>
+    
+    <li ><a href="#method-i-get_module_path">#get_module_path</a>
+    
+    <li ><a href="#method-i-getvar">#getvar</a>
+    
+    <li ><a href="#method-i-grep">#grep</a>
+    
+    <li ><a href="#method-i-has_interface_with">#has_interface_with</a>
+    
+    <li ><a href="#method-i-has_ip_address">#has_ip_address</a>
+    
+    <li ><a href="#method-i-has_ip_network">#has_ip_network</a>
+    
+    <li ><a href="#method-i-has_key">#has_key</a>
+    
+    <li ><a href="#method-i-hash">#hash</a>
+    
+    <li ><a href="#method-i-intersection">#intersection</a>
+    
+    <li ><a href="#method-i-is_array">#is_array</a>
+    
+    <li ><a href="#method-i-is_bool">#is_bool</a>
+    
+    <li ><a href="#method-i-is_domain_name">#is_domain_name</a>
+    
+    <li ><a href="#method-i-is_float">#is_float</a>
+    
+    <li ><a href="#method-i-is_function_available">#is_function_available</a>
+    
+    <li ><a href="#method-i-is_hash">#is_hash</a>
+    
+    <li ><a href="#method-i-is_integer">#is_integer</a>
+    
+    <li ><a href="#method-i-is_ip_address">#is_ip_address</a>
+    
+    <li ><a href="#method-i-is_mac_address">#is_mac_address</a>
+    
+    <li ><a href="#method-i-is_numeric">#is_numeric</a>
+    
+    <li ><a href="#method-i-is_string">#is_string</a>
+    
+    <li ><a href="#method-i-join">#join</a>
+    
+    <li ><a href="#method-i-join_keys_to_values">#join_keys_to_values</a>
+    
+    <li ><a href="#method-i-keys">#keys</a>
+    
+    <li ><a href="#method-i-loadyaml">#loadyaml</a>
+    
+    <li ><a href="#method-i-lstrip">#lstrip</a>
+    
+    <li ><a href="#method-i-max">#max</a>
+    
+    <li ><a href="#method-i-member">#member</a>
+    
+    <li ><a href="#method-i-merge">#merge</a>
+    
+    <li ><a href="#method-i-min">#min</a>
+    
+    <li ><a href="#method-i-num2bool">#num2bool</a>
+    
+    <li ><a href="#method-i-parsejson">#parsejson</a>
+    
+    <li ><a href="#method-i-parseyaml">#parseyaml</a>
+    
+    <li ><a href="#method-i-pick">#pick</a>
+    
+    <li ><a href="#method-i-pick_default">#pick_default</a>
+    
+    <li ><a href="#method-i-prefix">#prefix</a>
+    
+    <li ><a href="#method-i-range">#range</a>
+    
+    <li ><a href="#method-i-reject">#reject</a>
+    
+    <li ><a href="#method-i-reverse">#reverse</a>
+    
+    <li ><a href="#method-i-rstrip">#rstrip</a>
+    
+    <li ><a href="#method-i-shuffle">#shuffle</a>
+    
+    <li ><a href="#method-i-size">#size</a>
+    
+    <li ><a href="#method-i-sort">#sort</a>
+    
+    <li ><a href="#method-i-squeeze">#squeeze</a>
+    
+    <li ><a href="#method-i-str2bool">#str2bool</a>
+    
+    <li ><a href="#method-i-str2saltedsha512">#str2saltedsha512</a>
+    
+    <li ><a href="#method-i-strftime">#strftime</a>
+    
+    <li ><a href="#method-i-strip">#strip</a>
+    
+    <li ><a href="#method-i-suffix">#suffix</a>
+    
+    <li ><a href="#method-i-swapcase">#swapcase</a>
+    
+    <li ><a href="#method-i-time">#time</a>
+    
+    <li ><a href="#method-i-to_bytes">#to_bytes</a>
+    
+    <li ><a href="#method-i-type">#type</a>
+    
+    <li ><a href="#method-i-union">#union</a>
+    
+    <li ><a href="#method-i-unique">#unique</a>
+    
+    <li ><a href="#method-i-upcase">#upcase</a>
+    
+    <li ><a href="#method-i-uriescape">#uriescape</a>
+    
+    <li ><a href="#method-i-values">#values</a>
+    
+    <li ><a href="#method-i-values_at">#values_at</a>
+    
+    <li ><a href="#method-i-zip">#zip</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../__site__.html">__site__</a>
+  
+    <li><a href="../admin.html">admin</a>
+  
+    <li><a href="../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../admin_user.html">admin_user</a>
+  
+    <li><a href="../apache.html">apache</a>
+  
+    <li><a href="../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../apache/package.html">apache::package</a>
+  
+    <li><a href="../apache/params.html">apache::params</a>
+  
+    <li><a href="../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../apache/php.html">apache::php</a>
+  
+    <li><a href="../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../apache/python.html">apache::python</a>
+  
+    <li><a href="../apache/service.html">apache::service</a>
+  
+    <li><a href="../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../apache/version.html">apache::version</a>
+  
+    <li><a href="../apt.html">apt</a>
+  
+    <li><a href="../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../apt/params.html">apt::params</a>
+  
+    <li><a href="../apt/release.html">apt::release</a>
+  
+    <li><a href="../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../apt/update.html">apt::update</a>
+  
+    <li><a href="../base.html">base</a>
+  
+    <li><a href="../base/base.html">base::base</a>
+  
+    <li><a href="../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../concat.html">concat</a>
+  
+    <li><a href="../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../cookbook.html">cookbook</a>
+  
+    <li><a href="../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../cron.html">cron</a>
+  
+    <li><a href="../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../db.html">db</a>
+  
+    <li><a href="../db/client.html">db::client</a>
+  
+    <li><a href="../db/server.html">db::server</a>
+  
+    <li><a href="../debug.html">debug</a>
+  
+    <li><a href="../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../drupal.html">drupal</a>
+  
+    <li><a href="../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../enc.html">enc</a>
+  
+    <li><a href="../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../facts.html">facts</a>
+  
+    <li><a href="../firewall.html">firewall</a>
+  
+    <li><a href="../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../greeting.html">greeting</a>
+  
+    <li><a href="../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../haproxy.html">haproxy</a>
+  
+    <li><a href="../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../lisa.html">lisa</a>
+  
+    <li><a href="../module_data.html">module_data</a>
+  
+    <li><a href="../myfw.html">myfw</a>
+  
+    <li><a href="../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../mysql.html">mysql</a>
+  
+    <li><a href="../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../nfs.html">nfs</a>
+  
+    <li><a href="../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../nginx.html">nginx</a>
+  
+    <li><a href="../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../nothing.html">nothing</a>
+  
+    <li><a href="../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../one.html">one</a>
+  
+    <li><a href="../one/one.html">one::one</a>
+  
+    <li><a href="../profiles.html">profiles</a>
+  
+    <li><a href="../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../puppet.html">puppet</a>
+  
+    <li><a href="../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../roles.html">roles</a>
+  
+    <li><a href="../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../stdlib.html">stdlib</a>
+  
+    <li><a href="../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../thing.html">thing</a>
+  
+    <li><a href="../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../two.html">two</a>
+  
+    <li><a href="../two/two.html">two::two</a>
+  
+    <li><a href="../user.html">user</a>
+  
+    <li><a href="../user/developers.html">user::developers</a>
+  
+    <li><a href="../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../virtual.html">virtual</a>
+  
+    <li><a href="../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../wordpress.html">wordpress</a>
+  
+    <li><a href="../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module stdlib::__functions__</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-abs" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">abs</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- abs-method -->
+
+    
+      <div id="method-i-any2array" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">any2array</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- any2array-method -->
+
+    
+      <div id="method-i-base64" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">base64</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- base64-method -->
+
+    
+      <div id="method-i-bool2num" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bool2num</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- bool2num-method -->
+
+    
+      <div id="method-i-bool2str" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bool2str</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- bool2str-method -->
+
+    
+      <div id="method-i-camelcase" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">camelcase</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- camelcase-method -->
+
+    
+      <div id="method-i-capitalize" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">capitalize</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- capitalize-method -->
+
+    
+      <div id="method-i-chomp" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chomp</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- chomp-method -->
+
+    
+      <div id="method-i-chop" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chop</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- chop-method -->
+
+    
+      <div id="method-i-concat" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">concat</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- concat-method -->
+
+    
+      <div id="method-i-count" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">count</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- count-method -->
+
+    
+      <div id="method-i-deep_merge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">deep_merge</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- deep_merge-method -->
+
+    
+      <div id="method-i-delete" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete-method -->
+
+    
+      <div id="method-i-delete_at" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_at</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_at-method -->
+
+    
+      <div id="method-i-delete_undef_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_undef_values</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_undef_values-method -->
+
+    
+      <div id="method-i-delete_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_values</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_values-method -->
+
+    
+      <div id="method-i-difference" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">difference</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- difference-method -->
+
+    
+      <div id="method-i-dirname" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">dirname</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- dirname-method -->
+
+    
+      <div id="method-i-downcase" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">downcase</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- downcase-method -->
+
+    
+      <div id="method-i-empty" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">empty</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- empty-method -->
+
+    
+      <div id="method-i-flatten" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">flatten</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- flatten-method -->
+
+    
+      <div id="method-i-floor" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">floor</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- floor-method -->
+
+    
+      <div id="method-i-fqdn_rotate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fqdn_rotate</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- fqdn_rotate-method -->
+
+    
+      <div id="method-i-get_module_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_module_path</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_module_path-method -->
+
+    
+      <div id="method-i-getvar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getvar</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- getvar-method -->
+
+    
+      <div id="method-i-grep" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grep</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- grep-method -->
+
+    
+      <div id="method-i-has_interface_with" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_interface_with</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_interface_with-method -->
+
+    
+      <div id="method-i-has_ip_address" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_ip_address</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_ip_address-method -->
+
+    
+      <div id="method-i-has_ip_network" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_ip_network</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_ip_network-method -->
+
+    
+      <div id="method-i-has_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_key</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_key-method -->
+
+    
+      <div id="method-i-hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">hash</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- hash-method -->
+
+    
+      <div id="method-i-intersection" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">intersection</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- intersection-method -->
+
+    
+      <div id="method-i-is_array" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_array</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_array-method -->
+
+    
+      <div id="method-i-is_bool" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_bool</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_bool-method -->
+
+    
+      <div id="method-i-is_domain_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_domain_name</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_domain_name-method -->
+
+    
+      <div id="method-i-is_float" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_float</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_float-method -->
+
+    
+      <div id="method-i-is_function_available" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_function_available</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_function_available-method -->
+
+    
+      <div id="method-i-is_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_hash</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_hash-method -->
+
+    
+      <div id="method-i-is_integer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_integer</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_integer-method -->
+
+    
+      <div id="method-i-is_ip_address" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_ip_address</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_ip_address-method -->
+
+    
+      <div id="method-i-is_mac_address" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_mac_address</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_mac_address-method -->
+
+    
+      <div id="method-i-is_numeric" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_numeric</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_numeric-method -->
+
+    
+      <div id="method-i-is_string" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_string</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- is_string-method -->
+
+    
+      <div id="method-i-join" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">join</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- join-method -->
+
+    
+      <div id="method-i-join_keys_to_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">join_keys_to_values</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- join_keys_to_values-method -->
+
+    
+      <div id="method-i-keys" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">keys</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- keys-method -->
+
+    
+      <div id="method-i-loadyaml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">loadyaml</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- loadyaml-method -->
+
+    
+      <div id="method-i-lstrip" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">lstrip</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- lstrip-method -->
+
+    
+      <div id="method-i-max" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">max</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- max-method -->
+
+    
+      <div id="method-i-member" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">member</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- member-method -->
+
+    
+      <div id="method-i-merge" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">merge</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- merge-method -->
+
+    
+      <div id="method-i-min" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">min</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- min-method -->
+
+    
+      <div id="method-i-num2bool" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">num2bool</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- num2bool-method -->
+
+    
+      <div id="method-i-parsejson" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parsejson</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- parsejson-method -->
+
+    
+      <div id="method-i-parseyaml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parseyaml</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- parseyaml-method -->
+
+    
+      <div id="method-i-pick" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pick</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- pick-method -->
+
+    
+      <div id="method-i-pick_default" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pick_default</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- pick_default-method -->
+
+    
+      <div id="method-i-prefix" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">prefix</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- prefix-method -->
+
+    
+      <div id="method-i-range" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">range</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- range-method -->
+
+    
+      <div id="method-i-reject" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reject</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- reject-method -->
+
+    
+      <div id="method-i-reverse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reverse</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- reverse-method -->
+
+    
+      <div id="method-i-rstrip" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rstrip</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- rstrip-method -->
+
+    
+      <div id="method-i-shuffle" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">shuffle</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- shuffle-method -->
+
+    
+      <div id="method-i-size" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">size</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- size-method -->
+
+    
+      <div id="method-i-sort" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sort</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- sort-method -->
+
+    
+      <div id="method-i-squeeze" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">squeeze</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- squeeze-method -->
+
+    
+      <div id="method-i-str2bool" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">str2bool</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- str2bool-method -->
+
+    
+      <div id="method-i-str2saltedsha512" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">str2saltedsha512</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- str2saltedsha512-method -->
+
+    
+      <div id="method-i-strftime" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">strftime</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- strftime-method -->
+
+    
+      <div id="method-i-strip" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">strip</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- strip-method -->
+
+    
+      <div id="method-i-suffix" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">suffix</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- suffix-method -->
+
+    
+      <div id="method-i-swapcase" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">swapcase</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- swapcase-method -->
+
+    
+      <div id="method-i-time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">time</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- time-method -->
+
+    
+      <div id="method-i-to_bytes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_bytes</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- to_bytes-method -->
+
+    
+      <div id="method-i-type" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">type</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- type-method -->
+
+    
+      <div id="method-i-union" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">union</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- union-method -->
+
+    
+      <div id="method-i-unique" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unique</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- unique-method -->
+
+    
+      <div id="method-i-upcase" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">upcase</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- upcase-method -->
+
+    
+      <div id="method-i-uriescape" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">uriescape</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- uriescape-method -->
+
+    
+      <div id="method-i-values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">values</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- values-method -->
+
+    
+      <div id="method-i-values_at" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">values_at</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- values_at-method -->
+
+    
+      <div id="method-i-zip" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">zip</span><span
+            class="method-args">(*args)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div><!-- zip-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

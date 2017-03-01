@@ -1,0 +1,4 @@
+digraph Resource_Cycles {
+  label = "Resource Cycles"
+"File[/etc/ntp.conf]" -> "Package[ntp]" -> "File[/etc/ntp.conf]"
+}

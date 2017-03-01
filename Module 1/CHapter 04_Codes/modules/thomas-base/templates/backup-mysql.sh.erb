@@ -1,0 +1,5 @@
+#!/bin/sh
+/usr/bin/mysqldump -uroot \
+  -p<%= @mysql_password %> \
+  --all-databases | \
+  /bin/gzip > /backup/mysql/all-databases.sql.gz

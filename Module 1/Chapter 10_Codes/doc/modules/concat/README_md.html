@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-Concat">Concat</a>
+      <li><a href="#label-Table+of+Contents">Table of Contents</a>
+      <li><a href="#label-Overview">Overview</a>
+      <li><a href="#label-Module+Description">Module Description</a>
+      <li><a href="#label-Setup">Setup</a>
+      <li><a href="#label-What+concat+affects">What concat affects</a>
+      <li><a href="#label-Beginning+with+concat">Beginning with concat</a>
+      <li><a href="#label-Usage">Usage</a>
+      <li><a href="#label-Reference">Reference</a>
+      <li><a href="#label-Classes">Classes</a>
+      <li><a href="#label-Public+classes">Public classes</a>
+      <li><a href="#label-Private+classes">Private classes</a>
+      <li><a href="#label-Parameters">Parameters</a>
+      <li><a href="#label-Defines">Defines</a>
+      <li><a href="#label-concat">concat</a>
+      <li><a href="#label-ensure"><code>ensure</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-path"><code>path</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-owner"><code>owner</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-group"><code>group</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-mode"><code>mode</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-warn"><code>warn</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-force"><code>force</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-backup"><code>backup</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-replace"><code>replace</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-order"><code>order</code></a>
+      <li><a href="#label-Allowed+Values">Allowed Values</a>
+      <li><a href="#label-ensure_newline"><code>ensure_newline</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-concat%3A%3Afragment">concat::fragment</a>
+      <li><a href="#label-target"><code>target</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-content"><code>content</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-source"><code>source</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-order"><code>order</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-ensure"><code>ensure</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-mode"><code>mode</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-owner"><code>owner</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-group"><code>group</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-backup"><code>backup</code></a>
+      <li><a href="#label-Example">Example</a>
+      <li><a href="#label-API+deprecations">API <em>deprecations</em></a>
+      <li><a href="#label-Since+version+1.0.0">Since version <code>1.0.0</code></a>
+      <li><a href="#label-concat%7B%7D+warn+parameter"><code>concat{}</code> <code>warn</code> parameter</a>
+      <li><a href="#label-concat%7B%7D+gnu+parameter"><code>concat{}</code> <code>gnu</code> parameter</a>
+      <li><a href="#label-concat%3A%3Afragment%7B%7D+ensure+parameter"><code>concat::fragment{}</code> <code>ensure</code> parameter</a>
+      <li><a href="#label-concat%3A%3Afragment%7B%7D+mode%2Fowner%2Fgroup+parameters"><code>concat::fragment{}</code> <code>mode/owner/group</code> parameters</a>
+      <li><a href="#label-concat%3A%3Afragment%7B%7D+backup+parameter"><code>concat::fragment{}</code> <code>backup</code> parameter</a>
+      <li><a href="#label-class+%7B+%27concat%3A%3Asetup%27%3A+%7D"><code>class { &#39;concat::setup&#39;: }</code></a>
+      <li><a href="#label-Parameter+validation">Parameter validation</a>
+      <li><a href="#label-Limitations">Limitations</a>
+      <li><a href="#label-Development">Development</a>
+      <li><a href="#label-Contributors">Contributors</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-Concat">Concat<span><a href="#label-Concat">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p><a
+href="https://travis-ci.org/puppetlabs/puppetlabs-concat.png?branch=master">{Build
+Status</a>]</p>
+
+<h4 id="label-Table+of+Contents">Table of Contents<span><a href="#label-Table+of+Contents">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ol><li>
+<p><a href="#overview">Overview</a></p>
+</li><li>
+<p><a href="#module-description">Module Description - What the module does and
+why it is useful</a></p>
+</li><li>
+<p><a href="#setup">Setup - The basics of getting started with concat</a></p>
+<ul><li>
+<p><a href="#what-concat-affects">What concat affects</a></p>
+</li><li>
+<p><a href="#setup-requirements">Setup requirements</a></p>
+</li><li>
+<p><a href="#beginning-with-concat">Beginning with concat</a></p>
+</li></ul>
+</li><li>
+<p><a href="#usage">Usage - Configuration options and additional
+functionality</a></p>
+<ul><li>
+<p><a href="#api-deprecations">API deprecations</a></p>
+</li></ul>
+</li><li>
+<p><a href="#reference">Reference - An under-the-hood peek at what the module
+is doing and how</a></p>
+</li><li>
+<p><a href="#limitations">Limitations - OS compatibility, etc.</a></p>
+</li><li>
+<p><a href="#development">Development - Guide for contributing to the
+module</a></p>
+</li></ol>
+
+<h2 id="label-Overview">Overview<span><a href="#label-Overview">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This module constructs files from multiple fragments in an ordered way.</p>
+
+<h2 id="label-Module+Description">Module Description<span><a href="#label-Module+Description">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This module lets you use many concat::fragment{} resources throughout your
+modules to construct a single file at the end. It does this through a shell
+(or ruby) script and a temporary holding space for the fragments.</p>
+
+<h2 id="label-Setup">Setup<span><a href="#label-Setup">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-What+concat+affects">What concat affects<span><a href="#label-What+concat+affects">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p>Installs <a href="http://sh|rb">concatfragments.</a> based on platform.</p>
+</li><li>
+<p>Adds a concat/ directory into Puppets <code>vardir</code>.</p>
+</li></ul>
+
+<h3 id="label-Beginning+with+concat">Beginning with concat<span><a href="#label-Beginning+with+concat">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>To start using concat you need to create:</p>
+<ul><li>
+<p>A concat{} resource for the final file.</p>
+</li><li>
+<p>One or more concat::fragment{}&#39;s.</p>
+</li></ul>
+
+<p>A minimal example might be:</p>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span> { <span class="ruby-string">&#39;/tmp/file&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>,
+}
+
+<span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span> { <span class="ruby-string">&#39;tmpfile&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">target</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/tmp/file&#39;</span>,
+  <span class="ruby-identifier">content</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;test contents&#39;</span>,
+  <span class="ruby-identifier">order</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;01&#39;</span>
+}
+</pre>
+
+<h2 id="label-Usage">Usage<span><a href="#label-Usage">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Please be aware that there have been a number of <a
+href="#api-deprecations">API deprecations</a>.</p>
+
+<p>If you wanted a /etc/motd file that listed all the major modules on the
+machine. And that would be maintained automatically even if you just remove
+the include lines for other modules you could use code like below, a sample
+/etc/motd would be:</p>
+<pre>
+Puppet modules on this server:
+
+    -- Apache
+    -- MySQL
+</pre>
+<p>Local sysadmins can also append to the file by just editing /etc/motd.local
+their changes will be incorporated into the puppet managed motd.</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-identifier">motd</span> {
+  <span class="ruby-identifier">$motd</span> = <span class="ruby-string">&#39;/etc/motd&#39;</span>
+
+  <span class="ruby-identifier">concat</span> { <span class="ruby-identifier">$motd</span><span class="ruby-operator">:</span>
+    <span class="ruby-identifier">owner</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;root&#39;</span>,
+    <span class="ruby-identifier">group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;root&#39;</span>,
+    <span class="ruby-identifier">mode</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;0644&#39;</span>
+  }
+
+  <span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span>{ <span class="ruby-string">&#39;motd_header&#39;</span><span class="ruby-operator">:</span>
+    <span class="ruby-identifier">target</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$motd</span>,
+    <span class="ruby-identifier">content</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;\nPuppet modules on this server:\n\n&quot;</span>,
+    <span class="ruby-identifier">order</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;01&#39;</span>
+  }
+
+  <span class="ruby-comment"># local users on the machine can append to motd by just creating</span>
+  <span class="ruby-comment"># /etc/motd.local</span>
+  <span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span>{ <span class="ruby-string">&#39;motd_local&#39;</span><span class="ruby-operator">:</span>
+    <span class="ruby-identifier">target</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$motd</span>,
+    <span class="ruby-identifier">source</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/etc/motd.local&#39;</span>,
+    <span class="ruby-identifier">order</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;15&#39;</span>
+  }
+}
+
+<span class="ruby-comment"># used by other modules to register themselves in the motd</span>
+<span class="ruby-identifier">define</span> <span class="ruby-identifier">motd</span><span class="ruby-operator">::</span><span class="ruby-identifier">register</span>(<span class="ruby-identifier">$content</span>=<span class="ruby-string">&quot;&quot;</span>, <span class="ruby-identifier">$order</span>=<span class="ruby-string">&#39;10&#39;</span>) {
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">$content</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span> {
+    <span class="ruby-identifier">$body</span> = <span class="ruby-identifier">$name</span>
+  } <span class="ruby-keyword">else</span> {
+    <span class="ruby-identifier">$body</span> = <span class="ruby-identifier">$content</span>
+  }
+
+  <span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span>{ <span class="ruby-string">&quot;motd_fragment_$name&quot;</span><span class="ruby-operator">:</span>
+    <span class="ruby-identifier">target</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/etc/motd&#39;</span>,
+    <span class="ruby-identifier">order</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$order</span>,
+    <span class="ruby-identifier">content</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;    -- $body\n&quot;</span>
+  }
+}
+</pre>
+
+<p>To use this you&#39;d then do something like:</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-identifier">apache</span> {
+  <span class="ruby-identifier">include</span> <span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">install</span>, <span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">config</span>, <span class="ruby-identifier">apache</span><span class="ruby-operator">::</span><span class="ruby-identifier">service</span>
+
+  <span class="ruby-identifier">motd</span><span class="ruby-operator">::</span><span class="ruby-identifier">register</span>{ <span class="ruby-string">&#39;Apache&#39;</span><span class="ruby-operator">:</span> }
+}
+</pre>
+
+<h2 id="label-Reference">Reference<span><a href="#label-Reference">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Classes">Classes<span><a href="#label-Classes">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-Public+classes">Public classes<span><a href="#label-Public+classes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Private+classes">Private classes<span><a href="#label-Private+classes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p><code>concat::setup</code>: Sets up the concat script/directories.</p>
+</li></ul>
+
+<h3 id="label-Parameters">Parameters<span><a href="#label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h3 id="label-Defines">Defines<span><a href="#label-Defines">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-concat">concat<span><a href="#label-concat">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h5 id="label-ensure"><code>ensure</code><span><a href="#label-ensure">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Controls if the combined file is present or absent.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>ensure =&gt; present</p>
+</li><li>
+<p>ensure =&gt; absent</p>
+</li></ul>
+
+<h5 id="label-path"><code>path</code><span><a href="#label-path">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Controls the destination of the file to create.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>path =&gt; &#39;/tmp/filename&#39;</p>
+</li></ul>
+
+<h5 id="label-owner"><code>owner</code><span><a href="#label-owner">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the owner of the combined file.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>owner =&gt; &#39;root&#39;</p>
+</li></ul>
+
+<h5 id="label-group"><code>group</code><span><a href="#label-group">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the group of the combined file.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>group =&gt; &#39;root&#39;</p>
+</li></ul>
+
+<h5 id="label-mode"><code>mode</code><span><a href="#label-mode">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the mode of the combined file.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>mode =&gt; &#39;0644&#39;</p>
+</li></ul>
+
+<h5 id="label-warn"><code>warn</code><span><a href="#label-warn">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Determine if a warning message should be added at the top of the file to
+let users know it was autogenerated by Puppet. It should be a boolean or a
+string containing the contents of the warning message.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>warn =&gt; true</p>
+</li><li>
+<p>warn =&gt; false</p>
+</li><li>
+<p>warn =&gt; &#39;# This file is autogenerated!&#39;</p>
+</li></ul>
+
+<h5 id="label-force"><code>force</code><span><a href="#label-force">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Determine if empty files are allowed when no fragments were added.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>force =&gt; true</p>
+</li><li>
+<p>force =&gt; false</p>
+</li></ul>
+
+<h5 id="label-backup"><code>backup</code><span><a href="#label-backup">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Controls the filebucket behavior used for the file.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>backup =&gt; &#39;puppet&#39;</p>
+</li></ul>
+
+<h5 id="label-replace"><code>replace</code><span><a href="#label-replace">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Controls if Puppet should replace the destination file if it already
+exists.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>replace =&gt; true</p>
+</li><li>
+<p>replace =&gt; false</p>
+</li></ul>
+
+<h5 id="label-order"><code>order</code><span><a href="#label-order">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Controls the way in which the shell script chooses to sort the files.
+It&#39;s rare you&#39;ll need to adjust this.</p>
+
+<h6 id="label-Allowed+Values">Allowed Values<span><a href="#label-Allowed+Values">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>order =&gt; &#39;alpha&#39;</p>
+</li><li>
+<p>order =&gt; &#39;numeric&#39;</p>
+</li></ul>
+
+<h5 id="label-ensure_newline"><code>ensure_newline</code><span><a href="#label-ensure_newline">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Ensure there&#39;s a newline at the end of the fragments.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>ensure_newline =&gt; true</p>
+</li><li>
+<p>ensure_newline =&gt; false</p>
+</li></ul>
+
+<h4 id="label-concat%3A%3Afragment">concat::fragment<span><a href="#label-concat%3A%3Afragment">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h5 id="label-target"><code>target</code><span><a href="#label-target">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Choose the destination file of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>target =&gt; &#39;/tmp/testfile&#39;</p>
+</li></ul>
+
+<h5 id="label-content"><code>content</code><span><a href="#label-content">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Create the content of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>content =&gt; &#39;test file contents&#39;</p>
+</li></ul>
+
+<h5 id="label-source"><code>source</code><span><a href="#label-source">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Find the sources within Puppet of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>source =&gt; &#39;puppet:///modules/test/testfile&#39;</p>
+</li><li>
+<p>source =&gt; [&#39;puppet:///modules/test/1&#39;,
+&#39;puppet:///modules/test/2&#39;]</p>
+</li></ul>
+
+<h5 id="label-order"><code>order</code><span><a href="#label-order">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Order the fragments.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>order =&gt; &#39;01&#39;</p>
+</li></ul>
+
+<p>Best practice is to pass a string to this parameter but integer values are
+accepted.</p>
+
+<h5 id="label-ensure"><code>ensure</code><span><a href="#label-ensure">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Control the file of fragment created.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>ensure =&gt; &#39;present&#39;</p>
+</li><li>
+<p>ensure =&gt; &#39;absent&#39;</p>
+</li></ul>
+
+<h5 id="label-mode"><code>mode</code><span><a href="#label-mode">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the mode of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>mode =&gt; &#39;0644&#39;</p>
+</li></ul>
+
+<h5 id="label-owner"><code>owner</code><span><a href="#label-owner">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the owner of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>owner =&gt; &#39;root&#39;</p>
+</li></ul>
+
+<h5 id="label-group"><code>group</code><span><a href="#label-group">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Set the group of the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>group =&gt; &#39;root&#39;</p>
+</li></ul>
+
+<h5 id="label-backup"><code>backup</code><span><a href="#label-backup">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>Control the filebucket behavior for the fragment.</p>
+
+<h6 id="label-Example">Example<span><a href="#label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h6>
+<ul><li>
+<p>backup =&gt; &#39;puppet&#39;</p>
+</li></ul>
+
+<h3 id="label-API+deprecations">API <em>deprecations</em><span><a href="#label-API+deprecations">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-Since+version+1.0.0">Since version <code>1.0.0</code><span><a href="#label-Since+version+1.0.0">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h5 id="label-concat%7B%7D+warn+parameter"><code>concat{}</code> <code>warn</code> parameter<span><a href="#label-concat%7B%7D+warn+parameter">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span> { <span class="ruby-string">&#39;/tmp/file&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>,
+  <span class="ruby-identifier">warn</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;true&#39;</span>,  <span class="ruby-comment"># generates stringified boolean value warning</span>
+}
+</pre>
+
+<p>Using stringified Boolean values as the <code>warn</code> parameter to
+<code>concat</code> is deprecated, generates a catalog compile time
+warning, and will be silently treated as the concatenated file
+header/warning message in a future release.</p>
+
+<p>The following strings are considered a stringified Boolean value:</p>
+<ul><li>
+<p><code>&#39;true&#39;</code></p>
+</li><li>
+<p><code>&#39;yes&#39;</code></p>
+</li><li>
+<p><code>&#39;on&#39;</code></p>
+</li><li>
+<p><code>&#39;false&#39;</code></p>
+</li><li>
+<p><code>&#39;no&#39;</code></p>
+</li><li>
+<p><code>&#39;off&#39;</code></p>
+</li></ul>
+
+<p>Please migrate to using the Puppet DSL&#39;s native <a
+href="http://docs.puppetlabs.com/puppet/3/reference/lang_datatypes.html#booleans">Boolean
+data type</a>.</p>
+
+<h5 id="label-concat%7B%7D+gnu+parameter"><code>concat{}</code> <code>gnu</code> parameter<span><a href="#label-concat%7B%7D+gnu+parameter">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span> { <span class="ruby-string">&#39;/tmp/file&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">present</span>,
+  <span class="ruby-identifier">gnu</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$foo</span>,    <span class="ruby-comment"># generates deprecation warning</span>
+}
+</pre>
+
+<p>The <code>gnu</code> parameter to <code>concat</code> is deprecated,
+generates a catalog compile time warning, and has no effect. This parameter
+will be removed in a future release.</p>
+
+<p>Note that this parameter was silently ignored in the <code>1.0.0</code>
+release.</p>
+
+<h5 id="label-concat%3A%3Afragment%7B%7D+ensure+parameter"><code>concat::fragment{}</code> <code>ensure</code> parameter<span><a href="#label-concat%3A%3Afragment%7B%7D+ensure+parameter">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span> { <span class="ruby-string">&#39;cpuinfo&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-keyword">ensure</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/proc/cpuinfo&#39;</span>, <span class="ruby-comment"># generates deprecation warning</span>
+  <span class="ruby-identifier">target</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/tmp/file&#39;</span>,
+}
+</pre>
+
+<p>Passing a value other than <code>&#39;present&#39;</code> or
+<code>&#39;absent&#39;</code> as the <code>ensure</code> parameter to
+<code>concat::fragment</code> is deprecated and generates a catalog compile
+time warning. The warning will become a catalog compilation failure in a
+future release.</p>
+
+<p>This type emulates the Puppet core <code>file</code> type&#39;s disfavored
+<a
+href="http://docs.puppetlabs.com/references/latest/type.html#file-attribute-ensure">ensure
+semantics</a> of treating a file path as a directive to create a symlink.
+This feature is problematic in several ways. It copies an API semantic of
+another type that is both frowned upon and not generally well known.
+It&#39;s behavior may be surprising in that the target concatenated file
+will not be a symlink nor is there any common file system that has a
+concept of a section of a plain file being symbolically linked to another
+file. Additionally, the behavior is generally inconsistent with most Puppet
+types in that a missing source file will be silently ignored.</p>
+
+<p>If you want to use the content of a file as a fragment please use the
+<code>source</code> parameter.</p>
+
+<h5 id="label-concat%3A%3Afragment%7B%7D+mode%2Fowner%2Fgroup+parameters"><code>concat::fragment{}</code> <code>mode/owner/group</code> parameters<span><a href="#label-concat%3A%3Afragment%7B%7D+mode%2Fowner%2Fgroup+parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span> { <span class="ruby-string">&#39;foo&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">target</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/tmp/file&#39;</span>,
+  <span class="ruby-identifier">content</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;foo&#39;</span>,
+  <span class="ruby-identifier">mode</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$mode</span>,       <span class="ruby-comment"># generates deprecation warning</span>
+  <span class="ruby-identifier">owner</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$owner</span>,      <span class="ruby-comment"># generates deprecation warning</span>
+  <span class="ruby-identifier">group</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$group</span>,      <span class="ruby-comment"># generates deprecation warning</span>
+}
+</pre>
+
+<p>The <code>mode</code> parameter to <code>concat::fragment</code> is
+deprecated, generates a catalog compile time warning, and has no effect.</p>
+
+<p>The <code>owner</code> parameter to <code>concat::fragment</code> is
+deprecated, generates a catalog compile time warning, and has no effect.</p>
+
+<p>The <code>group</code> parameter to <code>concat::fragment</code> is
+deprecated, generates a catalog compile time warning, and has no effect.</p>
+
+<p>These parameters had no user visible effect in version <code>1.0.0</code>
+and will be removed in a future release.</p>
+
+<h5 id="label-concat%3A%3Afragment%7B%7D+backup+parameter"><code>concat::fragment{}</code> <code>backup</code> parameter<span><a href="#label-concat%3A%3Afragment%7B%7D+backup+parameter">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">fragment</span> { <span class="ruby-string">&#39;foo&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">target</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/tmp/file&#39;</span>,
+  <span class="ruby-identifier">content</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;foo&#39;</span>,
+  <span class="ruby-identifier">backup</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;bar&#39;</span>,       <span class="ruby-comment"># generates deprecation warning</span>
+}
+</pre>
+
+<p>The <code>backup</code> parameter to <code>concat::fragment</code> is
+deprecated, generates a catalog compile time warning, and has no effect. It
+will be removed in a future release.</p>
+
+<p>In the <code>1.0.0</code> release this parameter controlled file bucketing
+of the file fragment. Bucketting the fragment(s) is redundant with
+bucketting the final concatenated file and this feature has been removed.</p>
+
+<h5 id="label-class+%7B+%27concat%3A%3Asetup%27%3A+%7D"><code>class { &#39;concat::setup&#39;: }</code><span><a href="#label-class+%7B+%27concat%3A%3Asetup%27%3A+%7D">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<pre class="ruby"><span class="ruby-identifier">include</span> <span class="ruby-identifier">concat</span><span class="ruby-operator">::</span><span class="ruby-identifier">setup</span>     <span class="ruby-comment"># generates deprecation warning</span>
+
+<span class="ruby-identifier">class</span> { <span class="ruby-string">&#39;concat::setup&#39;</span><span class="ruby-operator">:</span> } <span class="ruby-comment"># generates deprecation warning</span>
+</pre>
+
+<p>The <code>concat::setup</code> class is deprecated as a public API of this
+module and should no longer be directly included in the manifest. This
+class may be removed in a future release.</p>
+
+<h5 id="label-Parameter+validation">Parameter validation<span><a href="#label-Parameter+validation">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>While not an API depreciation, users should be aware that all public
+parameters in this module are now validated for at least variable type.
+This may cause validation errors in a manifest that was previously silently
+misbehaving.</p>
+
+<h2 id="label-Limitations">Limitations<span><a href="#label-Limitations">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This module has been tested on:</p>
+<ul><li>
+<p>RedHat Enterprise Linux (and Centos) 5/6</p>
+</li><li>
+<p>Debian 6/7</p>
+</li><li>
+<p>Ubuntu 12.04</p>
+</li></ul>
+
+<p>Testing on other platforms has been light and cannot be guaranteed.</p>
+
+<h1 id="label-Development">Development<span><a href="#label-Development">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>Puppet Labs modules on the Puppet Forge are open projects, and community
+contributions are essential for keeping them great. We can’t access the
+huge number of platforms and myriad of hardware, software, and deployment
+configurations that Puppet is intended to serve.</p>
+
+<p>We want to keep it as easy as possible to contribute changes so that our
+modules work in your environment. There are a few guidelines that we need
+contributors to follow so that we can have a chance of keeping on top of
+things.</p>
+
+<p>You can read the complete module contribution guide <a
+href="http://projects.puppetlabs.com/projects/module-site/wiki/Module_contributing">on
+the Puppet Labs wiki.</a></p>
+
+<h3 id="label-Contributors">Contributors<span><a href="#label-Contributors">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>The list of contributors can be found at:</p>
+
+<p><a
+href="https://github.com/puppetlabs/puppetlabs-concat/graphs/contributors">github.com/puppetlabs/puppetlabs-concat/graphs/contributors</a></p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

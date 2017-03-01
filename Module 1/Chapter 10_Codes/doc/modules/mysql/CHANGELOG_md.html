@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>CHANGELOG - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-2014-07-15+-+Supported+Release+2.3.1">2014-07-15 - Supported Release 2.3.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2014-05-14+-+Supported+Release+2.3.0">2014-05-14 - Supported Release 2.3.0</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-03-04+-+Supported+Release+2.2.3">2014-03-04 - Supported Release 2.2.3</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-03-04+-+Supported+Release+2.2.2">2014-03-04 - Supported Release 2.2.2</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-02-19+-+Version+2.2.1">2014-02-19 - Version 2.2.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2014-02-13+-+Version+2.2.0">2014-02-13 - Version 2.2.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-11-13+-+Version+2.1.0">2013-11-13 - Version 2.1.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-21+-+Version+2.0.1">2013-10-21 - Version 2.0.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-14+-+Version+2.0.0">2013-10-14 - Version 2.0.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2013-10-09+-+Version+2.0.0-rc5">2013-10-09 - Version 2.0.0-rc5</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-09+-+Version+2.0.0-rc4">2013-10-09 - Version 2.0.0-rc4</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-07+-+Version+2.0.0-rc3">2013-10-07 - Version 2.0.0-rc3</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-03+-+Version+2.0.0-rc2">2013-10-03 - Version 2.0.0-rc2</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-10-03+-+Version+2.0.0-rc1">2013-10-03 - Version 2.0.0-rc1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2013-09-23+-+Version+1.0.0">2013-09-23 - Version 1.0.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-07-15+-+Version+0.9.0">2013-07-15 - Version 0.9.0</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-07-05+-+Version+0.8.1">2013-07-05 - Version 0.8.1</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-07-01+-+Version+0.8.0">2013-07-01 - Version 0.8.0</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-06-26+-+Version+0.7.1">2013-06-26 - Version 0.7.1</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-06-25+-+Version+0.7.0">2013-06-25 - Version 0.7.0</a>
+      <li><a href="#label-2013-01-11+-+Version+0.6.1">2013-01-11 - Version 0.6.1</a>
+      <li><a href="#label-2013-01-09+-+Version+0.6.0">2013-01-09 - Version 0.6.0</a>
+      <li><a href="#label-2012-08-23+-+Version+0.5.0">2012-08-23 - Version 0.5.0</a>
+      <li><a href="#label-2012-07-24+-+Version+0.4.0">2012-07-24 - Version 0.4.0</a>
+      <li><a href="#label-2012-05-03+-+Version+0.3.0">2012-05-03 - Version 0.3.0</a>
+      <li><a href="#label-2012-04-11+-+Version+0.2.0">2012-04-11 - Version 0.2.0</a>
+      <li><a href="#label-2012-03-19+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-03-19 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a></a>
+      <li><a href="#label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-18 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-18 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-15+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-03-15 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a></a>
+      <li><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-16+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-16 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">2012-03-07 - François Charlier <a href="mailto:fcharlier@ploup.net">fcharlier@ploup.net</a></a>
+      <li><a href="#label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">2012-03-07 - François Charlier <a href="mailto:fcharlier@ploup.net">fcharlier@ploup.net</a></a>
+      <li><a href="#label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-15 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-15 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-15+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-15 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-02-09+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-02-09 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a></a>
+      <li><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2012-02-09+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-02-09 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a></a>
+      <li><a href="#label-2012-02-04+-+Daniel+Black+mailto%3Agrooverdan%40users.sourceforge.net">2012-02-04 - Daniel Black <a href="mailto:grooverdan@users.sourceforge.net">grooverdan@users.sourceforge.net</a></a>
+      <li><a href="#label-2011-11-17+-+Matthias+Pigulla+mailto%3Amp%40webfactory.de">2011-11-17 - Matthias Pigulla <a href="mailto:mp@webfactory.de">mp@webfactory.de</a></a>
+      <li><a href="#label-2011-12-20+-+Jeff+McCune+mailto%3Ajeff%40puppetlabs.com">2011-12-20 - Jeff McCune <a href="mailto:jeff@puppetlabs.com">jeff@puppetlabs.com</a></a>
+      <li><a href="#label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">2011-12-19 - Carl Caum <a href="mailto:carl@carlcaum.com">carl@carlcaum.com</a></a>
+      <li><a href="#label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">2011-12-19 - Carl Caum <a href="mailto:carl@carlcaum.com">carl@carlcaum.com</a></a>
+      <li><a href="#label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2011-12-13 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2011-12-13 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a></a>
+      <li><a href="#label-2011-06-03+-+Dan+Bode+mailto%3Adan%40puppetlabs.com+-+0.0.1">2011-06-03 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a> - 0.0.1</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h2 id="label-2014-07-15+-+Supported+Release+2.3.1">2014-07-15 - Supported Release 2.3.1<span><a href="#label-2014-07-15+-+Supported+Release+2.3.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release merely updates metadata.json so the module can be uninstalled
+and upgraded via the puppet module command.</p>
+
+<h2 id="label-2014-05-14+-+Supported+Release+2.3.0">2014-05-14 - Supported Release 2.3.0<span><a href="#label-2014-05-14+-+Supported+Release+2.3.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This release primarily adds support for RHEL7 and Ubuntu 14.04 but it also
+adds a couple of new parameters to allow for further customization, as well
+as ensuring backups can backup stored procedures properly.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>Added <code>execpath</code> to allow a custom executable path for
+non-standard mysql installations. Added <code>dbname</code> to mysql::db
+and use ensure_resource to create the resource. Added support for RHEL7 and
+Fedora Rawhide. Added support for Ubuntu 14.04. Create a warning for if you
+disable SSL. Ensure the error logfile is owned by MySQL. Disable ssl on
+FreeBSD. Add PROCESS privilege for backups.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>No known bugs</p>
+</li></ul>
+
+<h2 id="label-2014-03-04+-+Supported+Release+2.2.3">2014-03-04 - Supported Release 2.2.3<span><a href="#label-2014-03-04+-+Supported+Release+2.2.3">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. This release removes a testing symlink that
+can cause trouble on systems where /var is on a seperate filesystem from
+the modulepath.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>No known bugs</p>
+</li></ul>
+
+<h2 id="label-2014-03-04+-+Supported+Release+2.2.2">2014-03-04 - Supported Release 2.2.2<span><a href="#label-2014-03-04+-+Supported+Release+2.2.2">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. Mostly comprised of enhanced testing, plus a
+bugfix for Suse.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>PHP bindings on Suse</p>
+</li><li>
+<p>Test fixes</p>
+</li></ul>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>No known bugs</p>
+</li></ul>
+
+<h2 id="label-2014-02-19+-+Version+2.2.1">2014-02-19 - Version 2.2.1<span><a href="#label-2014-02-19+-+Version+2.2.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Minor release that repairs mysql_database{} so that it sees the correct
+collation settings (it was only checking the global mysql ones, not the
+actual database and constantly setting it over and over since January
+22nd).</p>
+
+<p>Also fixes a bunch of tests on various platforms.</p>
+
+<h2 id="label-2014-02-13+-+Version+2.2.0">2014-02-13 - Version 2.2.0<span><a href="#label-2014-02-13+-+Version+2.2.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add <code>backupdirmode</code>, <code>backupdirowner</code>,
+<code>backupdirgroup</code> to  mysql::server::backup to allow customizing
+the mysqlbackupdir.</p>
+</li><li>
+<p>Support multiple options of the same name, allowing you to  do
+&#39;replicate-do-db&#39; =&gt; [&#39;base1&#39;, &#39;base2&#39;,
+&#39;base3&#39;] in order to get three  lines of replicate-do-db = base1,
+replicate-do-db = base2 etc.</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix <code>restart</code> so it actually stops mysql restarting if set to
+false.</p>
+</li><li>
+<p>DRY out the defaults_file functionality in the providers.</p>
+</li><li>
+<p>mysql_grant fixed to work with root@localhost/@.</p>
+</li><li>
+<p>mysql_grant fixed for WITH MAX_QUERIES_PER_HOUR</p>
+</li><li>
+<p>mysql_grant fixed so revoking all privileges accounts for GRANT OPTION</p>
+</li><li>
+<p>mysql_grant fixed to remove duplicate privileges.</p>
+</li><li>
+<p>mysql_grant fixed to handle PROCEDURES when removing privileges.</p>
+</li><li>
+<p>mysql_database won&#39;t try to create existing databases, breaking
+replication.</p>
+</li><li>
+<p>bind_address renamed bind-address in &#39;mysqld&#39; options.</p>
+</li><li>
+<p>key_buffer renamed to key_buffer_size.</p>
+</li><li>
+<p>log_error renamed to log-error.</p>
+</li><li>
+<p>pid_file renamed to pid-file.</p>
+</li><li>
+<p>Ensure mysql::server:root_password runs before mysql::server::backup</p>
+</li><li>
+<p>Fix options_override -&gt; override_options in the <a
+href="../apache/README_md.html">README</a>.</p>
+</li><li>
+<p>Extensively rewrite the <a href="../apache/README_md.html">README</a> to be
+accurate and awesome.</p>
+</li><li>
+<p>Move to requiring stdlib 3.2.0, shipped in PE3.0</p>
+</li><li>
+<p>Add many new tests.</p>
+</li></ul>
+
+<h2 id="label-2013-11-13+-+Version+2.1.0">2013-11-13 - Version 2.1.0<span><a href="#label-2013-11-13+-+Version+2.1.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>The most important changes in 2.1.0 are improvements to the my.cnf
+creation, as well as providers. Setting options to = true strips them to be
+just the key name itself, which is required for some options.</p>
+
+<p>The provider updates fix a number of bugs, from lowercase privileges to
+deprecation warnings.</p>
+
+<p>Last, the new hiera integration functionality should make it easier to
+externalize all your grants, users, and, databases. Another great set of
+community submissions helped to make this release.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Some options can not take a argument. Gets rid of the &#39;= true&#39; when
+an option is set to true.</p>
+</li><li>
+<p>Easier hiera integration: Add hash parameters to mysql::server to allow
+specifying grants, users, and databases.</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix an issue with lowercase privileges in mysql_grant{} causing them to be
+reapplied needlessly.</p>
+</li><li>
+<p>Changed defaults-file to defaults-extra-file in providers.</p>
+</li><li>
+<p>Ensure /root/.my.cnf is 0600 and root owned.</p>
+</li><li>
+<p>database_user deprecation warning was incorrect.</p>
+</li><li>
+<p>Add anchor pattern for client.pp</p>
+</li><li>
+<p>Documentation improvements.</p>
+</li><li>
+<p>Various test fixes.</p>
+</li></ul>
+
+<h2 id="label-2013-10-21+-+Version+2.0.1">2013-10-21 - Version 2.0.1<span><a href="#label-2013-10-21+-+Version+2.0.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a bugfix release to handle an issue where unsorted mysql_grant{}
+privileges could cause Puppet to incorrectly reapply the permissions on
+each run.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Mysql_grant now sorts privileges in the type and provider for comparison.</p>
+</li><li>
+<p>Comment and test tweak for PE3.1.</p>
+</li></ul>
+
+<h2 id="label-2013-10-14+-+Version+2.0.0">2013-10-14 - Version 2.0.0<span><a href="#label-2013-10-14+-+Version+2.0.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>(Previously detailed in the changelog for 2.0.0-rc1)</p>
+
+<p>This module has been completely refactored and works significantly
+different. The changes are broad and touch almost every piece of the
+module.</p>
+
+<p>See the README.md for full details of all changes and syntax. Please remain
+on 1.0.0 if you don&#39;t have time to fully test this in dev.</p>
+<ul><li>
+<p>mysql::server, mysql::client, and mysql::bindings are the primary interface
+classes.</p>
+</li><li>
+<p>mysql::server takes an <code>override_options</code> parameter to set
+my.cnf options, with the hash format: { &#39;section&#39; =&gt; {
+&#39;thing&#39; =&gt; &#39;value&#39; }}</p>
+</li><li>
+<p>mysql attempts backwards compatibility by forwarding all parameters to
+mysql::server.</p>
+</li></ul>
+
+<h2 id="label-2013-10-09+-+Version+2.0.0-rc5">2013-10-09 - Version 2.0.0-rc5<span><a href="#label-2013-10-09+-+Version+2.0.0-rc5">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Hopefully the final rc! Further fixes to mysql_grant (stripping out the
+cleverness so we match a much wider range of input.)</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Make mysql_grant accept &#39;.<em>&#39;@&#39;.</em>&#39; in terms of input
+for user@host.</p>
+</li></ul>
+
+<h2 id="label-2013-10-09+-+Version+2.0.0-rc4">2013-10-09 - Version 2.0.0-rc4<span><a href="#label-2013-10-09+-+Version+2.0.0-rc4">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Bugfixes to mysql_grant and mysql_user form the bulk of this rc, as well as
+ensuring that values in the override_options hash that contain a value of
+&#39;&#39; are created as just “key” in the conf rather than “key =” or
+“key = false”.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Improve mysql_grant to work with IPv6 addresses (both long and short).</p>
+</li><li>
+<p>Ensure @host users work as well as user@host users.</p>
+</li><li>
+<p>Updated my.cnf template to support items with no values.</p>
+</li></ul>
+
+<h2 id="label-2013-10-07+-+Version+2.0.0-rc3">2013-10-07 - Version 2.0.0-rc3<span><a href="#label-2013-10-07+-+Version+2.0.0-rc3">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Fix mysql::server::monitor&#39;s use of mysql_user{}.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix myql::server::monitor&#39;s use of mysql_user{} to grant the proper
+permissions. Add specs as well. (Thanks to treydock!)</p>
+</li></ul>
+
+<h2 id="label-2013-10-03+-+Version+2.0.0-rc2">2013-10-03 - Version 2.0.0-rc2<span><a href="#label-2013-10-03+-+Version+2.0.0-rc2">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Bugfixes</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix a duplicate parameter in mysql::server</p>
+</li></ul>
+
+<h2 id="label-2013-10-03+-+Version+2.0.0-rc1">2013-10-03 - Version 2.0.0-rc1<span><a href="#label-2013-10-03+-+Version+2.0.0-rc1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This module has been completely refactored and works significantly
+different. The changes are broad and touch almost every piece of the
+module.</p>
+
+<p>See the README.md for full details of all changes and syntax. Please remain
+on 1.0.0 if you don&#39;t have time to fully test this in dev.</p>
+<ul><li>
+<p>mysql::server, mysql::client, and mysql::bindings are the primary interface
+classes.</p>
+</li><li>
+<p>mysql::server takes an <code>override_options</code> parameter to set
+my.cnf options, with the hash format: { &#39;section&#39; =&gt; {
+&#39;thing&#39; =&gt; &#39;value&#39; }}</p>
+</li><li>
+<p>mysql attempts backwards compatibility by forwarding all parameters to
+mysql::server.</p>
+</li></ul>
+
+<p>—</p>
+
+<h2 id="label-2013-09-23+-+Version+1.0.0">2013-09-23 - Version 1.0.0<span><a href="#label-2013-09-23+-+Version+1.0.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release introduces a number of new type/providers, to eventually
+replace the database_ ones. The module has been converted to call the new
+providers rather than the previous ones as they have a number of fixes,
+additional options, and work with puppet resource.</p>
+
+<p>This 1.0.0 release precedes a large refactoring that will be released
+almost immediately after as 2.0.0.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Added mysql_grant, mysql_database, and mysql_user.</p>
+</li><li>
+<p>Add <code>mysql::bindings</code> class and refactor all other bindings to
+be contained underneath mysql::bindings:: namespace.</p>
+</li><li>
+<p>Added support to back up specified databases only with
+&#39;mysqlbackup&#39; parameter.</p>
+</li><li>
+<p>Add option to mysql::backup to set the backup script to perform a mysqldump
+on each database to its own file</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Update my.cnf.pass.erb to allow custom socket support</p>
+</li><li>
+<p>Add environment variable for .my.cnf in mysql::db.</p>
+</li><li>
+<p>Add HOME environment variable for .my.cnf to mysqladmin command when
+(re)setting root password</p>
+</li></ul>
+
+<p>—</p>
+
+<h2 id="label-2013-07-15+-+Version+0.9.0">2013-07-15 - Version 0.9.0<span><a href="#label-2013-07-15+-+Version+0.9.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add <code>mysql::backup::backuprotate</code> parameter</p>
+</li><li>
+<p>Add <code>mysql::backup::delete_before_dump</code> parameter</p>
+</li><li>
+<p>Add <code>max_user_connections</code> attribute to
+<code>database_user</code> type</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add client package dependency for <code>mysql::db</code></p>
+</li><li>
+<p>Remove duplicate <code>expire_logs_days</code> and
+<code>max_binlog_size</code> settings</p>
+</li><li>
+<p>Make root&#39;s <code>.my.cnf</code> file path dynamic</p>
+</li><li>
+<p>Update pidfile path for Suse variants</p>
+</li><li>
+<p>Fixes for lint</p>
+</li></ul>
+
+<h2 id="label-2013-07-05+-+Version+0.8.1">2013-07-05 - Version 0.8.1<span><a href="#label-2013-07-05+-+Version+0.8.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix a typo in the Fedora 19 support.</p>
+</li></ul>
+
+<h2 id="label-2013-07-01+-+Version+0.8.0">2013-07-01 - Version 0.8.0<span><a href="#label-2013-07-01+-+Version+0.8.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>mysql::perl class to install perl-DBD-mysql.</p>
+</li><li>
+<p>minor improvements to the providers to improve reliability</p>
+</li><li>
+<p>Install the MariaDB packages on Fedora 19 instead of MySQL.</p>
+</li><li>
+<p>Add new <code>mysql</code> class parameters:</p>
+</li><li>
+<p><code>max_connections</code>: The maximum number of allowed connections.</p>
+</li><li>
+<p><code>manage_config_file</code>: Opt out of puppetized control of my.cnf.</p>
+</li><li>
+<p><code>ft_min_word_len</code>: Fine tune the full text search.</p>
+</li><li>
+<p><code>ft_max_word_len</code>: Fine tune the full text search.</p>
+</li><li>
+<p>Add new <code>mysql</code> class performance tuning parameters:</p>
+</li><li>
+<p><code>key_buffer</code></p>
+</li><li>
+<p><code>thread_stack</code></p>
+</li><li>
+<p><code>thread_cache_size</code></p>
+</li><li>
+<p><code>myisam-recover</code></p>
+</li><li>
+<p><code>query_cache_limit</code></p>
+</li><li>
+<p><code>query_cache_size</code></p>
+</li><li>
+<p><code>max_connections</code></p>
+</li><li>
+<p><code>tmp_table_size</code></p>
+</li><li>
+<p><code>table_open_cache</code></p>
+</li><li>
+<p><code>long_query_time</code></p>
+</li><li>
+<p>Add new <code>mysql</code> class replication parameters:</p>
+</li><li>
+<p><code>server_id</code></p>
+</li><li>
+<p><code>sql_log_bin</code></p>
+</li><li>
+<p><code>log_bin</code></p>
+</li><li>
+<p><code>max_binlog_size</code></p>
+</li><li>
+<p><code>binlog_do_db</code></p>
+</li><li>
+<p><code>expire_logs_days</code></p>
+</li><li>
+<p><code>log_bin_trust_function_creators</code></p>
+</li><li>
+<p><code>replicate_ignore_table</code></p>
+</li><li>
+<p><code>replicate_wild_do_table</code></p>
+</li><li>
+<p><code>replicate_wild_ignore_table</code></p>
+</li><li>
+<p><code>expire_logs_days</code></p>
+</li><li>
+<p><code>max_binlog_size</code></p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>No longer restart MySQL when /root/.my.cnf changes.</p>
+</li><li>
+<p>Ensure mysql::config runs before any mysql::db defines.</p>
+</li></ul>
+
+<h2 id="label-2013-06-26+-+Version+0.7.1">2013-06-26 - Version 0.7.1<span><a href="#label-2013-06-26+-+Version+0.7.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Single-quote password for special characters</p>
+</li><li>
+<p>Update travis testing for puppet 3.2.x and missing Bundler gems</p>
+</li></ul>
+
+<h2 id="label-2013-06-25+-+Version+0.7.0">2013-06-25 - Version 0.7.0<span><a href="#label-2013-06-25+-+Version+0.7.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This is a maintenance release for community bugfixes and exposing
+configuration variables.</p>
+<ul><li>
+<p>Add new <code>mysql</code> class parameters:</p>
+</li><li>
+<p><code>basedir</code>: The base directory mysql uses</p>
+</li><li>
+<p><code>bind_address</code>: The IP mysql binds to</p>
+</li><li>
+<p><code>client_package_name</code>: The name of the mysql client package</p>
+</li><li>
+<p><code>config_file</code>: The location of the server config file</p>
+</li><li>
+<p><code>config_template</code>: The template to use to generate my.cnf</p>
+</li><li>
+<p><code>datadir</code>: The directory MySQL&#39;s datafiles are stored</p>
+</li><li>
+<p><code>default_engine</code>: The default engine to use for tables</p>
+</li><li>
+<p><code>etc_root_password</code>: Whether or not to add the mysql root
+password to  /etc/my.cnf</p>
+</li><li>
+<p><code>java_package_name</code>: The name of the java package containing the
+java  connector</p>
+</li><li>
+<p><code>log_error</code>: Where to log errors</p>
+</li><li>
+<p><code>manage_service</code>: Boolean dictating if mysql::server should
+manage the  service</p>
+</li><li>
+<p><code>max_allowed_packet</code>: Maximum network packet size mysqld will
+accept</p>
+</li><li>
+<p><code>old_root_password</code>: Previous root user password</p>
+</li><li>
+<p><code>php_package_name</code>: The name of the phpmysql package to install</p>
+</li><li>
+<p><code>pidfile</code>: The location mysql will expect the pidfile to be</p>
+</li><li>
+<p><code>port</code>: The port mysql listens on</p>
+</li><li>
+<p><code>purge_conf_dir</code>: Value fed to recurse and purge parameters of
+the  /etc/mysql/conf.d resource</p>
+</li><li>
+<p><code>python_package_name</code>: The name of the python mysql package to
+install</p>
+</li><li>
+<p><code>restart</code>: Whether to restart mysqld</p>
+</li><li>
+<p><code>root_group</code>: Use specified group for root-owned files</p>
+</li><li>
+<p><code>root_password</code>: The root MySQL password to use</p>
+</li><li>
+<p><code>ruby_package_name</code>: The name of the ruby mysql package to
+install</p>
+</li><li>
+<p><code>ruby_package_provider</code>: The installation suite to use when
+installing the  ruby package</p>
+</li><li>
+<p><code>server_package_name</code>: The name of the server package to install</p>
+</li><li>
+<p><code>service_name</code>: The name of the service to start</p>
+</li><li>
+<p><code>service_provider</code>: The name of the service provider</p>
+</li><li>
+<p><code>socket</code>: The location of the MySQL server socket file</p>
+</li><li>
+<p><code>ssl_ca</code>: The location of the SSL CA Cert</p>
+</li><li>
+<p><code>ssl_cert</code>: The location of the SSL Certificate to use</p>
+</li><li>
+<p><code>ssl_key</code>: The SSL key to use</p>
+</li><li>
+<p><code>ssl</code>: Whether or not to enable ssl</p>
+</li><li>
+<p><code>tmpdir</code>: The directory MySQL&#39;s tmpfiles are stored</p>
+</li><li>
+<p>Deprecate <code>mysql::package_name</code> parameter in favor of
+<code>mysql::client_package_name</code></p>
+</li><li>
+<p>Fix local variable template deprecation</p>
+</li><li>
+<p>Fix dependency ordering in <code>mysql::db</code></p>
+</li><li>
+<p>Fix ANSI quoting in queries</p>
+</li><li>
+<p>Fix travis support (but still messy)</p>
+</li><li>
+<p>Fix typos</p>
+</li></ul>
+
+<h2 id="label-2013-01-11+-+Version+0.6.1">2013-01-11 - Version 0.6.1<span><a href="#label-2013-01-11+-+Version+0.6.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix providers when /root/.my.cnf is absent</p>
+</li></ul>
+
+<h2 id="label-2013-01-09+-+Version+0.6.0">2013-01-09 - Version 0.6.0<span><a href="#label-2013-01-09+-+Version+0.6.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add <code>mysql::server::config</code> define for specific config
+directives</p>
+</li><li>
+<p>Add <code>mysql::php</code> class for php support</p>
+</li><li>
+<p>Add <code>backupcompress</code> parameter to <code>mysql::backup</code></p>
+</li><li>
+<p>Add <code>restart</code> parameter to <code>mysql::config</code></p>
+</li><li>
+<p>Add <code>purge_conf_dir</code> parameter to <code>mysql::config</code></p>
+</li><li>
+<p>Add <code>manage_service</code> parameter to <code>mysql::server</code></p>
+</li><li>
+<p>Add syslog logging support via the <code>log_error</code> parameter</p>
+</li><li>
+<p>Add initial SuSE support</p>
+</li><li>
+<p>Fix remove non-localhost root user when fqdn != hostname</p>
+</li><li>
+<p>Fix dependency in <code>mysql::server::monitor</code></p>
+</li><li>
+<p>Fix .my.cnf path for root user and root password</p>
+</li><li>
+<p>Fix ipv6 support for users</p>
+</li><li>
+<p>Fix / update various spec tests</p>
+</li><li>
+<p>Fix typos</p>
+</li><li>
+<p>Fix lint warnings</p>
+</li></ul>
+
+<h2 id="label-2012-08-23+-+Version+0.5.0">2012-08-23 - Version 0.5.0<span><a href="#label-2012-08-23+-+Version+0.5.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add puppetlabs/stdlib as requirement</p>
+</li><li>
+<p>Add validation for mysql privs in provider</p>
+</li><li>
+<p>Add <code>pidfile</code> parameter to mysql::config</p>
+</li><li>
+<p>Add <code>ensure</code> parameter to mysql::db</p>
+</li><li>
+<p>Add Amazon linux support</p>
+</li><li>
+<p>Change <code>bind_address</code> parameter to be optional in my.cnf
+template</p>
+</li><li>
+<p>Fix quoting root passwords</p>
+</li></ul>
+
+<h2 id="label-2012-07-24+-+Version+0.4.0">2012-07-24 - Version 0.4.0<span><a href="#label-2012-07-24+-+Version+0.4.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix various bugs regarding database names</p>
+</li><li>
+<p>FreeBSD support</p>
+</li><li>
+<p>Allow specifying the storage engine</p>
+</li><li>
+<p>Add a backup class</p>
+</li><li>
+<p>Add a security class to purge default accounts</p>
+</li></ul>
+
+<h2 id="label-2012-05-03+-+Version+0.3.0">2012-05-03 - Version 0.3.0<span><a href="#label-2012-05-03+-+Version+0.3.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>14218 Query the database for available privileges</p>
+</li><li>
+<p>Add mysql::java class for java connector installation</p>
+</li><li>
+<p>Use correct error log location on different distros</p>
+</li><li>
+<p>Fix set_mysql_rootpw to properly depend on my.cnf</p>
+</li></ul>
+
+<h2 id="label-2012-04-11+-+Version+0.2.0">2012-04-11 - Version 0.2.0<span><a href="#label-2012-04-11+-+Version+0.2.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h2 id="label-2012-03-19+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-03-19 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a><span><a href="#label-2012-03-19+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#13203) Add ssl support (f7e0ea5)</p>
+</li></ul>
+
+<h2 id="label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-18 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Travis ci before script needs success exit code. (0ea463b)</p>
+</li></ul>
+
+<h2 id="label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-18 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-18+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix Puppet 2.6 compilation issues. (9ebbbc4)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add travis.ci for testing multiple puppet versions. (33c72ef)</p>
+</li></ul>
+
+<h2 id="label-2012-03-15+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-03-15 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a><span><a href="#label-2012-03-15+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#13163) Datadir should be configurable (f353fc6)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Document create_resources dependency. (558a59c)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix spec test issues related to error message. (eff79b5)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix mysql service on Ubuntu. (72da2c5)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-16 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add more spec test coverage (55e399d)</p>
+</li></ul>
+
+<h2 id="label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-16 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-16+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#11963) Fix spec test due to path changes. (1700349)</p>
+</li></ul>
+
+<h2 id="label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">2012-03-07 - François Charlier <a href="mailto:fcharlier@ploup.net">fcharlier@ploup.net</a><span><a href="#label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add a test to check path for &#39;mysqld-restart&#39; (b14c7d1)</p>
+</li></ul>
+
+<h2 id="label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">2012-03-07 - François Charlier <a href="mailto:fcharlier@ploup.net">fcharlier@ploup.net</a><span><a href="#label-2012-03-07+-+Fran%C3%A7ois+Charlier+mailto%3Afcharlier%40ploup.net">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix path for &#39;mysqld-restart&#39; (1a9ae6b)</p>
+</li></ul>
+
+<h2 id="label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-15 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add rspec-puppet tests for mysql::config (907331a)</p>
+</li></ul>
+
+<h2 id="label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-15 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-15+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Moved class dependency between sever and config to server (da62ad6)</p>
+</li></ul>
+
+<h2 id="label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Notify mysql restart from set_mysql_rootpw exec (0832a2c)</p>
+</li></ul>
+
+<h2 id="label-2012-03-15+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-03-15 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-03-15+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Add documentation related to osfamily fact. (8265d28)</p>
+</li></ul>
+
+<h2 id="label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Mention osfamily value in failure message (e472d3b)</p>
+</li></ul>
+
+<h2 id="label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">2012-03-14 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a><span><a href="#label-2012-03-14+-+Dan+Bode+mailto%3Adan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fix bug when querying for all database users (015490c)</p>
+</li></ul>
+
+<h2 id="label-2012-02-09+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">2012-02-09 - Nan Liu <a href="mailto:nan@puppetlabs.com">nan@puppetlabs.com</a><span><a href="#label-2012-02-09+-+Nan+Liu+mailto%3Anan%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Major refactor of mysql module. (b1f90fd)</p>
+</li></ul>
+
+<h2 id="label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Ruby and Python&#39;s MySQL libraries are named differently on different
+distros. (1e926b4)</p>
+</li></ul>
+
+<h2 id="label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Per @ghoneycutt, we should fail explicitly and explain why. (09af083)</p>
+</li></ul>
+
+<h2 id="label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-11 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-11+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Removing duplicate declaration (7513d03)</p>
+</li></ul>
+
+<h2 id="label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Use socket value from params class instead of hardcoding. (663e97c)</p>
+</li></ul>
+
+<h2 id="label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Instead of hardcoding the config file target, pull it from mysql::params
+(031a47d)</p>
+</li></ul>
+
+<h2 id="label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Moved $socket to within the case to toggle between distros. Added a
+$config_file variable to allow per-distro config file destinations.
+(360eacd)</p>
+</li></ul>
+
+<h2 id="label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2012-01-10 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2012-01-10+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Pretty sure this is a bug, 99% of Linux distros out there won&#39;t ever
+hit the default. (3462e6b)</p>
+</li></ul>
+
+<h2 id="label-2012-02-09+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">2012-02-09 - William Van Hevelingen <a href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a><span><a href="#label-2012-02-09+-+William+Van+Hevelingen+mailto%3Ablkperl%40cat.pdx.edu">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Changed the <a href="../apache/README_md.html">README</a> to use markdown
+(3b7dfeb)</p>
+</li></ul>
+
+<h2 id="label-2012-02-04+-+Daniel+Black+mailto%3Agrooverdan%40users.sourceforge.net">2012-02-04 - Daniel Black <a href="mailto:grooverdan@users.sourceforge.net">grooverdan@users.sourceforge.net</a><span><a href="#label-2012-02-04+-+Daniel+Black+mailto%3Agrooverdan%40users.sourceforge.net">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#12412) mysqltuner.pl update (b809e6f)</p>
+</li></ul>
+
+<h2 id="label-2011-11-17+-+Matthias+Pigulla+mailto%3Amp%40webfactory.de">2011-11-17 - Matthias Pigulla <a href="mailto:mp@webfactory.de">mp@webfactory.de</a><span><a href="#label-2011-11-17+-+Matthias+Pigulla+mailto%3Amp%40webfactory.de">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#11363) Add two missing privileges to grant: event_priv, trigger_priv
+(d15c9d1)</p>
+</li></ul>
+
+<h2 id="label-2011-12-20+-+Jeff+McCune+mailto%3Ajeff%40puppetlabs.com">2011-12-20 - Jeff McCune <a href="mailto:jeff@puppetlabs.com">jeff@puppetlabs.com</a><span><a href="#label-2011-12-20+-+Jeff+McCune+mailto%3Ajeff%40puppetlabs.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(minor) Fixup typos in <a href="../base/Modulefile.html">Modulefile</a>
+metadata (a0ed6a1)</p>
+</li></ul>
+
+<h2 id="label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">2011-12-19 - Carl Caum <a href="mailto:carl@carlcaum.com">carl@carlcaum.com</a><span><a href="#label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Only notify Exec to import sql if sql is given (0783c74)</p>
+</li></ul>
+
+<h2 id="label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">2011-12-19 - Carl Caum <a href="mailto:carl@carlcaum.com">carl@carlcaum.com</a><span><a href="#label-2011-12-19+-+Carl+Caum+mailto%3Acarl%40carlcaum.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>(#11508) Only load sql_scripts on DB creation (e3b9fd9)</p>
+</li></ul>
+
+<h2 id="label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2011-12-13 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Require not needed due to implicit dependencies (3058feb)</p>
+</li></ul>
+
+<h2 id="label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">2011-12-13 - Justin Ellison <a href="mailto:justin.ellison@buckle.com">justin.ellison@buckle.com</a><span><a href="#label-2011-12-13+-+Justin+Ellison+mailto%3Ajustin.ellison%40buckle.com">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Bug #11375: puppetlabs-mysql fails on CentOS/RHEL (a557b8d)</p>
+</li></ul>
+
+<h2 id="label-2011-06-03+-+Dan+Bode+mailto%3Adan%40puppetlabs.com+-+0.0.1">2011-06-03 - Dan Bode <a href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a> - 0.0.1<span><a href="#label-2011-06-03+-+Dan+Bode+mailto%3Adan%40puppetlabs.com+-+0.0.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>initial commit</p>
+</li></ul>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,11 @@
+use_logd yes
+udpport 694
+autojoin none
+ucast eth0 <%= @ip1 %>
+ucast eth0 <%= @ip2 %>
+keepalive 1
+deadtime 10
+warntime 5
+auto_failback off
+node <%= @node1 %>
+node <%= @node2 %>

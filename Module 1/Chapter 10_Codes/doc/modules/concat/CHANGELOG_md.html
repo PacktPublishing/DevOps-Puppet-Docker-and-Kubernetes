@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>CHANGELOG - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-2014-09-10+-+Supported+Release+1.1.1">2014-09-10 - Supported Release 1.1.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2014-05-14+-+Release+1.1.0">2014-05-14 - Release 1.1.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2014-01-03+-+Release+1.1.0-rc1">2014-01-03 - Release 1.1.0-rc1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Removed">Removed</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2014-06-25+-+Supported+Release+1.0.4">2014-06-25 - Supported Release 1.0.4</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+bugs">Known bugs</a>
+      <li><a href="#label-2014-06-04+-+Release+1.0.3">2014-06-04 - Release 1.0.3</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+bugs">Known bugs</a>
+      <li><a href="#label-2014-03-04+-+Supported+Release+1.0.2">2014-03-04 - Supported Release 1.0.2</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-02-12+-+1.0.1">2014-02-12 - 1.0.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2013-08-09+-+1.0.0">2013-08-09 - 1.0.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-CHANGELOG%3A">CHANGELOG:</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h2 id="label-2014-09-10+-+Supported+Release+1.1.1">2014-09-10 - Supported Release 1.1.1<span><a href="#label-2014-09-10+-+Supported+Release+1.1.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a bugfix release, and the first supported release of the 1.1.x
+series.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Make the <code>$order</code> parameter default to a string and be validated
+as an integer  or a string</p>
+</li><li>
+<p>Use the ruby script on Solaris to not break Sol10 support</p>
+</li><li>
+<p>Add quotes to the ryby script location for Windows</p>
+</li><li>
+<p>Fix typos in README.md</p>
+</li><li>
+<p>Make regex in concat::setup case-insensitive to make it work on Windows</p>
+</li><li>
+<p>Make sure concat fragments are always replaced</p>
+</li><li>
+<p>Fix validation to allow <code>$backup</code> to be a boolean</p>
+</li><li>
+<p>Remove dependency on stdlib 4.x</p>
+</li><li>
+<p>Fix for lack of idempotency with <code>ensure =&gt; &#39;absent&#39;</code></p>
+</li><li>
+<p>Fix tests and spec_helper</p>
+</li><li>
+<p>Synchronized files for more consistency across modules via modulesync</p>
+</li></ul>
+
+<h2 id="label-2014-05-14+-+Release+1.1.0">2014-05-14 - Release 1.1.0<span><a href="#label-2014-05-14+-+Release+1.1.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release is primarily a bugfix release since 1.1.0-rc1.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Improved testing, with tests moved to beaker</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>No longer attempts to set fragment owner and mode on Windows</p>
+</li><li>
+<p>Fix numeric sorting</p>
+</li><li>
+<p>Fix incorrect quoting</p>
+</li><li>
+<p>Fix newlines</p>
+</li></ul>
+
+<h2 id="label-2014-01-03+-+Release+1.1.0-rc1">2014-01-03 - Release 1.1.0-rc1<span><a href="#label-2014-01-03+-+Release+1.1.0-rc1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release of concat was 90% written by Joshua Hoblitt, and the module
+team would like to thank him for the huge amount of work he put into this
+release.</p>
+
+<p>This module deprecates a bunch of old parameters and usage patterns,
+modernizes much of the manifest code, simplifies a whole bunch of logic and
+makes improvements to almost all parts of the module.</p>
+
+<p>The other major feature is windows support, courtesy of luisfdez, with an
+alternative version of the concat bash script in ruby. We&#39;ve attempted
+to ensure that there are no backwards incompatible changes, all users of
+1.0.0 should be able to use 1.1.0 without any failures, but you may find
+deprecation warnings and we&#39;ll be aggressively moving for a 2.0 to
+remove those too.</p>
+
+<p>For further information on deprecations, please read: <a
+href="https://github.com/puppetlabs/puppetlabs-concat/blob/master/README.md#api-deprecations">github.com/puppetlabs/puppetlabs-concat/blob/master/README.md#api-deprecations</a></p>
+
+<h4 id="label-Removed">Removed<span><a href="#label-Removed">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Puppet 0.24 support.</p>
+</li><li>
+<p>Filebucket backup of all file resources except the target concatenated
+file.</p>
+</li><li>
+<p>Default owner/user/group values.</p>
+</li><li>
+<p>Purging of long unused /usr/local/bin/concatfragments.sh</p>
+</li></ul>
+
+<h3 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p>Windows support via a ruby version of the concat bash script.</p>
+</li><li>
+<p>Huge amount of acceptance testing work added.</p>
+</li><li>
+<p>Documentation (README) completely rewritten.</p>
+</li><li>
+<p>New parameters in concat:</p>
+</li><li>
+<p><code>ensure</code>: Controls if the file should be present/absent at all.</p>
+</li><li>
+<p>Remove requirement to include concat::setup in manifests.</p>
+</li><li>
+<p>Made <code>gnu</code> parameter deprecated.</p>
+</li><li>
+<p>Added parameter validation.</p>
+</li></ul>
+
+<h3 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p>Ensure concat::setup runs before concat::fragment in all cases.</p>
+</li><li>
+<p>Pluginsync references updated for modern Puppet.</p>
+</li><li>
+<p>Fix incorrect group parameter.</p>
+</li><li>
+<p>Use $owner instead of $id to avoid confusion with $::id</p>
+</li><li>
+<p>Compatibility fixes for Puppet 2.7/ruby 1.8.7</p>
+</li><li>
+<p>Use LC_ALL=C instead of LANG=C</p>
+</li><li>
+<p>Always exec the concatfragments script as root when running as root.</p>
+</li><li>
+<p>Syntax and other cleanup changes.</p>
+</li></ul>
+
+<h2 id="label-2014-06-25+-+Supported+Release+1.0.4">2014-06-25 - Supported Release 1.0.4<span><a href="#label-2014-06-25+-+Supported+Release+1.0.4">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release has test fixes.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Added test support for OSX.</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+bugs">Known bugs<span><a href="#label-Known+bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Not supported on Windows.</p>
+</li></ul>
+
+<h2 id="label-2014-06-04+-+Release+1.0.3">2014-06-04 - Release 1.0.3<span><a href="#label-2014-06-04+-+Release+1.0.3">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds compatibility for PE3.3 and fixes tests.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Added test support for Ubuntu Trusty.</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+bugs">Known bugs<span><a href="#label-Known+bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>*Not supported on Windows.</p>
+
+<h2 id="label-2014-03-04+-+Supported+Release+1.0.2">2014-03-04 - Supported Release 1.0.2<span><a href="#label-2014-03-04+-+Supported+Release+1.0.2">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. No functional changes were made from 1.0.1.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Huge amount of tests backported from 1.1.</p>
+</li><li>
+<p>Documentation rewrite.</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Not supported on Windows.</p>
+</li></ul>
+
+<h2 id="label-2014-02-12+-+1.0.1">2014-02-12 - 1.0.1<span><a href="#label-2014-02-12+-+1.0.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Minor bugfixes for sorting of fragments and ordering of resources.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>LANG =&gt; C replaced with LC_ALL =&gt; C to reduce spurious recreation of
+fragments.</p>
+</li><li>
+<p>Corrected pluginsync documentation.</p>
+</li><li>
+<p>Ensure concat::setup always runs before fragments.</p>
+</li></ul>
+
+<h2 id="label-2013-08-09+-+1.0.0">2013-08-09 - 1.0.0<span><a href="#label-2013-08-09+-+1.0.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Many new features and bugfixes in this release, and if you&#39;re a heavy
+concat user you should test carefully before upgrading. The features should
+all be backwards compatible but only light testing has been done from our
+side before this release.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>New parameters in concat:</p>
+</li><li>
+<p><code>replace</code>: specify if concat should replace existing files.</p>
+</li><li>
+<p><code>ensure_newline</code>: controls if fragments should contain a newline
+at the end.</p>
+</li><li>
+<p>Improved <a href="../apache/README_md.html">README</a> documentation.</p>
+</li><li>
+<p>Add rspec:system tests (rake spec:system to test concat)</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Gracefully handle n in a fragment resource name.</p>
+</li><li>
+<p>Adding more helpful message for &#39;pluginsync = true&#39;</p>
+</li><li>
+<p>Allow passing <code>source</code> and <code>content</code> directly to file
+resource, rather than defining resource defaults.</p>
+</li><li>
+<p>Added -r flag to read so that filenames with \ will be read correctly.</p>
+</li><li>
+<p>sort always uses LANG=C.</p>
+</li><li>
+<p>Allow WARNMSG to contain/start with &#39;#&#39;.</p>
+</li><li>
+<p>Replace while-read pattern with for-do in order to support Solaris.</p>
+</li></ul>
+
+<h4 id="label-CHANGELOG%3A">CHANGELOG:<span><a href="#label-CHANGELOG%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>2010/02/19 - initial release</p>
+</li><li>
+<p>2010/03/12 - add support for 0.24.8 and newer  - make the location of sort
+configurable  - add the ability to add shell comment based warnings to  top
+of files  - add the ablity to create empty files</p>
+</li><li>
+<p>2010/04/05 - fix parsing of WARN and change code style to match rest  of
+the code  - Better and safer boolean handling for warn and force  -
+Don&#39;t use hard coded paths in the shell script, set PATH  top of the
+script  - Use file{} to copy the result and make all fragments owned  by
+root. This means we can chnage the ownership/group of the  resulting file
+at any time.  - You can specify ensure =&gt; “/some/other/file” in
+concat::fragment  to include the contents of a symlink into the final file.</p>
+</li><li>
+<p>2010/04/16 - Add more cleaning of the fragment name - removing / from the
+$name</p>
+</li><li>
+<p>2010/05/22 - Improve documentation and show the use of ensure =&gt;</p>
+</li><li>
+<p>2010/07/14 - Add support for setting the filebucket behavior of files</p>
+</li><li>
+<p>2010/10/04 - Make the warning message configurable</p>
+</li><li>
+<p>2010/12/03 - Add flags to make concat work better on Solaris - thanks
+Jonathan Boyett</p>
+</li><li>
+<p>2011/02/03 - Make the shell script more portable and add a config option
+for root group</p>
+</li><li>
+<p>2011/06/21 - Make base dir root readable only for security</p>
+</li><li>
+<p>2011/06/23 - Set base directory using a fact instead of hardcoding it</p>
+</li><li>
+<p>2011/06/23 - Support operating as non privileged user</p>
+</li><li>
+<p>2011/06/23 - Support dash instead of bash or sh</p>
+</li><li>
+<p>2011/07/11 - Better solaris support</p>
+</li><li>
+<p>2011/12/05 - Use fully qualified variables</p>
+</li><li>
+<p>2011/12/13 - Improve Nexenta support</p>
+</li><li>
+<p>2012/04/11 - Do not use any GNU specific extensions in the shell script</p>
+</li><li>
+<p>2012/03/24 - Comply to community style guides</p>
+</li><li>
+<p>2012/05/23 - Better errors when basedir isnt set</p>
+</li><li>
+<p>2012/05/31 - Add spec tests</p>
+</li><li>
+<p>2012/07/11 - Include concat::setup in concat improving UX</p>
+</li><li>
+<p>2012/08/14 - Puppet Lint improvements</p>
+</li><li>
+<p>2012/08/30 - The target path can be different from the $name</p>
+</li><li>
+<p>2012/08/30 - More Puppet Lint cleanup</p>
+</li><li>
+<p>2012/09/04 - RELEASE 0.2.0</p>
+</li><li>
+<p>2012/12/12 - Added (file) $replace parameter to concat</p>
+</li></ul>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

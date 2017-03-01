@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>CHANGELOG - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-2014-11-04+-+Supported+Release+1.2.0">2014-11-04 - Supported Release 1.2.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2014-07-08+-+Supported+Release+1.1.3">2014-07-08 - Supported Release 1.1.3</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-2014-06-04+-+Release+1.1.2">2014-06-04 - Release 1.1.2</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2014-05-16+Release+1.1.1">2014-05-16 Release 1.1.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2014-05-13+Release+1.1.0">2014-05-13 Release 1.1.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-03-04+Supported+Release+1.0.2">2014-03-04 Supported Release 1.0.2</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-Supported+release+-+2014-03-04+1.0.1">Supported release - 2014-03-04 1.0.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-1.0.0+-+2014-02-11">1.0.0 - 2014-02-11</a>
+      <li><a href="#label-0.5.0+-+2014-02-10">0.5.0 - 2014-02-10</a>
+      <li><a href="#label-Summary%3A">Summary:</a>
+      <li><a href="#label-New+Features%3A">New Features:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-0.4.2+-+2013-09-10">0.4.2 - 2013-09-10</a>
+      <li><a href="#label-0.4.1+-+2013-08-09">0.4.1 - 2013-08-09</a>
+      <li><a href="#label-0.4.0+-+2013-07-11">0.4.0 - 2013-07-11</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-0.3.1+-+2013%2F6%2F10">0.3.1 - 2013/6/10</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.3.0+-+2013%2F4%2F25">0.3.0 - 2013/4/25</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.2.1+-+2012%2F3%2F13">0.2.1 - 2012/3/13</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.2.0+-+2012%2F3%2F3">0.2.0 - 2012/3/3</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.1.1+-+2012%2F2%2F28">0.1.1 - 2012/2/28</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.1.0+-+2012%2F2%2F24">0.1.0 - 2012/2/24</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.0.4+-+2011%2F12%2F05">0.0.4 - 2011/12/05</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.0.3+-+2011%2F11%2F12">0.0.3 - 2011/11/12</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.0.2+-+2011%2F10%2F26">0.0.2 - 2011/10/26</a>
+      <li><a href="#label-Changes">Changes</a>
+      <li><a href="#label-0.0.1+-+2011%2F10%2F18">0.0.1 - 2011/10/18</a>
+      <li><a href="#label-Changes">Changes</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h2 id="label-2014-11-04+-+Supported+Release+1.2.0">2014-11-04 - Supported Release 1.2.0<span><a href="#label-2014-11-04+-+Supported+Release+1.2.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release has a number of new features and bugfixes, including rule
+inversion, future parser support, improved EL7 support, and the ability to
+purge ip6tables rules.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Documentation updates!</p>
+</li><li>
+<p>Test updates!</p>
+</li><li>
+<p>Add ipset support</p>
+</li><li>
+<p>Enable rule inversion</p>
+</li><li>
+<p>Future parser support</p>
+</li><li>
+<p>Improved support for EL7</p>
+</li><li>
+<p>Support netfilter-persistent</p>
+</li><li>
+<p>Add support for statistics module</p>
+</li><li>
+<p>Add support for mac address source rules</p>
+</li><li>
+<p>Add cbt protocol</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Incorrect use of <code>source =&gt; :iptables</code> in the ip6tables
+provider was making it impossible to purge ip6tables rules (MODULES-41)</p>
+</li><li>
+<p>Don&#39;t require <code>toports</code> when <code>jump =&gt;
+&#39;REDIRECT&#39;</code> (MODULES-1086)</p>
+</li><li>
+<p>Don&#39;t limit which chains iniface and outiface parameters can be used in</p>
+</li><li>
+<p>Don&#39;t fail on rules added with ipsec/strongswan (MODULES-796)</p>
+</li></ul>
+
+<h2 id="label-2014-07-08+-+Supported+Release+1.1.3">2014-07-08 - Supported Release 1.1.3<span><a href="#label-2014-07-08+-+Supported+Release+1.1.3">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release with test coverage enhancements.</p>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Confine to supported kernels</p>
+</li></ul>
+
+<h2 id="label-2014-06-04+-+Release+1.1.2">2014-06-04 - Release 1.1.2<span><a href="#label-2014-06-04+-+Release+1.1.2">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a release of the code previously released as 1.1.1, with updated
+metadata.</p>
+
+<h2 id="label-2014-05-16+Release+1.1.1">2014-05-16 Release 1.1.1<span><a href="#label-2014-05-16+Release+1.1.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release reverts the alphabetical ordering of 1.1.0. We found this
+caused a regression in the Openstack modules so in the interest of safety
+we have removed this for now.</p>
+
+<h2 id="label-2014-05-13+Release+1.1.0">2014-05-13 Release 1.1.0<span><a href="#label-2014-05-13+Release+1.1.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release has a significant change from previous releases; we now apply
+the firewall resources alphabetically by default, removing the need to
+create pre and post classes just to enforce ordering. It only effects
+default ordering and further information can be found in the <a
+href="../apache/README_md.html">README</a> about this. Please test this in
+development before rolling into production out of an abundance of caution.</p>
+
+<p>We&#39;ve also added <code>mask</code> which is required for –recent in
+recent (no pun intended) versions of iptables, as well as connlimit and
+connmark. This release has been validated against Ubuntu 14.04 and RHEL7
+and should be fully working on those platforms.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Apply firewall resources alphabetically.</p>
+</li><li>
+<p>Add support for connlimit and connmark.</p>
+</li><li>
+<p>Add <code>mask</code> as a parameter. (Used exclusively with the recent
+parameter).</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add systemd support for RHEL7.</p>
+</li><li>
+<p>Replace &amp;&amp;&#39;s with the correct and in manifests.</p>
+</li><li>
+<p>Fix tests on Trusty and RHEL7</p>
+</li><li>
+<p>Fix for Fedora Rawhide.</p>
+</li><li>
+<p>Fix boolean flag tests.</p>
+</li><li>
+<p>Fix DNAT-&gt;SNAT typo in an error message.</p>
+</li></ul>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>For Oracle, the <code>owner</code> and <code>socket</code> parameters
+require a workaround to function. Please see the Limitations section of the
+<a href="../apache/README_md.html">README</a>.</p>
+</li></ul>
+
+<h2 id="label-2014-03-04+Supported+Release+1.0.2">2014-03-04 Supported Release 1.0.2<span><a href="#label-2014-03-04+Supported+Release+1.0.2">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. This release removes a testing symlink that
+can cause trouble on systems where /var is on a seperate filesystem from
+the modulepath.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>For Oracle, the <code>owner</code> and <code>socket</code> parameters
+require a workaround to function. Please see the Limitations section of the
+<a href="../apache/README_md.html">README</a>.</p>
+</li></ul>
+
+<h3 id="label-Supported+release+-+2014-03-04+1.0.1">Supported release - 2014-03-04 1.0.1<span><a href="#label-Supported+release+-+2014-03-04+1.0.1">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>An important bugfix was made to the offset calculation for unmanaged rules
+to handle rules with 9000+ in the name.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Offset calculations assumed unmanaged rules were numbered 9000+.</p>
+</li><li>
+<p>Gracefully fail to manage ip6tables on iptables 1.3.x</p>
+</li></ul>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>For Oracle, the <code>owner</code> and <code>socket</code> parameters
+require a workaround to function. Please see the Limitations section of the
+<a href="../apache/README_md.html">README</a>.</p>
+</li></ul>
+
+<p>—</p>
+
+<h3 id="label-1.0.0+-+2014-02-11">1.0.0 - 2014-02-11<span><a href="#label-1.0.0+-+2014-02-11">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>No changes, just renumbering to 1.0.0.</p>
+
+<p>—</p>
+
+<h3 id="label-0.5.0+-+2014-02-10">0.5.0 - 2014-02-10<span><a href="#label-0.5.0+-+2014-02-10">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h5 id="label-Summary%3A">Summary:<span><a href="#label-Summary%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+
+<p>This is a bigger release that brings in “recent” connection limiting (think
+“port knocking”), firewall chain purging on a per-chain/per-table basis,
+and support for a few other use cases. This release also fixes a major bug
+which could cause modifications to the wrong rules when unmanaged rules are
+present.</p>
+
+<h5 id="label-New+Features%3A">New Features:<span><a href="#label-New+Features%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>Add “recent” limiting via parameters <code>rdest</code>, <code>reap</code>,
+<code>recent</code>, <code>rhitcount</code>,  <code>rname</code>,
+<code>rseconds</code>, <code>rsource</code>, and <code>rttl</code></p>
+</li><li>
+<p>Add negation support for source and destination</p>
+</li><li>
+<p>Add per-chain/table purging support to <code>firewallchain</code></p>
+</li><li>
+<p>IPv4 specific</p>
+</li><li>
+<p>Add random port forwarding support</p>
+</li><li>
+<p>Add ipsec policy matching via <code>ipsec_dir</code> and
+<code>ipsec_policy</code></p>
+</li><li>
+<p>IPv6 specific</p>
+</li><li>
+<p>Add support for hop limiting via <code>hop_limit</code> parameter</p>
+</li><li>
+<p>Add fragmentation matchers via <code>ishasmorefrags</code>,
+<code>islastfrag</code>, and <code>isfirstfrag</code></p>
+</li><li>
+<p>Add support for conntrack stateful firewall matching via
+<code>ctstate</code></p>
+</li></ul>
+
+<h5 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>Boolean fixups allowing false values</p>
+</li><li>
+<p>Better detection of unmanaged rules</p>
+</li><li>
+<p>Fix multiport rule detection</p>
+</li><li>
+<p>Fix sport/dport rule detection</p>
+</li><li>
+<p>Make INPUT, OUTPUT, and FORWARD not autorequired for firewall chain filter</p>
+</li><li>
+<p>Allow INPUT with the nat table</p>
+</li><li>
+<p>Fix <code>src_range</code> &amp; <code>dst_range</code> order detection</p>
+</li><li>
+<p>Documentation clarifications</p>
+</li><li>
+<p>Fixes to spec tests</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.4.2+-+2013-09-10">0.4.2 - 2013-09-10<span><a href="#label-0.4.2+-+2013-09-10">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Another attempt to fix the packaging issue. We think we understand exactly
+what is failing and this should work properly for the first time.</p>
+<hr style="height: 1px">
+
+<h3 id="label-0.4.1+-+2013-08-09">0.4.1 - 2013-08-09<span><a href="#label-0.4.1+-+2013-08-09">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Bugfix release to fix a packaging issue that may have caused puppet module
+install commands to fail.</p>
+<hr style="height: 1px">
+
+<h3 id="label-0.4.0+-+2013-07-11">0.4.0 - 2013-07-11<span><a href="#label-0.4.0+-+2013-07-11">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds support for address type, src/dest ip ranges, and adds
+additional testing and bugfixes.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add <code>src_type</code> and <code>dst_type</code> attributes (Nick
+Stenning)</p>
+</li><li>
+<p>Add <code>src_range</code> and <code>dst_range</code> attributes (Lei
+Zhang)</p>
+</li><li>
+<p>Add SL and SLC operatingsystems as supported (Steve Traylen)</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix parser for bursts other than 5 (Chris Rutter)</p>
+</li><li>
+<p>Fix parser for -f in –comment (Georg Koester)</p>
+</li><li>
+<p>Add doc headers to class files (Dan Carley)</p>
+</li><li>
+<p>Fix lint warnings/errors (Wolf Noble)</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.3.1+-+2013%2F6%2F10">0.3.1 - 2013/6/10<span><a href="#label-0.3.1+-+2013%2F6%2F10">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This minor release provides some bugfixes and additional tests.</p>
+
+<h4 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Update tests for rspec-system-puppet 2 (Ken Barber)</p>
+</li><li>
+<p>Update rspec-system tests for rspec-system-puppet 1.5 (Ken Barber)</p>
+</li><li>
+<p>Ensure all services have &#39;hasstatus =&gt; true&#39; for Puppet 2.6 (Ken
+Barber)</p>
+</li><li>
+<p>Accept pre-existing rule with invalid name (Joe Julian)</p>
+</li><li>
+<p>Swap log_prefix and log_level order to match the way it&#39;s saved (Ken
+Barber)</p>
+</li><li>
+<p>Fix log test to replicate bug #182 (Ken Barber)</p>
+</li><li>
+<p>Split argments while maintaining quoted strings (Joe Julian)</p>
+</li><li>
+<p>Add more log param tests (Ken Barber)</p>
+</li><li>
+<p>Add extra tests for logging parameters (Ken Barber)</p>
+</li><li>
+<p>Clarify OS support (Ken Barber)</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.3.0+-+2013%2F4%2F25">0.3.0 - 2013/4/25<span><a href="#label-0.3.0+-+2013%2F4%2F25">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release introduces support for Arch Linux and extends support for
+Fedora 15 and up. There are also lots of bugs fixed and improved testing to
+prevent regressions.</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>Fix error reporting for insane hostnames (Tomas Doran)</p>
+</li><li>
+<p>Support systemd on Fedora 15 and up (Eduardo Gutierrez)</p>
+</li><li>
+<p>Move examples to docs (Ken Barber)</p>
+</li><li>
+<p>Add support for Arch Linux platform (Ingmar Steen)</p>
+</li><li>
+<p>Add match rule for fragments (Georg Koester)</p>
+</li><li>
+<p>Fix boolean rules being recognized as changed (Georg Koester)</p>
+</li><li>
+<p>Same rules now get deleted (Anastasis Andronidis)</p>
+</li><li>
+<p>Socket params test (Ken Barber)</p>
+</li><li>
+<p>Ensure parameter can disable firewall (Marc Tardif)</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.2.1+-+2012%2F3%2F13">0.2.1 - 2012/3/13<span><a href="#label-0.2.1+-+2012%2F3%2F13">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This maintenance release introduces the new <a
+href="../apache/README_md.html">README</a> layout, and fixes a bug with
+iptables_persistent_version.</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(GH-139) Throw away STDERR from dpkg-query in Fact</p>
+</li><li>
+<p>Update <a href="../apache/README_md.html">README</a> to be consistent with
+module documentation template</p>
+</li><li>
+<p>Fix failing spec tests due to dpkg change in iptables_persistent_version</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.2.0+-+2012%2F3%2F3">0.2.0 - 2012/3/3<span><a href="#label-0.2.0+-+2012%2F3%2F3">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release introduces automatic persistence, removing the need for the
+previous manual dependency requirement for persistent the running rules to
+the OS persistence file.</p>
+
+<p>Previously you would have required the following in your site.pp (or some
+other global location):</p>
+
+<pre class="ruby"><span class="ruby-comment"># Always persist firewall rules</span>
+<span class="ruby-identifier">exec</span> { <span class="ruby-string">&#39;persist-firewall&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">command</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">$operatingsystem</span> <span class="ruby-operator">?</span> {
+    <span class="ruby-string">&#39;debian&#39;</span>          =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/sbin/iptables-save &gt; /etc/iptables/rules.v4&#39;</span>,
+    <span class="ruby-regexp">/(RedHat|CentOS)/</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;/sbin/iptables-save &gt; /etc/sysconfig/iptables&#39;</span>,
+  },
+  <span class="ruby-identifier">refreshonly</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>,
+}
+<span class="ruby-constant">Firewall</span> {
+  <span class="ruby-identifier">notify</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Exec</span>[<span class="ruby-string">&#39;persist-firewall&#39;</span>],
+  <span class="ruby-identifier">before</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Class</span>[<span class="ruby-string">&#39;my_fw::post&#39;</span>],
+  <span class="ruby-identifier">require</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Class</span>[<span class="ruby-string">&#39;my_fw::pre&#39;</span>],
+}
+<span class="ruby-constant">Firewallchain</span> {
+  <span class="ruby-identifier">notify</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Exec</span>[<span class="ruby-string">&#39;persist-firewall&#39;</span>],
+}
+<span class="ruby-identifier">resources</span> { <span class="ruby-string">&quot;firewall&quot;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">purge</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+}
+</pre>
+
+<p>You only need:</p>
+
+<pre class="ruby"><span class="ruby-identifier">class</span> { <span class="ruby-string">&#39;firewall&#39;</span><span class="ruby-operator">:</span> }
+<span class="ruby-constant">Firewall</span> {
+  <span class="ruby-identifier">before</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Class</span>[<span class="ruby-string">&#39;my_fw::post&#39;</span>],
+  <span class="ruby-identifier">require</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Class</span>[<span class="ruby-string">&#39;my_fw::pre&#39;</span>],
+}
+</pre>
+
+<p>To install pre-requisites and to create dependencies on your pre &amp; post
+rules. Consult the <a href="../apache/README_md.html">README</a> for more
+information.</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>Firewall class manifests (Dan Carley)</p>
+</li><li>
+<p>Firewall and firewallchain persistence (Dan Carley)</p>
+</li><li>
+<p>(GH-134) Autorequire iptables related packages (Dan Carley)</p>
+</li><li>
+<p>Typo in persist_iptables OS normalisation (Dan Carley)</p>
+</li><li>
+<p>Tests for persist_iptables (Dan Carley)</p>
+</li><li>
+<p>(GH-129) Replace errant return in autoreq block (Dan Carley)</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.1.1+-+2012%2F2%2F28">0.1.1 - 2012/2/28<span><a href="#label-0.1.1+-+2012%2F2%2F28">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release primarily fixes changing parameters in 3.x</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(GH-128) Change method_missing usage to define_method for 3.x compatibility</p>
+</li><li>
+<p>Update travis.yml gem specifications to actually test 2.6</p>
+</li><li>
+<p>Change source in <a href="../apache/Gemfile.html">Gemfile</a> to use a
+specific URL for Ruby 2.0.0 compatibility</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.1.0+-+2012%2F2%2F24">0.1.0 - 2012/2/24<span><a href="#label-0.1.0+-+2012%2F2%2F24">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release is somewhat belated, so no summary as there are far too many
+changes this time around. Hopefully we won&#39;t fall this far behind again
+:-).</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>Add support for MARK target and set-mark property (Johan Huysmans)</p>
+</li><li>
+<p>Fix broken call to super for ruby-1.9.2 in munge (Ken Barber)</p>
+</li><li>
+<p>simple fix of the error message for allowed values of the jump property
+(Daniel Black)</p>
+</li><li>
+<p>Adding OSPF(v3) protocol to puppetlabs-firewall (Arnoud Vermeer)</p>
+</li><li>
+<p>Display multi-value: port, sport, dport and state command seperated (Daniel
+Black)</p>
+</li><li>
+<p>Require jump=&gt;LOG for log params (Daniel Black)</p>
+</li><li>
+<p>Reject and document icmp =&gt; “any” (Dan Carley)</p>
+</li><li>
+<p>add firewallchain type and iptables_chain provider (Daniel Black)</p>
+</li><li>
+<p>Various fixes for firewallchain resource (Ken Barber)</p>
+</li><li>
+<p>Modify firewallchain name to be chain:table:protocol (Ken Barber)</p>
+</li><li>
+<p>Fix allvalidchain iteration (Ken Barber)</p>
+</li><li>
+<p>Firewall autorequire Firewallchains (Dan Carley)</p>
+</li><li>
+<p>Tests and docstring for chain autorequire (Dan Carley)</p>
+</li><li>
+<p>Fix <a href="../apache/README_md.html">README</a> so setup instructions
+actually work (Ken Barber)</p>
+</li><li>
+<p>Support vlan interfaces (interface containing “.”) (Johan Huysmans)</p>
+</li><li>
+<p>Add tests for VLAN support for iniface/outiface (Ken Barber)</p>
+</li><li>
+<p>Add the table when deleting rules (Johan Huysmans)</p>
+</li><li>
+<p>Fix tests since we are now prefixing -t)</p>
+</li><li>
+<p>Changed &#39;jump&#39; to &#39;action&#39;, commands to lower case (Jason
+Short)</p>
+</li><li>
+<p>Support interface names containing “+” (Simon Deziel)</p>
+</li><li>
+<p>Fix for when iptables-save spews out “FATAL” errors (Sharif Nassar)</p>
+</li><li>
+<p>Fix for incorrect limit command arguments for ip6tables provider (Michael
+Hsu)</p>
+</li><li>
+<p>Document Util::Firewall.host_to_ip (Dan Carley)</p>
+</li><li>
+<p>Nullify addresses with zero prefixlen (Dan Carley)</p>
+</li><li>
+<p>Add support for –tcp-flags (Thomas Vander Stichele)</p>
+</li><li>
+<p>Make tcp_flags support a feature (Ken Barber)</p>
+</li><li>
+<p>OUTPUT is a valid chain for the mangle table (Adam Gibbins)</p>
+</li><li>
+<p>Enable travis-ci support (Ken Barber)</p>
+</li><li>
+<p>Convert an existing test to CIDR (Dan Carley)</p>
+</li><li>
+<p>Normalise iptables-save to CIDR (Dan Carley)</p>
+</li><li>
+<p>be clearer about what distributions we support (Ken Barber)</p>
+</li><li>
+<p>add gre protocol to list of acceptable protocols (Jason Hancock)</p>
+</li><li>
+<p>Added pkttype property (Ashley Penney)</p>
+</li><li>
+<p>Fix mark to not repeat rules with iptables 1.4.1+ (Sharif Nassar)</p>
+</li><li>
+<p>Stub iptables_version for now so tests run on non-Linux hosts (Ken Barber)</p>
+</li><li>
+<p>Stub iptables facts for set_mark tests (Dan Carley)</p>
+</li><li>
+<p>Update formatting of <a href="../apache/README_md.html">README</a> to meet
+Puppet Labs best practices (Will Hopper)</p>
+</li><li>
+<p>Support for ICMP6 type code resolutions (Dan Carley)</p>
+</li><li>
+<p>Insert order hash included chains from different tables (Ken Barber)</p>
+</li><li>
+<p>rspec 2.11 compatibility (Jonathan Boyett)</p>
+</li><li>
+<p>Add missing class declaration in <a
+href="../apache/README_md.html">README</a> (sfozz)</p>
+</li><li>
+<p>array_matching is contraindicated (Sharif Nassar)</p>
+</li><li>
+<p>Convert port Fixnum into strings (Sharif Nassar)</p>
+</li><li>
+<p>Update test framework to the modern age (Ken Barber)</p>
+</li><li>
+<p>working with ip6tables support (wuwx)</p>
+</li><li>
+<p>Remove gemfile.lock and add to gitignore (William Van Hevelingen)</p>
+</li><li>
+<p>Update travis and gemfile to be like stdlib travis files (William Van
+Hevelingen)</p>
+</li><li>
+<p>Add support for -m socket option (Ken Barber)</p>
+</li><li>
+<p>Add support for single –sport and –dport parsing (Ken Barber)</p>
+</li><li>
+<p>Fix tests for Ruby 1.9.3 from 3e13bf3 (Dan Carley)</p>
+</li><li>
+<p>Mock Resolv.getaddress in host_to_ip (Dan Carley)</p>
+</li><li>
+<p>Update docs for source and dest - they are not arrays (Ken Barber)</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.0.4+-+2011%2F12%2F05">0.0.4 - 2011/12/05<span><a href="#label-0.0.4+-+2011%2F12%2F05">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds two new parameters, &#39;uid&#39; and &#39;gid&#39;. As a
+part of the owner module, these params allow you to specify a uid,
+username, gid, or group got a match:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&#39;497 match uid&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;123&#39;</span>,
+  <span class="ruby-identifier">proto</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;mangle&#39;</span>,
+  <span class="ruby-identifier">chain</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;OUTPUT&#39;</span>,
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;drop&#39;</span>
+  <span class="ruby-identifier">uid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;123&#39;</span>
+}
+</pre>
+
+<p>This release also adds value munging for the &#39;log_level&#39;,
+&#39;source&#39;, and &#39;destination&#39; parameters. The
+&#39;source&#39; and &#39;destination&#39; now support hostnames:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&#39;498 accept from puppetlabs.com&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;123&#39;</span>,
+  <span class="ruby-identifier">proto</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;tcp&#39;</span>,
+  <span class="ruby-identifier">source</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;puppetlabs.com&#39;</span>,
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;accept&#39;</span>
+}
+</pre>
+
+<p>The &#39;log_level&#39; parameter now supports using log level names, such
+as &#39;warn&#39;, &#39;debug&#39;, and &#39;panic&#39;:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&#39;499 logging&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;123&#39;</span>,
+  <span class="ruby-identifier">proto</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;udp&#39;</span>,
+  <span class="ruby-identifier">log_level</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;debug&#39;</span>,
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;drop&#39;</span>
+}
+</pre>
+
+<p>Additional changes include iptables and ip6tables version facts, general
+whitespace cleanup, and adding additional unit tests.</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(#10957) add iptables_version and ip6tables_version facts</p>
+</li><li>
+<p>(#11093) Improve log_level property so it converts names to numbers</p>
+</li><li>
+<p>(#10723) Munge hostnames and IPs to IPs with CIDR</p>
+</li><li>
+<p>(#10718) Add owner-match support</p>
+</li><li>
+<p>(#10997) Add fixtures for ipencap</p>
+</li><li>
+<p>(#11034) Whitespace cleanup</p>
+</li><li>
+<p>(#10690) add port property support to ip6tables</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.0.3+-+2011%2F11%2F12">0.0.3 - 2011/11/12<span><a href="#label-0.0.3+-+2011%2F11%2F12">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release introduces a new parameter &#39;port&#39; which allows you to
+set both source and destination ports for a match:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&quot;500 allow NTP requests&quot;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">port</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;123&quot;</span>,
+  <span class="ruby-identifier">proto</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;udp&quot;</span>,
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accept&quot;</span>,
+}
+</pre>
+
+<p>We also have the limit parameter finally working:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&quot;500 limit HTTP requests&quot;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">dport</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">80</span>,
+  <span class="ruby-identifier">proto</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tcp</span>,
+  <span class="ruby-identifier">limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;60/sec&quot;</span>,
+  <span class="ruby-identifier">burst</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">30</span>,
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">accept</span>,
+}
+</pre>
+
+<p>State ordering has been fixed now, and more characters are allowed in the
+namevar:</p>
+<ul><li>
+<p>Alphabetical</p>
+</li><li>
+<p>Numbers</p>
+</li><li>
+<p>Punctuation</p>
+</li><li>
+<p>Whitespace</p>
+</li></ul>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(#10693) Ensure -m limit is added for iptables when using &#39;limit&#39;
+param</p>
+</li><li>
+<p>(#10690) Create new port property</p>
+</li><li>
+<p>(#10700) allow additional characters in comment string</p>
+</li><li>
+<p>(#9082) Sort iptables –state option values internally to keep it consistent
+across runs</p>
+</li><li>
+<p>(#10324) Remove extraneous whitespace from iptables rule line in spec tests</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.0.2+-+2011%2F10%2F26">0.0.2 - 2011/10/26<span><a href="#label-0.0.2+-+2011%2F10%2F26">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is largely a maintanence and cleanup release, but includes the ability
+to specify ranges of ports in the sport/dport parameter:</p>
+
+<pre class="ruby"><span class="ruby-identifier">firewall</span> { <span class="ruby-string">&quot;500 allow port range&quot;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">dport</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;3000-3030&quot;</span>,<span class="ruby-string">&quot;5000-5050&quot;</span>],
+  <span class="ruby-identifier">sport</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;1024-65535&quot;</span>],
+  <span class="ruby-identifier">action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accept&quot;</span>,
+}
+</pre>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(#10295) Work around bug #4248 whereby the puppet/util paths are not being
+loaded correctly on the puppetmaster</p>
+</li><li>
+<p>(#10002) Change to dport and sport to handle ranges, and fix handling of
+name to name to port</p>
+</li><li>
+<p>(#10263) Fix tests on Puppet 2.6.x</p>
+</li><li>
+<p>(#10163) Cleanup some of the inline documentation and <a
+href="../apache/README_md.html">README</a> file to align with general forge
+usage</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h3 id="label-0.0.1+-+2011%2F10%2F18">0.0.1 - 2011/10/18<span><a href="#label-0.0.1+-+2011%2F10%2F18">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Initial release.</p>
+
+<h5 id="label-Changes">Changes<span><a href="#label-Changes">&para;</a> <a href="#documentation">&uarr;</a></span></h5>
+<ul><li>
+<p>(#9362) Create action property and perform transformation for accept, drop,
+reject value for iptables jump parameter</p>
+</li><li>
+<p>(#10088) Provide a customised version of CONTRIBUTING.md</p>
+</li><li>
+<p>(#10026) Re-arrange provider and type spec files to align with Puppet</p>
+</li><li>
+<p>(#10026) Add aliases for test,specs,tests to <a
+href="../apache/Rakefile.html">Rakefile</a> and provide -T as default</p>
+</li><li>
+<p>(#9439) fix parsing and deleting existing rules</p>
+</li><li>
+<p>(#9583) Fix provider detection for gentoo and unsupported linuxes for the
+iptables provider</p>
+</li><li>
+<p>(#9576) Stub provider so it works properly outside of Linux</p>
+</li><li>
+<p>(#9576) Align spec framework with Puppet core</p>
+</li><li>
+<p>and lots of other earlier development tasks …</p>
+</li></ul>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

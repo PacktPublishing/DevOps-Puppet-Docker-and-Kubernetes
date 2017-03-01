@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-apt">apt</a>
+      <li><a href="#label-Overview">Overview</a>
+      <li><a href="#label-Module+Description">Module Description</a>
+      <li><a href="#label-Setup">Setup</a>
+      <li><a href="#label-What+apt+affects%3A">What apt affects:</a>
+      <li><a href="#label-Beginning+with+apt">Beginning with apt</a>
+      <li><a href="#label-Usage">Usage</a>
+      <li><a href="#label-Reference">Reference</a>
+      <li><a href="#label-Classes">Classes</a>
+      <li><a href="#label-Types">Types</a>
+      <li><a href="#label-Defined+Types">Defined Types</a>
+      <li><a href="#label-Facts">Facts</a>
+      <li><a href="#label-Hiera+example">Hiera example</a>
+      <li><a href="#label-Parameters">Parameters</a>
+      <li><a href="#label-apt">apt</a>
+      <li><a href="#label-apt%3A%3Aunattended_upgrades">apt::unattended_upgrades</a>
+      <li><a href="#label-Testing">Testing</a>
+      <li><a href="#label-Example+Test">Example Test</a>
+      <li><a href="#label-Limitations">Limitations</a>
+      <li><a href="#label-Development">Development</a>
+      <li><a href="#label-License">License</a>
+      <li><a href="#label-Contributors">Contributors</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-apt">apt<span><a href="#label-apt">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p><a
+href="https://travis-ci.org/puppetlabs/puppetlabs-apt.png?branch=master">{Build
+Status</a>]</p>
+
+<h2 id="label-Overview">Overview<span><a href="#label-Overview">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>The apt module provides a simple interface for managing Apt source, key,
+and definitions with Puppet.</p>
+
+<h2 id="label-Module+Description">Module Description<span><a href="#label-Module+Description">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>The apt module automates obtaining and installing software packages on *nix
+systems.</p>
+
+<p><strong>Note</strong>: While this module allows the use of short keys,
+<strong>we urge you NOT to use short keys</strong>, as they pose a serious
+security issue by opening you up to collision attacks.</p>
+
+<h2 id="label-Setup">Setup<span><a href="#label-Setup">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-What+apt+affects%3A">What apt affects:<span><a href="#label-What+apt+affects%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p>Package/service/configuration files for Apt</p>
+</li><li>
+<p>Your system&#39;s <code>sources.list</code> file and
+<code>sources.list.d</code> directory</p>
+</li><li>
+<p>System repositories</p>
+</li><li>
+<p>Authentication keys</p>
+</li></ul>
+
+<p><strong>Note</strong>: Setting the apt module&#39;s
+<code>purge_sources_list</code> and <code>purge_sources_list_d</code>
+parameters to &#39;true&#39; will <strong>destroy</strong> any existing
+content that was not declared with Puppet. The default for these parameters
+is &#39;false&#39;.</p>
+
+<h3 id="label-Beginning+with+apt">Beginning with apt<span><a href="#label-Beginning+with+apt">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>To begin using the apt module with default parameters, declare the class
+with <code>include apt</code>.</p>
+
+<p>Any Puppet code that uses anything from the apt module requires that the
+core apt class be declared.</p>
+
+<h2 id="label-Usage">Usage<span><a href="#label-Usage">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Using the apt module consists predominantly of declaring classes and
+defined types that provide the desired functionality and features. This
+module provides common resources and options that are shared by the various
+defined types in the apt module, so you <strong>must always</strong>
+include this class in your manifests.</p>
+
+<pre class="ruby"><span class="ruby-identifier">class</span> { <span class="ruby-string">&#39;apt&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">always_apt_update</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>,
+  <span class="ruby-identifier">apt_update_frequency</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">undef</span>,
+  <span class="ruby-identifier">disable_keys</span>         =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">undef</span>,
+  <span class="ruby-identifier">proxy_host</span>           =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>,
+  <span class="ruby-identifier">proxy_port</span>           =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;8080&#39;</span>,
+  <span class="ruby-identifier">purge_sources_list</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>,
+  <span class="ruby-identifier">purge_sources_list_d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>,
+  <span class="ruby-identifier">purge_preferences_d</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>,
+  <span class="ruby-identifier">update_timeout</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">undef</span>,
+  <span class="ruby-identifier">fancy_progress</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">undef</span>
+}
+</pre>
+
+<h2 id="label-Reference">Reference<span><a href="#label-Reference">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Classes">Classes<span><a href="#label-Classes">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p><code>apt</code>: Main class, provides common resources and options. Allows
+Puppet to manage your system&#39;s sources.list file and sources.list.d
+directory, but it does its best to respect existing content.</p>
+</li></ul>
+
+<p>If you declare your apt class with <code>purge_sources_list</code>,
+<code>purge_sources_list_d</code>, <code>purge_preferences</code> and
+<code>purge_preferences_d</code> set to &#39;true&#39;, Puppet will
+unapologetically purge any existing content it finds that wasn&#39;t
+declared with Puppet.</p>
+<ul><li>
+<p><code>apt::backports</code>: This class adds the necessary components to
+get backports for Ubuntu and Debian. The release name defaults to
+<code>$lsbdistcodename</code>. Setting this manually can cause undefined
+and potentially serious behavior.</p>
+</li></ul>
+
+<p>By default, this class drops a pin-file for backports, pinning it to a
+priority of 200. This is lower than the normal Debian archive, which gets a
+priority of 500 to ensure that packages with <code>ensure =&gt;
+latest</code> don&#39;t get magically upgraded from backports without your
+explicit permission.</p>
+
+<p>If you raise the priority through the <code>pin_priority</code> parameter
+to 500—identical to the rest of the Debian mirrors—normal policy goes into
+effect, and Apt installs or upgrades to the newest version. This means that
+if a package is available from backports, it and its dependencies are
+pulled in from backports unless you explicitly set the <code>ensure</code>
+attribute of the <code>package</code> resource to
+<code>installed</code>/<code>present</code> or a specific version.</p>
+<ul><li>
+<p><code>apt::params</code>: Sets defaults for the apt module parameters.</p>
+</li><li>
+<p><code>apt::release</code>: Sets the default Apt release. This class is
+particularly useful when using repositories that are unstable in Ubuntu,
+such as Debian.</p>
+</li></ul>
+
+<p><code>   class { &#39;apt::release&#39;:     release_id =&gt;
+&#39;precise&#39;,   } </code></p>
+<ul><li>
+<p><code>apt::unattended_updates</code>: This class manages the
+unattended-upgrades package and related configuration files for Ubuntu and
+Debian systems. You can configure the class to automatically upgrade all
+new package releases or just security releases.</p>
+</li></ul>
+
+<p><code>   apt::unattended_upgrades {     origins             =
+$::apt::params::origins,     blacklist           = [],     update          
+= &#39;1&#39;,     download            = &#39;1&#39;,     upgrade          
+= &#39;1&#39;,     autoclean           = &#39;7&#39;,   } </code></p>
+<ul><li>
+<p><code>apt::update</code>: Runs <code>apt-get update</code>, updating the
+list of available packages and their versions without installing or
+upgrading any packages. The update runs on the first Puppet run after you
+include the class, then whenever <code>notify  =&gt;
+Exec['apt_update']</code> occurs; i.e., whenever config files get updated
+or other relevant changes occur. If you set the
+<code>always_apt_update</code> parameter to &#39;true&#39;, the update runs
+on every Puppet run.</p>
+</li></ul>
+
+<h3 id="label-Types">Types<span><a href="#label-Types">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p><code>apt_key</code></p>
+</li></ul>
+
+<p>A native Puppet type and provider for managing GPG keys for Apt is provided
+by this module.</p>
+
+<p><code>   apt_key { &#39;puppetlabs&#39;:     ensure =&gt;
+&#39;present&#39;,     id     =&gt; &#39;1054B7A24BD6EC30&#39;,   } </code></p>
+
+<p>You can additionally set the following attributes:</p>
+<ul><li>
+<p><code>source</code>: HTTP, HTTPS or FTP location of a GPG key or path to a
+file on the target host.</p>
+</li><li>
+<p><code>content</code>: Instead of pointing to a file, pass the key in as a
+string.</p>
+</li><li>
+<p><code>server</code>: The GPG key server to use. It defaults to
+<em>keyserver.ubuntu.com</em>.</p>
+</li><li>
+<p><code>keyserver_options</code>: Additional options to pass to
+<code>--keyserver</code>.</p>
+</li></ul>
+
+<p>Because apt_key is a native type, you can use it and query for it with
+MCollective.</p>
+
+<h3 id="label-Defined+Types">Defined Types<span><a href="#label-Defined+Types">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p><code>apt::builddep</code>: Installs the build dependencies of a specified
+package.</p>
+</li></ul>
+
+<p><code>apt::builddep { &#39;glusterfs-server&#39;: }</code></p>
+<ul><li>
+<p><code>apt::conf</code>: Specifies a custom configuration file. The priority
+defaults to 50, but you can set the priority parameter to load the file
+earlier or later. The content parameter passes specified content, if any,
+into the file resource.</p>
+</li><li>
+<p><code>apt::hold</code>: Holds a specific version of a package. You can hold
+a package to a full version or a partial version.</p>
+</li></ul>
+
+<p>To set a package&#39;s ensure attribute to &#39;latest&#39; but get the
+version specified by <code>apt::hold</code>:</p>
+
+<p><code>   apt::hold { &#39;vim&#39;:     version =&gt;
+&#39;2:7.3.547-7&#39;,   } </code></p>
+
+<p>Alternatively, if you want to hold your package at a partial version, you
+can use a wildcard. For example, you can hold Vim at version 7.3.*:</p>
+
+<p><code>   apt::hold { &#39;vim&#39;:     version =&gt; &#39;2:7.3.*&#39;,  
+} </code></p>
+<ul><li>
+<p><code>apt::force</code>: Forces a package to be installed from a specific
+release. This is particularly useful when using repositories that are
+unstable in Ubuntu, such as Debian.</p>
+</li></ul>
+
+<p><code>   apt::force { &#39;glusterfs-server&#39;:     release     =&gt;
+&#39;unstable&#39;,     version     =&gt; &#39;3.0.3&#39;,     cfg_files  
+=&gt; &#39;unchanged&#39;,     cfg_missing =&gt; true,     require =&gt;
+Apt::Source['debian_unstable'],   } </code></p>
+
+<p>Valid values for <code>cfg_files</code> are:  * &#39;new&#39;: Overwrites
+all existing configuration files with newer ones.  * &#39;old&#39;: Forces
+usage of all old files.  * &#39;unchanged: Updates only unchanged config
+files.  * &#39;none&#39;: Provides backward-compatibility with existing
+Puppet manifests.</p>
+
+<p>Valid values for <code>cfg_missing</code> are &#39;true&#39;,
+&#39;false&#39;. Setting this to &#39;false&#39; provides backward
+compatability; setting it to &#39;true&#39; checks for and installs missing
+configuration files for the selected package.</p>
+<ul><li>
+<p><code>apt::key</code>: Adds a key to the list of keys used by Apt to
+authenticate packages. This type uses the aforementioned
+<code>apt_key</code> native type. As such, it no longer requires the
+<code>wget</code> command on which the old implementation depended.</p>
+</li></ul>
+
+<p>“`  apt::key { &#39;puppetlabs&#39;:  key =&gt; &#39;1054B7A24BD6EC30&#39;,
+key_server =&gt; &#39;pgp.mit.edu&#39;,  }</p>
+
+<p>apt::key { &#39;jenkins&#39;:  key =&gt; &#39;9B7D32F2D50582E6&#39;, 
+key_source =&gt; &#39;<a
+href="http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key">pkg.jenkins-ci.org/debian/jenkins-ci.org.key</a>&#39;,
+}  “`</p>
+<ul><li>
+<p><code>apt::pin</code>: Defined type that adds an Apt pin for a certain
+release.</p>
+</li></ul>
+
+<p><code>   apt::pin { &#39;karmic&#39;: priority =&gt; 700 }   apt::pin {
+&#39;karmic-updates&#39;: priority =&gt; 700 }   apt::pin {
+&#39;karmic-security&#39;: priority =&gt; 700 } </code></p>
+
+<p>Note that you can also specify more complex pins using distribution
+properties.</p>
+
+<p><code>   apt::pin { &#39;stable&#39;:     priority        =&gt; -10,    
+originator      =&gt; &#39;Debian&#39;,     release_version =&gt;
+&#39;3.0&#39;,     component       =&gt; &#39;main&#39;,     label         
+=&gt; &#39;Debian&#39;   } </code></p>
+
+<p>If you want to pin a number of packages, you can specify the packages as a
+space-delimited string using the <code>packages</code> attribute, or you
+can pass in an array of package names.</p>
+<ul><li>
+<p><code>apt::ppa</code>: Adds a PPA repository using
+<code>add-apt-repository</code>. For example, <code>apt::ppa {
+&#39;ppa:drizzle-developers/ppa&#39;: }</code>.</p>
+</li><li>
+<p><code>apt::source</code>: Adds an Apt source to
+<code>/etc/apt/sources.list.d/</code>. For example:</p>
+</li></ul>
+
+<p><code>   apt::source { &#39;debian_unstable&#39;:     comment          
+=&gt; &#39;This is the iWeb Debian unstable mirror&#39;,     location      
+=&gt; &#39;http://debian.mirror.iweb.ca/debian/&#39;,     release          
+=&gt; &#39;unstable&#39;,     repos             =&gt; &#39;main contrib
+non-free&#39;,     required_packages =&gt; &#39;debian-keyring
+debian-archive-keyring&#39;,     key               =&gt;
+&#39;8B48AD6246925553&#39;,     key_server        =&gt;
+&#39;subkeys.pgp.net&#39;,     pin               =&gt; &#39;-10&#39;,    
+include_src       =&gt; true,     include_deb       =&gt; true   } </code></p>
+
+<p>For example, to configure your system so the source is the Puppet Labs Apt
+repository:</p>
+
+<p><code>   apt::source { &#39;puppetlabs&#39;:     location   =&gt;
+&#39;http://apt.puppetlabs.com&#39;,     repos      =&gt; &#39;main&#39;,  
+key        =&gt; &#39;1054B7A24BD6EC30&#39;,     key_server =&gt;
+&#39;pgp.mit.edu&#39;,     } </code></p>
+
+<h3 id="label-Facts">Facts<span><a href="#label-Facts">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>The apt module includes a few facts to describe the state of the Apt
+system:</p>
+<ul><li>
+<p><code>apt_updates</code>: The number of updates available on the system</p>
+</li><li>
+<p><code>apt_security_updates</code>: The number of updates which are security
+updates</p>
+</li><li>
+<p><code>apt_package_updates</code>: The package names that are available for
+update. In Facter 2.0 and later, this will be a list type; in earlier
+versions, it is a comma-delimited string.</p>
+</li><li>
+<p><code>apt_update_last_success</code>: The date, in epochtime, of the most
+recent successful <code>apt-get update</code> run. This is determined by
+reading the mtime of /var/lib/apt/periodic/update-success-stamp.</p>
+</li></ul>
+
+<p><strong>Note:</strong> The facts depend on &#39;update-notifier&#39; being
+installed on your system. Though this is a GNOME daemon only the support
+files are needed so the package &#39;update-notifier-common&#39; is enough
+to enable this functionality.</p>
+
+<h4 id="label-Hiera+example">Hiera example<span><a href="#label-Hiera+example">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<pre>&lt;pre&gt;
+apt::sources:
+  &#39;debian_unstable&#39;:
+    location: &#39;http://debian.mirror.iweb.ca/debian/&#39;
+    release: &#39;unstable&#39;
+    repos: &#39;main contrib non-free&#39;
+    required_packages: &#39;debian-keyring debian-archive-keyring&#39;
+    key: &#39;9AA38DCD55BE302B&#39;
+    key_server: &#39;subkeys.pgp.net&#39;
+    pin: &#39;-10&#39;
+    include_src: &#39;true&#39;
+    include_deb: &#39;true&#39;
+
+  &#39;puppetlabs&#39;:
+    location: &#39;http://apt.puppetlabs.com&#39;
+    repos: &#39;main&#39;
+    key: &#39;1054B7A24BD6EC30&#39;
+    key_server: &#39;pgp.mit.edu&#39;
+&lt;/pre&gt;</pre>
+
+<h3 id="label-Parameters">Parameters<span><a href="#label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<h4 id="label-apt">apt<span><a href="#label-apt">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p><code>always_apt_update</code>: Set to &#39;true&#39; to update Apt on
+every run. This setting is intended for development environments where
+package updates are frequent. Defaults to &#39;false&#39;.</p>
+</li><li>
+<p><code>apt_update_frequency</code>: Sets the run frequency for <code>apt-get
+update</code>. Defaults to &#39;reluctantly&#39;. Accepts the following
+values:</p>
+</li><li>
+<p>&#39;always&#39;: Runs update at every Puppet run.</p>
+</li><li>
+<p>&#39;daily&#39;: Runs update daily; that is, <code>apt-get update</code>
+runs if the value of <code>apt_update_last_success</code> is less than
+current epoch time - 86400. If the exec resource <code>apt_update</code> is
+notified, <code>apt-get update</code> runs regardless of this value.</p>
+</li><li>
+<p>&#39;weekly&#39;: Runs update weekly; that is, <code>apt-get update</code>
+runs if the value of <code>apt_update_last_success</code> is less than
+current epoch time - 604800. If the exec resource <code>apt_update</code>
+is notified, <code>apt-get update</code> runs regardless of this value.</p>
+</li><li>
+<p>&#39;reluctantly&#39;: Only runs <code>apt-get update</code> if the exec
+resource <code>apt_update</code> is notified. This is the default setting.</p>
+</li><li>
+<p><code>disable_keys</code>: Disables the requirement for all packages to be
+signed.</p>
+</li><li>
+<p><code>proxy_host</code>: Configures a proxy host and stores the
+configuration in /etc/apt/apt.conf.d/01proxy.</p>
+</li><li>
+<p><code>proxy_port</code>: Configures a proxy port and stores the
+configuration in /etc/apt/apt.conf.d/01proxy.</p>
+</li><li>
+<p><code>purge_sources_list</code>: If set to &#39;true&#39;, Puppet purges
+all unmanaged entries from sources.list. Accepts &#39;true&#39; or
+&#39;false&#39;. Defaults to &#39;false&#39;.</p>
+</li><li>
+<p><code>purge_sources_list_d</code>: If set to &#39;true&#39;, Puppet purges
+all unmanaged entries from sources.list.d. Accepts &#39;true&#39; or
+&#39;false&#39;. Defaults to &#39;false&#39;.</p>
+</li><li>
+<p><code>update_timeout</code>: Overrides the exec timeout in seconds for
+<code>apt-get update</code>. Defaults to exec default (300).</p>
+</li><li>
+<p><code>update_tries</code>: Sets how many times to attempt running
+<code>apt-get update</code>. Use this to work around transient DNS and HTTP
+errors. By default, the command runs only once.</p>
+</li><li>
+<p><code>sources</code>: Passes a hash to create_resource to make new
+<code>apt::source</code> resources.</p>
+</li><li>
+<p><code>fancy_progress</code>: Enables fancy progress bars for apt. Accepts
+&#39;true&#39;, &#39;false&#39;. Defaults to &#39;false&#39;.</p>
+</li></ul>
+
+<h4 id="label-apt%3A%3Aunattended_upgrades">apt::unattended_upgrades<span><a href="#label-apt%3A%3Aunattended_upgrades">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p><code>origins</code>: The repositories from which to automatically upgrade
+included packages.</p>
+</li><li>
+<p><code>blacklist</code>: A list of packages to <strong>not</strong>
+automatically upgrade.</p>
+</li><li>
+<p><code>update</code>: How often, in days, to run <code>apt-get
+update</code>.</p>
+</li><li>
+<p><code>download</code>: How often, in days, to run <code>apt-get upgrade
+--download-only</code>.</p>
+</li><li>
+<p><code>upgrade</code>: How often, in days, to upgrade packages included in
+the origins list.</p>
+</li><li>
+<p><code>autoclean</code>: How often, in days, to run <code>apt-get
+autoclean</code>.</p>
+</li><li>
+<p><code>randomsleep</code>: How long, in seconds, to randomly wait before
+applying upgrades.</p>
+</li></ul>
+
+<h3 id="label-Testing">Testing<span><a href="#label-Testing">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>The apt module is mostly a collection of defined resource types, which
+provide reusable logic for managing Apt. It provides smoke tests for
+testing functionality on a target system, as well as spec tests for
+checking a compiled catalog against an expected set of resources.</p>
+
+<h4 id="label-Example+Test">Example Test<span><a href="#label-Example+Test">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>This test sets up a Puppet Labs Apt repository. Start by creating a new
+smoke test, called puppetlabs-apt.pp, in the apt module&#39;s test folder.
+In this test, declare a single resource representing the Puppet Labs Apt
+source and GPG key:</p>
+
+<pre class="ruby"><span class="ruby-identifier">apt</span><span class="ruby-operator">::</span><span class="ruby-identifier">source</span> { <span class="ruby-string">&#39;puppetlabs&#39;</span><span class="ruby-operator">:</span>
+  <span class="ruby-identifier">location</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;http://apt.puppetlabs.com&#39;</span>,
+  <span class="ruby-identifier">repos</span>      =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;main&#39;</span>,
+  <span class="ruby-identifier">key</span>        =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;1054B7A24BD6EC30&#39;</span>,
+  <span class="ruby-identifier">key_server</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;pgp.mit.edu&#39;</span>,
+}
+</pre>
+
+<p>This resource creates an Apt source named puppetlabs and gives Puppet
+information about the repository&#39;s location and the key used to sign
+its packages. Puppet leverages Facter to determine the appropriate release,
+but you can set this directly by adding the release type.</p>
+
+<p>Check your smoke test for syntax errors:</p>
+
+<p><code>$ puppet parser validate tests/puppetlabs-apt.pp</code></p>
+
+<p>If you receive no output from that command, it means nothing is wrong.
+Then, apply the code:</p>
+
+<pre>$ puppet apply --verbose tests/puppetlabs-apt.pp
+notice: /Stage[main]//Apt::Source[puppetlabs]/File[puppetlabs.list]/ensure: defined content as &#39;{md5}3be1da4923fb910f1102a233b77e982e&#39;
+info: /Stage[main]//Apt::Source[puppetlabs]/File[puppetlabs.list]: Scheduling refresh of Exec[puppetlabs apt update]
+notice: /Stage[main]//Apt::Source[puppetlabs]/Exec[puppetlabs apt update]: Triggered &#39;refresh&#39; from 1 events&gt;</pre>
+
+<p>The above example uses a smoke test to lay out a resource declaration and
+apply it on your system. In production, you might want to declare your Apt
+sources inside the classes where they’re needed.</p>
+
+<h2 id="label-Limitations">Limitations<span><a href="#label-Limitations">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>This module should work across all versions of Debian/Ubuntu and support
+all major Apt repository management features.</p>
+
+<h2 id="label-Development">Development<span><a href="#label-Development">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Puppet Labs modules on the Puppet Forge are open projects, and community
+contributions are essential for keeping them great. We can’t access the
+huge number of platforms and myriad of hardware, software, and deployment
+configurations that Puppet is intended to serve.</p>
+
+<p>We want to keep it as easy as possible to contribute changes so that our
+modules work in your environment. There are a few guidelines that we need
+contributors to follow so that we can have a chance of keeping on top of
+things.</p>
+
+<p>You can read the complete module contribution guide <a
+href="http://projects.puppetlabs.com/projects/module-site/wiki/Module_contributing">on
+the Puppet Labs wiki.</a></p>
+
+<h2 id="label-License">License<span><a href="#label-License">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>The original code for this module comes from Evolving Web and was licensed
+under the MIT license. Code added since the fork of this module is licensed
+under the Apache 2.0 License like the rest of the Puppet Labs products.</p>
+
+<p>The <a href="../apache/LICENSE.html">LICENSE</a> contains both licenses.</p>
+
+<h2 id="label-Contributors">Contributors<span><a href="#label-Contributors">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>A lot of great people have contributed to this module. A somewhat current
+list follows:</p>
+<ul><li>
+<p>Ben Godfrey <a
+href="mailto:ben.godfrey@wonga.com">ben.godfrey@wonga.com</a></p>
+</li><li>
+<p>Branan Purvine-Riley <a
+href="mailto:branan@puppetlabs.com">branan@puppetlabs.com</a></p>
+</li><li>
+<p>Christian G. Warden <a
+href="mailto:cwarden@xerus.org">cwarden@xerus.org</a></p>
+</li><li>
+<p>Dan Bode <a href="mailto:bodepd@gmail.com">bodepd@gmail.com</a> <a
+href="mailto:dan@puppetlabs.com">dan@puppetlabs.com</a></p>
+</li><li>
+<p>Daniel Tremblay <a
+href="mailto:github@danieltremblay.ca">github@danieltremblay.ca</a></p>
+</li><li>
+<p>Garrett Honeycutt <a
+href="mailto:github@garretthoneycutt.com">github@garretthoneycutt.com</a></p>
+</li><li>
+<p>Jeff Wallace <a href="mailto:jeff@evolvingweb.ca">jeff@evolvingweb.ca</a>
+<a href="mailto:jeff@tjwallace.ca">jeff@tjwallace.ca</a></p>
+</li><li>
+<p>Ken Barber <a href="mailto:ken@bob.sh">ken@bob.sh</a></p>
+</li><li>
+<p>Matthaus Litteken <a
+href="mailto:matthaus@puppetlabs.com">matthaus@puppetlabs.com</a> <a
+href="mailto:mlitteken@gmail.com">mlitteken@gmail.com</a></p>
+</li><li>
+<p>Matthias Pigulla <a href="mailto:mp@webfactory.de">mp@webfactory.de</a></p>
+</li><li>
+<p>Monty Taylor <a href="mailto:mordred@inaugust.com">mordred@inaugust.com</a></p>
+</li><li>
+<p>Peter Drake <a
+href="mailto:pdrake@allplayers.com">pdrake@allplayers.com</a></p>
+</li><li>
+<p>Reid Vandewiele <a href="mailto:marut@cat.pdx.edu">marut@cat.pdx.edu</a></p>
+</li><li>
+<p>Robert Navarro <a href="mailto:rnavarro@phiivo.com">rnavarro@phiivo.com</a></p>
+</li><li>
+<p>Ryan Coleman <a href="mailto:ryan@puppetlabs.com">ryan@puppetlabs.com</a></p>
+</li><li>
+<p>Scott McLeod <a
+href="mailto:scott.mcleod@theice.com">scott.mcleod@theice.com</a></p>
+</li><li>
+<p>Spencer Krum <a
+href="mailto:spencer@puppetlabs.com">spencer@puppetlabs.com</a></p>
+</li><li>
+<p>William Van Hevelingen <a
+href="mailto:blkperl@cat.pdx.edu">blkperl@cat.pdx.edu</a> <a
+href="mailto:wvan13@gmail.com">wvan13@gmail.com</a></p>
+</li><li>
+<p>Zach Leslie <a href="mailto:zach@puppetlabs.com">zach@puppetlabs.com</a></p>
+</li><li>
+<p>Daniele Sluijters <a
+href="mailto:github@daenney.net">github@daenney.net</a></p>
+</li><li>
+<p>Daniel Paulus <a href="mailto:daniel@inuits.eu">daniel@inuits.eu</a></p>
+</li><li>
+<p>Wolf Noble <a href="mailto:wolf@wolfspyre.com">wolf@wolfspyre.com</a></p>
+</li></ul>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

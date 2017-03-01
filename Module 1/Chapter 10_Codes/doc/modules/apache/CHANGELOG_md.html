@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>CHANGELOG - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-2014-07-15+-+Supported+Release+1.1.1">2014-07-15 - Supported Release 1.1.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-2014-04-14+Supported+Release+1.1.0">2014-04-14 Supported Release 1.1.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-03-04+Supported+Release+1.0.1">2014-03-04 Supported Release 1.0.1</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-03-04+Supported+Release+1.0.0">2014-03-04 Supported Release 1.0.0</a>
+      <li><a href="#label-Summary">Summary</a>
+      <li><a href="#label-Features">Features</a>
+      <li><a href="#label-Bugfixes">Bugfixes</a>
+      <li><a href="#label-Known+Bugs">Known Bugs</a>
+      <li><a href="#label-2014-01-31+Release+0.11.0">2014-01-31 Release 0.11.0</a>
+      <li><a href="#label-Summary%3A">Summary:</a>
+      <li><a href="#label-Backwards-incompatible+Changes%3A">Backwards-incompatible Changes:</a>
+      <li><a href="#label-Features%3A">Features:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-12-05+Release+0.10.0">2013-12-05 Release 0.10.0</a>
+      <li><a href="#label-Summary%3A">Summary:</a>
+      <li><a href="#label-Features%3A">Features:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-09-06+Release+0.9.0">2013-09-06 Release 0.9.0</a>
+      <li><a href="#label-Summary%3A">Summary:</a>
+      <li><a href="#label-Backwards-incompatible+Changes%3A">Backwards-incompatible Changes:</a>
+      <li><a href="#label-Features%3A">Features:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-07-26+Release+0.8.1">2013-07-26 Release 0.8.1</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-07-16+Release+0.8.0">2013-07-16 Release 0.8.0</a>
+      <li><a href="#label-Features%3A">Features:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-07-09+Release+0.7.0">2013-07-09 Release 0.7.0</a>
+      <li><a href="#label-Changes%3A">Changes:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2013-03-2+Release+0.6.0">2013-03-2 Release 0.6.0</a>
+      <li><a href="#label-2012-08-24+Release+0.4.0">2012-08-24 Release 0.4.0</a>
+      <li><a href="#label-Changes%3A">Changes:</a>
+      <li><a href="#label-Bugfixes%3A">Bugfixes:</a>
+      <li><a href="#label-2012-05-08+Puppet+Labs+mailto%3Ainfo%40puppetlabs.com+-+0.0.4">2012-05-08 Puppet Labs <a href="mailto:info@puppetlabs.com">info@puppetlabs.com</a> - 0.0.4</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h2 id="label-2014-07-15+-+Supported+Release+1.1.1">2014-07-15 - Supported Release 1.1.1<span><a href="#label-2014-07-15+-+Supported+Release+1.1.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release merely updates metadata.json so the module can be uninstalled
+and upgraded via the puppet module command.</p>
+
+<h2 id="label-2014-04-14+Supported+Release+1.1.0">2014-04-14 Supported Release 1.1.0<span><a href="#label-2014-04-14+Supported+Release+1.1.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release primarily focuses on extending the httpd 2.4 support, tested
+through adding RHEL7 and Ubuntu 14.04 support. It also includes Passenger 4
+support, as well as several new modules and important bugfixes.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add support for RHEL7 and Ubuntu 14.04</p>
+</li><li>
+<p>More complete apache24 support</p>
+</li><li>
+<p>Passenger 4 support</p>
+</li><li>
+<p>Add support for max_keepalive_requests and log_formats parameters</p>
+</li><li>
+<p>Add mod_pagespeed support</p>
+</li><li>
+<p>Add mod_speling support</p>
+</li><li>
+<p>Added several parameters for mod_passenger</p>
+</li><li>
+<p>Added ssl_cipher parameter to apache::mod::ssl</p>
+</li><li>
+<p>Improved examples in documentation</p>
+</li><li>
+<p>Added docroot_mode, action, and suexec_user_group parameters to
+apache::vhost</p>
+</li><li>
+<p>Add support for custom extensions for mod_php</p>
+</li><li>
+<p>Improve proxy_html support for Debian</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Remove NameVirtualHost directive for apache &gt;= 2.4</p>
+</li><li>
+<p>Order proxy_set option so it doesn&#39;t change between runs</p>
+</li><li>
+<p>Fix inverted SSL compression</p>
+</li><li>
+<p>Fix missing ensure on concat::fragment resources</p>
+</li><li>
+<p>Fix bad dependencies in apache::mod and apache::mod::mime</p>
+</li></ul>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>By default, the version of Apache that ships with Ubuntu 10.04 does not
+work with <code>wsgi_import_script</code>.</p>
+</li><li>
+<p>SLES is unsupported.</p>
+</li></ul>
+
+<h2 id="label-2014-03-04+Supported+Release+1.0.1">2014-03-04 Supported Release 1.0.1<span><a href="#label-2014-03-04+Supported+Release+1.0.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. This release removes a testing symlink that
+can cause trouble on systems where /var is on a seperate filesystem from
+the modulepath.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>By default, the version of Apache that ships with Ubuntu 10.04 does not
+work with <code>wsgi_import_script</code>.</p>
+</li><li>
+<p>SLES is unsupported.</p>
+</li></ul>
+
+<h2 id="label-2014-03-04+Supported+Release+1.0.0">2014-03-04 Supported Release 1.0.0<span><a href="#label-2014-03-04+Supported+Release+1.0.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary">Summary<span><a href="#label-Summary">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This is a supported release. This release introduces Apache 2.4 support for
+Debian and RHEL based osfamilies.</p>
+
+<h4 id="label-Features">Features<span><a href="#label-Features">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add apache24 support</p>
+</li><li>
+<p>Add rewrite_base functionality to rewrites</p>
+</li><li>
+<p>Updated <a href="README_md.html">README</a> documentation</p>
+</li><li>
+<p>Add WSGIApplicationGroup and WSGIImportScript directives</p>
+</li></ul>
+
+<h4 id="label-Bugfixes">Bugfixes<span><a href="#label-Bugfixes">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Replace mutating hashes with merge() for Puppet 3.5</p>
+</li><li>
+<p>Fix WSGI import_script and mod_ssl issues on Lucid</p>
+</li></ul>
+
+<h4 id="label-Known+Bugs">Known Bugs<span><a href="#label-Known+Bugs">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>By default, the version of Apache that ships with Ubuntu 10.04 does not
+work with <code>wsgi_import_script</code>.</p>
+</li><li>
+<p>SLES is unsupported.</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h2 id="label-2014-01-31+Release+0.11.0">2014-01-31 Release 0.11.0<span><a href="#label-2014-01-31+Release+0.11.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary%3A">Summary:<span><a href="#label-Summary%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds preliminary support for Windows compatibility and
+multiple rewrite support.</p>
+
+<h4 id="label-Backwards-incompatible+Changes%3A">Backwards-incompatible Changes:<span><a href="#label-Backwards-incompatible+Changes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>The rewrite_rule parameter is deprecated in favor of the new rewrite
+parameter  and will be removed in a future release.</p>
+</li></ul>
+
+<h4 id="label-Features%3A">Features:<span><a href="#label-Features%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>add Match directive</p>
+</li><li>
+<p>quote paths for windows compatibility</p>
+</li><li>
+<p>add auth_group_file option to README.md</p>
+</li><li>
+<p>allow AuthGroupFile directive for vhosts</p>
+</li><li>
+<p>Support Header directives in vhost context</p>
+</li><li>
+<p>Don&#39;t purge mods-available dir when separate enable dir is used</p>
+</li><li>
+<p>Fix the servername used in log file name</p>
+</li><li>
+<p>Added support for mod_include</p>
+</li><li>
+<p>Remove index parameters.</p>
+</li><li>
+<p>Support environment variable control for CustomLog</p>
+</li><li>
+<p>added redirectmatch support</p>
+</li><li>
+<p>Setting up the ability to do multiple rewrites and conditions.</p>
+</li><li>
+<p>Convert spec tests to beaker.</p>
+</li><li>
+<p>Support php_admin_(flag|value)s</p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>directories are either a Hash or an Array of Hashes</p>
+</li><li>
+<p>Configure Passenger in separate .conf file on RH so PassengerRoot isn&#39;t
+lost</p>
+</li><li>
+<p>(docs) Update list of <code>apache::mod::[name]</code> classes</p>
+</li><li>
+<p>(docs) Fix apache::namevirtualhost example call style</p>
+</li><li>
+<p>Fix $ports_file reference in apache::listen.</p>
+</li><li>
+<p>Fix $ports_file reference in Namevirtualhost.</p>
+</li></ul>
+
+<h2 id="label-2013-12-05+Release+0.10.0">2013-12-05 Release 0.10.0<span><a href="#label-2013-12-05+Release+0.10.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary%3A">Summary:<span><a href="#label-Summary%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds FreeBSD osfamily support and various other improvements
+to some mods.</p>
+
+<h4 id="label-Features%3A">Features:<span><a href="#label-Features%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add suPHP_UserGroup directive to directory context</p>
+</li><li>
+<p>Add support for ScriptAliasMatch directives</p>
+</li><li>
+<p>Set SSLOptions StdEnvVars in server context</p>
+</li><li>
+<p>No implicit &lt;Directory&gt; entry for ScriptAlias path</p>
+</li><li>
+<p>Add support for overriding ErrorDocument</p>
+</li><li>
+<p>Add support for AliasMatch directives</p>
+</li><li>
+<p>Disable default “allow from all” in vhost-directories</p>
+</li><li>
+<p>Add WSGIPythonPath as an optional parameter to mod_wsgi.</p>
+</li><li>
+<p>Add mod_rpaf support</p>
+</li><li>
+<p>Add directives: IndexOptions, IndexOrderDefault</p>
+</li><li>
+<p>Add ability to include additional external configurations in vhost</p>
+</li><li>
+<p>need to use the provider variable not the provider key value from the
+directory hash for matches</p>
+</li><li>
+<p>Support for FreeBSD and few other features</p>
+</li><li>
+<p>Add new params to apache::mod::mime class</p>
+</li><li>
+<p>Allow apache::mod to specify module id and path</p>
+</li><li>
+<p>added $server_root parameter</p>
+</li><li>
+<p>Add Allow and ExtendedStatus support to mod_status</p>
+</li><li>
+<p>Expand vhost/_directories.pp directive support</p>
+</li><li>
+<p>Add initial support for nss module (no directives in vhost template yet)</p>
+</li><li>
+<p>added peruser and event mpms</p>
+</li><li>
+<p>added $service_name parameter</p>
+</li><li>
+<p>add parameter for TraceEnable</p>
+</li><li>
+<p>Make LogLevel configurable for server and vhost</p>
+</li><li>
+<p>Add documentation about $ip</p>
+</li><li>
+<p>Add ability to pass ip (instead of wildcard) in default vhost files</p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Don&#39;t listen on port or set NameVirtualHost for non-existent vhost</p>
+</li><li>
+<p>only apply Directory defaults when provider is a directory</p>
+</li><li>
+<p>Working mod_authnz_ldap support on Debian/Ubuntu</p>
+</li></ul>
+
+<h2 id="label-2013-09-06+Release+0.9.0">2013-09-06 Release 0.9.0<span><a href="#label-2013-09-06+Release+0.9.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="label-Summary%3A">Summary:<span><a href="#label-Summary%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>This release adds more parameters to the base apache class and apache
+defined resource to make the module more flexible. It also adds or enhances
+SuPHP, WSGI, and Passenger mod support, and support for the ITK mpm module.</p>
+
+<h4 id="label-Backwards-incompatible+Changes%3A">Backwards-incompatible Changes:<span><a href="#label-Backwards-incompatible+Changes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Remove many default mods that are not normally needed.</p>
+</li><li>
+<p>Remove <code>rewrite_base</code> <code>apache::vhost</code> parameter; did
+not work anyway.</p>
+</li><li>
+<p>Specify dependencies on stdlib &gt;=2.4.0 (this was already the case, but
+making explicit)</p>
+</li><li>
+<p>Deprecate <code>a2mod</code> in favor of the <code>apache::mod::*</code>
+classes and <code>apache::mod</code> defined resource.</p>
+</li></ul>
+
+<h4 id="label-Features%3A">Features:<span><a href="#label-Features%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p><code>apache</code> class</p>
+</li><li>
+<p>Add <code>httpd_dir</code> parameter to change the location of the
+configuration  files.</p>
+</li><li>
+<p>Add <code>logroot</code> parameter to change the logroot</p>
+</li><li>
+<p>Add <code>ports_file</code> parameter to changes the
+<code>ports.conf</code> file location</p>
+</li><li>
+<p>Add <code>keepalive</code> parameter to enable persistent connections</p>
+</li><li>
+<p>Add <code>keepalive_timeout</code> parameter to change the timeout</p>
+</li><li>
+<p>Update <code>default_mods</code> to be able to take an array of mods to
+enable.</p>
+</li><li>
+<p><code>apache::vhost</code></p>
+</li><li>
+<p>Add <code>wsgi_daemon_process</code>,
+<code>wsgi_daemon_process_options</code>,  <code>wsgi_process_group</code>,
+and <code>wsgi_script_aliases</code> parameters for per-vhost  WSGI
+configuration.</p>
+</li><li>
+<p>Add <code>access_log_syslog</code> parameter to enable syslogging.</p>
+</li><li>
+<p>Add <code>error_log_syslog</code> parameter to enable syslogging of errors.</p>
+</li><li>
+<p>Add <code>directories</code> hash parameter. Please see <a
+href="README_md.html">README</a> for documentation.</p>
+</li><li>
+<p>Add <code>sslproxyengine</code> parameter to enable SSLProxyEngine</p>
+</li><li>
+<p>Add <code>suphp_addhandler</code>, <code>suphp_engine</code>, and
+<code>suphp_configpath</code> for  configuring SuPHP.</p>
+</li><li>
+<p>Add <code>custom_fragment</code> parameter to allow for arbitrary apache 
+configuration injection. (Feature pull requests are prefered over using 
+this, but it is available in a pinch.)</p>
+</li><li>
+<p>Add <code>apache::mod::suphp</code> class for configuring SuPHP.</p>
+</li><li>
+<p>Add <code>apache::mod::itk</code> class for configuring ITK mpm module.</p>
+</li><li>
+<p>Update <code>apache::mod::wsgi</code> class for global WSGI configuration
+with <code>wsgi_socket_prefix</code> and <code>wsgi_python_home</code>
+parameters.</p>
+</li><li>
+<p>Add README.passenger.md to document the <code>apache::mod::passenger</code>
+usage. Added <code>passenger_high_performance</code>,
+<code>passenger_pool_idle_time</code>, <code>passenger_max_requests</code>,
+<code>passenger_stat_throttle_rate</code>, <code>rack_autodetect</code>,
+and <code>rails_autodetect</code> parameters.</p>
+</li><li>
+<p>Separate the httpd service resource into a new <code>apache::service</code>
+class for dependency chaining of <code>Class['apache'] -&gt;
+&lt;resource&gt; ~&gt; Class['apache::service']</code></p>
+</li><li>
+<p>Added <code>apache::mod::proxy_balancer</code> class for
+<code>apache::balancer</code></p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Change dependency to puppetlabs-concat</p>
+</li><li>
+<p>Fix ruby 1.9 bug for <code>a2mod</code></p>
+</li><li>
+<p>Change servername to be <code>$::hostname</code> if there is no
+<code>$::fqdn</code></p>
+</li><li>
+<p>Make <code>/etc/ssl/certs</code> the default ssl certs directory for RedHat
+non-5.</p>
+</li><li>
+<p>Make <code>php</code> the default php package for RedHat non-5.</p>
+</li><li>
+<p>Made <code>aliases</code> able to take a single alias hash instead of
+requiring an array.</p>
+</li></ul>
+
+<h2 id="label-2013-07-26+Release+0.8.1">2013-07-26 Release 0.8.1<span><a href="#label-2013-07-26+Release+0.8.1">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Update <code>apache::mpm_module</code> detection for worker/prefork</p>
+</li><li>
+<p>Update <code>apache::mod::cgi</code> and <code>apache::mod::cgid</code>
+detection for worker/prefork</p>
+</li></ul>
+
+<h2 id="label-2013-07-16+Release+0.8.0">2013-07-16 Release 0.8.0<span><a href="#label-2013-07-16+Release+0.8.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Features%3A">Features:<span><a href="#label-Features%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Add <code>servername</code> parameter to <code>apache</code> class</p>
+</li><li>
+<p>Add <code>proxy_set</code> parameter to <code>apache::balancer</code>
+define</p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix ordering for multiple <code>apache::balancer</code> clusters</p>
+</li><li>
+<p>Fix symlinking for sites-available on Debian-based OSs</p>
+</li><li>
+<p>Fix dependency ordering for recursive confdir management</p>
+</li><li>
+<p>Fix <code>apache::mod::*</code> to notify the service on config change</p>
+</li><li>
+<p>Documentation updates</p>
+</li></ul>
+
+<h2 id="label-2013-07-09+Release+0.7.0">2013-07-09 Release 0.7.0<span><a href="#label-2013-07-09+Release+0.7.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Changes%3A">Changes:<span><a href="#label-Changes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Essentially rewrite the module – too many to list</p>
+</li><li>
+<p><code>apache::vhost</code> has many abilities – see README.md for details</p>
+</li><li>
+<p><code>apache::mod::*</code> classes provide httpd mod-loading capabilities</p>
+</li><li>
+<p><code>apache</code> base class is much more configurable</p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Many. And many more to come</p>
+</li></ul>
+
+<h2 id="label-2013-03-2+Release+0.6.0">2013-03-2 Release 0.6.0<span><a href="#label-2013-03-2+Release+0.6.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>update travis tests (add more supported versions)</p>
+</li><li>
+<p>add access log_parameter</p>
+</li><li>
+<p>make purging of vhost dir configurable</p>
+</li></ul>
+
+<h2 id="label-2012-08-24+Release+0.4.0">2012-08-24 Release 0.4.0<span><a href="#label-2012-08-24+Release+0.4.0">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h4 id="label-Changes%3A">Changes:<span><a href="#label-Changes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p><code>include apache</code> is now required when using
+<code>apache::mod::*</code></p>
+</li></ul>
+
+<h4 id="label-Bugfixes%3A">Bugfixes:<span><a href="#label-Bugfixes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>Fix syntax for validate_re</p>
+</li><li>
+<p>Fix formatting in vhost template</p>
+</li><li>
+<p>Fix spec tests such that they pass</p>
+</li></ul>
+
+<h2 id="label-2012-05-08+Puppet+Labs+mailto%3Ainfo%40puppetlabs.com+-+0.0.4">2012-05-08 Puppet Labs <a href="mailto:info@puppetlabs.com">info@puppetlabs.com</a> - 0.0.4<span><a href="#label-2012-05-08+Puppet+Labs+mailto%3Ainfo%40puppetlabs.com+-+0.0.4">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>e62e362 Fix broken tests for ssl, vhost, vhost::*</p>
+</li><li>
+<p>42c6363 Changes to match style guide and pass puppet-lint without error</p>
+</li><li>
+<p>42bc8ba changed name =&gt; path for file resources in order to name namevar
+by it&#39;s name</p>
+</li><li>
+<p>72e13de One end too much</p>
+</li><li>
+<p>0739641 style guide fixes: &#39;true&#39; &lt;&gt; true, $operatingsystem
+needs to be $::operatingsystem, etc.</p>
+</li><li>
+<p>273f94d fix tests</p>
+</li><li>
+<p>a35ede5 (#13860) Make a2enmod/a2dismo commands optional</p>
+</li><li>
+<p>98d774e (#13860) Autorequire <a href="http://'httpd'">Package</a></p>
+</li><li>
+<p>05fcec5 (#13073) Add missing puppet spec tests</p>
+</li><li>
+<p>541afda (#6899) Remove virtual a2mod definition</p>
+</li><li>
+<p>976cb69 (#13072) Move mod python and wsgi package names to params</p>
+</li><li>
+<p>323915a (#13060) Add .gitignore to repo</p>
+</li><li>
+<p>fdf40af (#13060) Remove pkg directory from source tree</p>
+</li><li>
+<p>fd90015 Add <a href="LICENSE.html">LICENSE</a> file and update the
+ModuleFile</p>
+</li><li>
+<p>d3d0d23 Re-enable local php class</p>
+</li><li>
+<p>d7516c7 Make management of firewalls configurable for vhosts</p>
+</li><li>
+<p>60f83ba Explicitly lookup scope of apache_name in templates.</p>
+</li><li>
+<p>f4d287f (#12581) Add explicit ordering for vdir directory</p>
+</li><li>
+<p>88a2ac6 (#11706) puppetlabs-apache depends on puppetlabs-firewall</p>
+</li><li>
+<p>a776a8b (#11071) Fix to work with latest firewall module</p>
+</li><li>
+<p>2b79e8b (#11070) Add support for Scientific Linux</p>
+</li><li>
+<p>405b3e9 Fix for a2mod</p>
+</li><li>
+<p>57b9048 Commit apache::vhost::redirect Manifest</p>
+</li><li>
+<p>8862d01 Commit apache::vhost::proxy Manifest</p>
+</li><li>
+<p>d5c1fd0 Commit apache::mod::wsgi Manifest</p>
+</li><li>
+<p>a825ac7 Commit apache::mod::python Manifest</p>
+</li><li>
+<p>b77062f Commit Templates</p>
+</li><li>
+<p>9a51b4a Vhost File Declarations</p>
+</li><li>
+<p>6cf7312 Defaults for Parameters</p>
+</li><li>
+<p>6a5b11a Ensure installed</p>
+</li><li>
+<p>f672e46 a2mod fix</p>
+</li><li>
+<p>8a56ee9 add pthon support to apache</p>
+</li></ul>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

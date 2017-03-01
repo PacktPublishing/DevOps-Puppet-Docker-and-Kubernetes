@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>checksums.json - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../modules/apache/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apache/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apache/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apache/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apache/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apache/README_passenger_md.html">README.passenger</a>
+  
+    <li class="file"><a href="../../modules/apache/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apache/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apache/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/apt/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/apt/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/apt/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/apt/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/apt/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/apt/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/apt/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/apt/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/concat/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/concat/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/concat/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/concat/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/concat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/concat/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/concat/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/firewall/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/firewall/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/firewall/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/firewall/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/firewall/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/firewall/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/firewall/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/heartbeat/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/module_data/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/module_data/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/mysql/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/mysql/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/mysql/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/mysql/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/mysql/TODO.html">TODO</a>
+  
+    <li class="file"><a href="../../modules/mysql/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/mysql/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/nginx/Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../modules/nginx/LICENSE_md.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/nginx/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/nginx/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/nginx/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/composer_json.html">composer.json</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/common_yaml.html">common.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/hiera_yaml.html">hiera.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/operatingsystem/SmartOS_yaml.html">SmartOS.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Archlinux_yaml.html">Archlinux.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Debian_yaml.html">Debian.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/FreeBSD_yaml.html">FreeBSD.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/data/osfamily/Solaris_yaml.html">Solaris.yaml</a>
+  
+    <li class="file"><a href="../../modules/nginx/docs/hiera_md.html">hiera</a>
+  
+    <li class="file"><a href="../../modules/nginx/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/roles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="../../modules/stdlib/CONTRIBUTING_md.html">CONTRIBUTING</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_markdown.html">README.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_DEVELOPER_markdown.html">README_DEVELOPER.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/README_SPECS_markdown.html">README_SPECS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/RELEASE_PROCESS_markdown.html">RELEASE_PROCESS.markdown</a>
+  
+    <li class="file"><a href="../../modules/stdlib/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/stdlib/checksums_json.html">checksums.json</a>
+  
+    <li class="file"><a href="../../modules/stdlib/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thing/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/Modulefile.html">Modulefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-base/README.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-profiles/metadata_json.html">metadata.json</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/README_md.html">README</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../modules/thomas-roles/metadata_json.html">metadata.json</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../__site__.html">__site__</a>
+  
+    <li><a href="../../admin.html">admin</a>
+  
+    <li><a href="../../admin/__functions__.html">admin::__functions__</a>
+  
+    <li><a href="../../admin/percona_repo.html">admin::percona_repo</a>
+  
+    <li><a href="../../admin/stages.html">admin::stages</a>
+  
+    <li><a href="../../admin/stages/me_first.html">admin::stages::me_first</a>
+  
+    <li><a href="../../admin/stages/me_last.html">admin::stages::me_last</a>
+  
+    <li><a href="../../admin_user.html">admin_user</a>
+  
+    <li><a href="../../apache.html">apache</a>
+  
+    <li><a href="../../apache.cookbook.html">apache.cookbook</a>
+  
+    <li><a href="../../apache.cookbook/apache.html">apache.cookbook::apache</a>
+  
+    <li><a href="../../apache/__types__.html">apache::__types__</a>
+  
+    <li><a href="../../apache/confd.html">apache::confd</a>
+  
+    <li><a href="../../apache/confd/no_accf.html">apache::confd::no_accf</a>
+  
+    <li><a href="../../apache/default_confd_files.html">apache::default_confd_files</a>
+  
+    <li><a href="../../apache/default_mods.html">apache::default_mods</a>
+  
+    <li><a href="../../apache/dev.html">apache::dev</a>
+  
+    <li><a href="../../apache/mod.html">apache::mod</a>
+  
+    <li><a href="../../apache/mod/actions.html">apache::mod::actions</a>
+  
+    <li><a href="../../apache/mod/alias.html">apache::mod::alias</a>
+  
+    <li><a href="../../apache/mod/auth_basic.html">apache::mod::auth_basic</a>
+  
+    <li><a href="../../apache/mod/auth_kerb.html">apache::mod::auth_kerb</a>
+  
+    <li><a href="../../apache/mod/authnz_ldap.html">apache::mod::authnz_ldap</a>
+  
+    <li><a href="../../apache/mod/autoindex.html">apache::mod::autoindex</a>
+  
+    <li><a href="../../apache/mod/cache.html">apache::mod::cache</a>
+  
+    <li><a href="../../apache/mod/cgi.html">apache::mod::cgi</a>
+  
+    <li><a href="../../apache/mod/cgid.html">apache::mod::cgid</a>
+  
+    <li><a href="../../apache/mod/dav.html">apache::mod::dav</a>
+  
+    <li><a href="../../apache/mod/dav_fs.html">apache::mod::dav_fs</a>
+  
+    <li><a href="../../apache/mod/dav_svn.html">apache::mod::dav_svn</a>
+  
+    <li><a href="../../apache/mod/deflate.html">apache::mod::deflate</a>
+  
+    <li><a href="../../apache/mod/dev.html">apache::mod::dev</a>
+  
+    <li><a href="../../apache/mod/dir.html">apache::mod::dir</a>
+  
+    <li><a href="../../apache/mod/disk_cache.html">apache::mod::disk_cache</a>
+  
+    <li><a href="../../apache/mod/event.html">apache::mod::event</a>
+  
+    <li><a href="../../apache/mod/expires.html">apache::mod::expires</a>
+  
+    <li><a href="../../apache/mod/fastcgi.html">apache::mod::fastcgi</a>
+  
+    <li><a href="../../apache/mod/fcgid.html">apache::mod::fcgid</a>
+  
+    <li><a href="../../apache/mod/headers.html">apache::mod::headers</a>
+  
+    <li><a href="../../apache/mod/include.html">apache::mod::include</a>
+  
+    <li><a href="../../apache/mod/info.html">apache::mod::info</a>
+  
+    <li><a href="../../apache/mod/itk.html">apache::mod::itk</a>
+  
+    <li><a href="../../apache/mod/ldap.html">apache::mod::ldap</a>
+  
+    <li><a href="../../apache/mod/mime.html">apache::mod::mime</a>
+  
+    <li><a href="../../apache/mod/mime_magic.html">apache::mod::mime_magic</a>
+  
+    <li><a href="../../apache/mod/negotiation.html">apache::mod::negotiation</a>
+  
+    <li><a href="../../apache/mod/nss.html">apache::mod::nss</a>
+  
+    <li><a href="../../apache/mod/pagespeed.html">apache::mod::pagespeed</a>
+  
+    <li><a href="../../apache/mod/passenger.html">apache::mod::passenger</a>
+  
+    <li><a href="../../apache/mod/perl.html">apache::mod::perl</a>
+  
+    <li><a href="../../apache/mod/peruser.html">apache::mod::peruser</a>
+  
+    <li><a href="../../apache/mod/php.html">apache::mod::php</a>
+  
+    <li><a href="../../apache/mod/prefork.html">apache::mod::prefork</a>
+  
+    <li><a href="../../apache/mod/proxy.html">apache::mod::proxy</a>
+  
+    <li><a href="../../apache/mod/proxy_ajp.html">apache::mod::proxy_ajp</a>
+  
+    <li><a href="../../apache/mod/proxy_balancer.html">apache::mod::proxy_balancer</a>
+  
+    <li><a href="../../apache/mod/proxy_html.html">apache::mod::proxy_html</a>
+  
+    <li><a href="../../apache/mod/proxy_http.html">apache::mod::proxy_http</a>
+  
+    <li><a href="../../apache/mod/python.html">apache::mod::python</a>
+  
+    <li><a href="../../apache/mod/reqtimeout.html">apache::mod::reqtimeout</a>
+  
+    <li><a href="../../apache/mod/rewrite.html">apache::mod::rewrite</a>
+  
+    <li><a href="../../apache/mod/rpaf.html">apache::mod::rpaf</a>
+  
+    <li><a href="../../apache/mod/setenvif.html">apache::mod::setenvif</a>
+  
+    <li><a href="../../apache/mod/speling.html">apache::mod::speling</a>
+  
+    <li><a href="../../apache/mod/ssl.html">apache::mod::ssl</a>
+  
+    <li><a href="../../apache/mod/status.html">apache::mod::status</a>
+  
+    <li><a href="../../apache/mod/suexec.html">apache::mod::suexec</a>
+  
+    <li><a href="../../apache/mod/suphp.html">apache::mod::suphp</a>
+  
+    <li><a href="../../apache/mod/userdir.html">apache::mod::userdir</a>
+  
+    <li><a href="../../apache/mod/vhost_alias.html">apache::mod::vhost_alias</a>
+  
+    <li><a href="../../apache/mod/worker.html">apache::mod::worker</a>
+  
+    <li><a href="../../apache/mod/wsgi.html">apache::mod::wsgi</a>
+  
+    <li><a href="../../apache/mod/xsendfile.html">apache::mod::xsendfile</a>
+  
+    <li><a href="../../apache/package.html">apache::package</a>
+  
+    <li><a href="../../apache/params.html">apache::params</a>
+  
+    <li><a href="../../apache/peruser.html">apache::peruser</a>
+  
+    <li><a href="../../apache/php.html">apache::php</a>
+  
+    <li><a href="../../apache/proxy.html">apache::proxy</a>
+  
+    <li><a href="../../apache/python.html">apache::python</a>
+  
+    <li><a href="../../apache/service.html">apache::service</a>
+  
+    <li><a href="../../apache/ssl.html">apache::ssl</a>
+  
+    <li><a href="../../apache/version.html">apache::version</a>
+  
+    <li><a href="../../apt.html">apt</a>
+  
+    <li><a href="../../apt/__facts__.html">apt::__facts__</a>
+  
+    <li><a href="../../apt/__types__.html">apt::__types__</a>
+  
+    <li><a href="../../apt/apt.html">apt::apt</a>
+  
+    <li><a href="../../apt/backports.html">apt::backports</a>
+  
+    <li><a href="../../apt/debian.html">apt::debian</a>
+  
+    <li><a href="../../apt/debian/testing.html">apt::debian::testing</a>
+  
+    <li><a href="../../apt/debian/unstable.html">apt::debian::unstable</a>
+  
+    <li><a href="../../apt/params.html">apt::params</a>
+  
+    <li><a href="../../apt/release.html">apt::release</a>
+  
+    <li><a href="../../apt/unattended_upgrades.html">apt::unattended_upgrades</a>
+  
+    <li><a href="../../apt/update.html">apt::update</a>
+  
+    <li><a href="../../base.html">base</a>
+  
+    <li><a href="../../base/base.html">base::base</a>
+  
+    <li><a href="../../base/ssh_host.html">base::ssh_host</a>
+  
+    <li><a href="../../concat.html">concat</a>
+  
+    <li><a href="../../concat/__facts__.html">concat::__facts__</a>
+  
+    <li><a href="../../concat/__functions__.html">concat::__functions__</a>
+  
+    <li><a href="../../concat/setup.html">concat::setup</a>
+  
+    <li><a href="../../cookbook.html">cookbook</a>
+  
+    <li><a href="../../cookbook/__functions__.html">cookbook::__functions__</a>
+  
+    <li><a href="../../cron.html">cron</a>
+  
+    <li><a href="../../cron/cron.html">cron::cron</a>
+  
+    <li><a href="../../db.html">db</a>
+  
+    <li><a href="../../db/client.html">db::client</a>
+  
+    <li><a href="../../db/server.html">db::server</a>
+  
+    <li><a href="../../debug.html">debug</a>
+  
+    <li><a href="../../debug/debug.html">debug::debug</a>
+  
+    <li><a href="../../drupal.html">drupal</a>
+  
+    <li><a href="../../drupal/drupal.html">drupal::drupal</a>
+  
+    <li><a href="../../enc.html">enc</a>
+  
+    <li><a href="../../enc/enc.html">enc::enc</a>
+  
+    <li><a href="../../facts.html">facts</a>
+  
+    <li><a href="../../firewall.html">firewall</a>
+  
+    <li><a href="../../firewall/__types__.html">firewall::__types__</a>
+  
+    <li><a href="../../firewall/firewall.html">firewall::firewall</a>
+  
+    <li><a href="../../firewall/linux.html">firewall::linux</a>
+  
+    <li><a href="../../firewall/linux/archlinux.html">firewall::linux::archlinux</a>
+  
+    <li><a href="../../firewall/linux/debian.html">firewall::linux::debian</a>
+  
+    <li><a href="../../firewall/linux/redhat.html">firewall::linux::redhat</a>
+  
+    <li><a href="../../greeting.html">greeting</a>
+  
+    <li><a href="../../greeting/greeting.html">greeting::greeting</a>
+  
+    <li><a href="../../haproxy.html">haproxy</a>
+  
+    <li><a href="../../haproxy/config.html">haproxy::config</a>
+  
+    <li><a href="../../haproxy/master.html">haproxy::master</a>
+  
+    <li><a href="../../haproxy/slave.html">haproxy::slave</a>
+  
+    <li><a href="../../heartbeat.html">heartbeat</a>
+  
+    <li><a href="../../heartbeat/heartbeat.html">heartbeat::heartbeat</a>
+  
+    <li><a href="../../heartbeat/vip.html">heartbeat::vip</a>
+  
+    <li><a href="../../jumpbox.html">jumpbox</a>
+  
+    <li><a href="../../jumpbox/jumpbox.html">jumpbox::jumpbox</a>
+  
+    <li><a href="../../lisa.html">lisa</a>
+  
+    <li><a href="../../module_data.html">module_data</a>
+  
+    <li><a href="../../myfw.html">myfw</a>
+  
+    <li><a href="../../myfw/myfw.html">myfw::myfw</a>
+  
+    <li><a href="../../myfw/post.html">myfw::post</a>
+  
+    <li><a href="../../myfw/pre.html">myfw::pre</a>
+  
+    <li><a href="../../mysql.html">mysql</a>
+  
+    <li><a href="../../mysql.cookbook.html">mysql.cookbook</a>
+  
+    <li><a href="../../mysql.cookbook/mysql.html">mysql.cookbook::mysql</a>
+  
+    <li><a href="../../mysql/__functions__.html">mysql::__functions__</a>
+  
+    <li><a href="../../mysql/__types__.html">mysql::__types__</a>
+  
+    <li><a href="../../mysql/backup.html">mysql::backup</a>
+  
+    <li><a href="../../mysql/bindings.html">mysql::bindings</a>
+  
+    <li><a href="../../mysql/bindings/java.html">mysql::bindings::java</a>
+  
+    <li><a href="../../mysql/bindings/perl.html">mysql::bindings::perl</a>
+  
+    <li><a href="../../mysql/bindings/php.html">mysql::bindings::php</a>
+  
+    <li><a href="../../mysql/bindings/python.html">mysql::bindings::python</a>
+  
+    <li><a href="../../mysql/bindings/ruby.html">mysql::bindings::ruby</a>
+  
+    <li><a href="../../mysql/client.html">mysql::client</a>
+  
+    <li><a href="../../mysql/client/install.html">mysql::client::install</a>
+  
+    <li><a href="../../mysql/params.html">mysql::params</a>
+  
+    <li><a href="../../mysql/server.html">mysql::server</a>
+  
+    <li><a href="../../mysql/server/account_security.html">mysql::server::account_security</a>
+  
+    <li><a href="../../mysql/server/backup.html">mysql::server::backup</a>
+  
+    <li><a href="../../mysql/server/config.html">mysql::server::config</a>
+  
+    <li><a href="../../mysql/server/install.html">mysql::server::install</a>
+  
+    <li><a href="../../mysql/server/monitor.html">mysql::server::monitor</a>
+  
+    <li><a href="../../mysql/server/mysqltuner.html">mysql::server::mysqltuner</a>
+  
+    <li><a href="../../mysql/server/providers.html">mysql::server::providers</a>
+  
+    <li><a href="../../mysql/server/root_password.html">mysql::server::root_password</a>
+  
+    <li><a href="../../mysql/server/service.html">mysql::server::service</a>
+  
+    <li><a href="../../nfs.html">nfs</a>
+  
+    <li><a href="../../nfs/exports.html">nfs::exports</a>
+  
+    <li><a href="../../nfs/server.html">nfs::server</a>
+  
+    <li><a href="../../nfs/server/debian.html">nfs::server::debian</a>
+  
+    <li><a href="../../nfs/server/redhat.html">nfs::server::redhat</a>
+  
+    <li><a href="../../nginx.html">nginx</a>
+  
+    <li><a href="../../nginx/config.html">nginx::config</a>
+  
+    <li><a href="../../nginx/nginx.html">nginx::nginx</a>
+  
+    <li><a href="../../nginx/notice.html">nginx::notice</a>
+  
+    <li><a href="../../nginx/notice/puppet_module_data.html">nginx::notice::puppet_module_data</a>
+  
+    <li><a href="../../nginx/package.html">nginx::package</a>
+  
+    <li><a href="../../nginx/package/archlinux.html">nginx::package::archlinux</a>
+  
+    <li><a href="../../nginx/package/debian.html">nginx::package::debian</a>
+  
+    <li><a href="../../nginx/package/freebsd.html">nginx::package::freebsd</a>
+  
+    <li><a href="../../nginx/package/gentoo.html">nginx::package::gentoo</a>
+  
+    <li><a href="../../nginx/package/redhat.html">nginx::package::redhat</a>
+  
+    <li><a href="../../nginx/package/solaris.html">nginx::package::solaris</a>
+  
+    <li><a href="../../nginx/package/suse.html">nginx::package::suse</a>
+  
+    <li><a href="../../nginx/resource.html">nginx::resource</a>
+  
+    <li><a href="../../nginx/resource/upstream.html">nginx::resource::upstream</a>
+  
+    <li><a href="../../nginx/service.html">nginx::service</a>
+  
+    <li><a href="../../nothing.html">nothing</a>
+  
+    <li><a href="../../nothing/nothing.html">nothing::nothing</a>
+  
+    <li><a href="../../one.html">one</a>
+  
+    <li><a href="../../one/one.html">one::one</a>
+  
+    <li><a href="../../profiles.html">profiles</a>
+  
+    <li><a href="../../profiles/apache.html">profiles::apache</a>
+  
+    <li><a href="../../profiles/base.html">profiles::base</a>
+  
+    <li><a href="../../profiles/profiles.html">profiles::profiles</a>
+  
+    <li><a href="../../puppet.html">puppet</a>
+  
+    <li><a href="../../puppet/puppet.html">puppet::puppet</a>
+  
+    <li><a href="../../roles.html">roles</a>
+  
+    <li><a href="../../roles/roles.html">roles::roles</a>
+  
+    <li><a href="../../roles/webserver.html">roles::webserver</a>
+  
+    <li><a href="../../ssh_user.html">ssh_user</a>
+  
+    <li><a href="../../stdlib.html">stdlib</a>
+  
+    <li><a href="../../stdlib/__facts__.html">stdlib::__facts__</a>
+  
+    <li><a href="../../stdlib/__functions__.html">stdlib::__functions__</a>
+  
+    <li><a href="../../stdlib/__types__.html">stdlib::__types__</a>
+  
+    <li><a href="../../stdlib/stages.html">stdlib::stages</a>
+  
+    <li><a href="../../stdlib/stdlib.html">stdlib::stdlib</a>
+  
+    <li><a href="../../thing.html">thing</a>
+  
+    <li><a href="../../thing/thing.html">thing::thing</a>
+  
+    <li><a href="../../thomas-base.html">thomas-base</a>
+  
+    <li><a href="../../thomas-profiles.html">thomas-profiles</a>
+  
+    <li><a href="../../thomas-roles.html">thomas-roles</a>
+  
+    <li><a href="../../two.html">two</a>
+  
+    <li><a href="../../two/two.html">two::two</a>
+  
+    <li><a href="../../user.html">user</a>
+  
+    <li><a href="../../user/developers.html">user::developers</a>
+  
+    <li><a href="../../user/sysadmins.html">user::sysadmins</a>
+  
+    <li><a href="../../user/virtual.html">user::virtual</a>
+  
+    <li><a href="../../virtual.html">virtual</a>
+  
+    <li><a href="../../virtual/virtual.html">virtual::virtual</a>
+  
+    <li><a href="../../wordpress.html">wordpress</a>
+  
+    <li><a href="../../wordpress/wordpress.html">wordpress::wordpress</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>{</p>
+
+<pre>&quot;CHANGELOG.md&quot;: &quot;8281eef9d77aa52808259900380bfe39&quot;,
+&quot;Gemfile&quot;: &quot;8ce9d4a7aeab7592cac526e08c6416e4&quot;,
+&quot;Gemfile.lock&quot;: &quot;f910e34764e760f216752bba4a7fe363&quot;,
+&quot;LICENSE&quot;: &quot;6089b6bd1f0d807edb8bdfd76da0b038&quot;,
+&quot;README.md&quot;: &quot;9ce07a67636c662300a07f11e88904af&quot;,
+&quot;Rakefile&quot;: &quot;0254db5d3fc38c67a2c160d7296a24f8&quot;,
+&quot;TODO&quot;: &quot;88ca4024a37992b46c34cb46e4ac39e6&quot;,
+&quot;files/mysqltuner.pl&quot;: &quot;65056d1386e04fdf22a1fee556c1b9fc&quot;,
+&quot;lib/puppet/parser/functions/mysql_deepmerge.rb&quot;: &quot;2b5040ee8cd75a81cf881851e922833a&quot;,
+&quot;lib/puppet/parser/functions/mysql_password.rb&quot;: &quot;a4c8ec72dede069508dbc266131b06a3&quot;,
+&quot;lib/puppet/parser/functions/mysql_strip_hash.rb&quot;: &quot;3efe69f1eb189b2913e178b8472aaede&quot;,
+&quot;lib/puppet/provider/database/mysql.rb&quot;: &quot;10c0c508f88145d0cda948f26f97d86f&quot;,
+&quot;lib/puppet/provider/database_grant/mysql.rb&quot;: &quot;bfe3202efcecfe8f5fa98282594f7bed&quot;,
+&quot;lib/puppet/provider/database_user/mysql.rb&quot;: &quot;26d55375b308ffa8cf9db68d0e039c5f&quot;,
+&quot;lib/puppet/provider/mysql.rb&quot;: &quot;881f4f76b084054f7299fe2de596e4c9&quot;,
+&quot;lib/puppet/provider/mysql_database/mysql.rb&quot;: &quot;938b0602ea341e7062b011478e9fafb1&quot;,
+&quot;lib/puppet/provider/mysql_grant/mysql.rb&quot;: &quot;100421e10f27f7adee4f53ec7778501c&quot;,
+&quot;lib/puppet/provider/mysql_user/mysql.rb&quot;: &quot;7eda6cfab27de90e3ee8f6517d2ae3a0&quot;,
+&quot;lib/puppet/type/database.rb&quot;: &quot;7b4b49b841d41541ce719d1a051ee94b&quot;,
+&quot;lib/puppet/type/database_grant.rb&quot;: &quot;66fce5df0f3f4111fe37f094965f6f93&quot;,
+&quot;lib/puppet/type/database_user.rb&quot;: &quot;b2a87e3854324fb0ae407a1fbad5802a&quot;,
+&quot;lib/puppet/type/mysql_database.rb&quot;: &quot;e21a38611edc6cba5454889170bc0ebc&quot;,
+&quot;lib/puppet/type/mysql_grant.rb&quot;: &quot;082aa9131d7e5871935da409ee16a9fa&quot;,
+&quot;lib/puppet/type/mysql_user.rb&quot;: &quot;ddb054a5fd03689ae4325fbe003a41d3&quot;,
+&quot;manifests/backup.pp&quot;: &quot;dfa324a48d47935a8423b102458c6516&quot;,
+&quot;manifests/bindings/java.pp&quot;: &quot;6a581f1da1690d436ae14832af551ca2&quot;,
+&quot;manifests/bindings/perl.pp&quot;: &quot;e765d0792afacbe72cf3e65804b78fe7&quot;,
+&quot;manifests/bindings/php.pp&quot;: &quot;09017ca0adefbb8bf894393371cfad94&quot;,
+&quot;manifests/bindings/python.pp&quot;: &quot;50c22f04074695f17ea383b307d01ea3&quot;,
+&quot;manifests/bindings/ruby.pp&quot;: &quot;99f7c01e468136c8e699fcbb36d037fa&quot;,
+&quot;manifests/bindings.pp&quot;: &quot;5976e9b74a29cc3a102f49867709a08f&quot;,
+&quot;manifests/client/install.pp&quot;: &quot;381f70bfbaac921d631e3b115d8ae264&quot;,
+&quot;manifests/client.pp&quot;: &quot;ab5a3ece8f5c4cc2174532472bdc5afe&quot;,
+&quot;manifests/db.pp&quot;: &quot;b670eaf5e5ac1b8df6dce1a8a05f72e3&quot;,
+&quot;manifests/init.pp&quot;: &quot;52ad9ac01674695edaf62cc1c48ef4f8&quot;,
+&quot;manifests/params.pp&quot;: &quot;be62c4467c333032c20a9ec8adf5f03a&quot;,
+&quot;manifests/server/account_security.pp&quot;: &quot;c793a434142ddaa6a529ed59739368fb&quot;,
+&quot;manifests/server/backup.pp&quot;: &quot;6938ef939617b450477dc657bbf2c0f8&quot;,
+&quot;manifests/server/config.pp&quot;: &quot;ba43df4df08889c8c8a052d9791b04eb&quot;,
+&quot;manifests/server/install.pp&quot;: &quot;8666481a3ea12e9f76c47dfa558c09e6&quot;,
+&quot;manifests/server/monitor.pp&quot;: &quot;a63731018c171de9e441009d453dcac8&quot;,
+&quot;manifests/server/mysqltuner.pp&quot;: &quot;4b19b075ecb7a7054cac237e5f50ed16&quot;,
+&quot;manifests/server/providers.pp&quot;: &quot;87a019dce5bbb6b18c9aa61b5f99134c&quot;,
+&quot;manifests/server/root_password.pp&quot;: &quot;73738c1b6ee42b896db5356575c95af6&quot;,
+&quot;manifests/server/service.pp&quot;: &quot;7ca5f4efbd1c89f60262c6b5ed45ab57&quot;,
+&quot;manifests/server.pp&quot;: &quot;442990ade0834d54ffe30fb74c4fa9db&quot;,
+&quot;metadata.json&quot;: &quot;56fe19891dbedf0e75ce4841f4746718&quot;,
+&quot;spec/acceptance/mysql_account_delete_spec.rb&quot;: &quot;71a1f232dcc5a0c04e0f2c147bfb7901&quot;,
+&quot;spec/acceptance/mysql_backup_spec.rb&quot;: &quot;8f700ec26a6d84e5f5fb925b03caaa06&quot;,
+&quot;spec/acceptance/mysql_bindings_spec.rb&quot;: &quot;ff4172cfb4ef2eb7140773607ae8da19&quot;,
+&quot;spec/acceptance/mysql_db_spec.rb&quot;: &quot;d075f2a33bacce626c41c72d8c00fa76&quot;,
+&quot;spec/acceptance/mysql_server_config_spec.rb&quot;: &quot;9709a14165ff7fae246d2cebec7cc0f8&quot;,
+&quot;spec/acceptance/mysql_server_monitor_spec.rb&quot;: &quot;2e38bbcb9b5a2248188b6de04a8ca140&quot;,
+&quot;spec/acceptance/mysql_server_root_password_spec.rb&quot;: &quot;d689c9564aecf4d823f222daf01020fa&quot;,
+&quot;spec/acceptance/mysql_server_spec.rb&quot;: &quot;2476345f9a03d84224820c8cb55c5220&quot;,
+&quot;spec/acceptance/nodesets/centos-510-x64.yml&quot;: &quot;5698f7e61292730c603e03f64fe19359&quot;,
+&quot;spec/acceptance/nodesets/centos-59-x64.yml&quot;: &quot;57eb3e471b9042a8ea40978c467f8151&quot;,
+&quot;spec/acceptance/nodesets/centos-64-x64-pe.yml&quot;: &quot;ec075d95760df3d4702abea1ce0a829b&quot;,
+&quot;spec/acceptance/nodesets/centos-65-x64.yml&quot;: &quot;3e5c36e6aa5a690229e720f4048bb8af&quot;,
+&quot;spec/acceptance/nodesets/default.yml&quot;: &quot;092dd2c588a9f87fa1fb12997c0723ef&quot;,
+&quot;spec/acceptance/nodesets/fedora-18-x64.yml&quot;: &quot;80e41b1ee16ea489f53164bfdae58855&quot;,
+&quot;spec/acceptance/nodesets/sles-11-x64.yml&quot;: &quot;44e4c6c15c018333bfa9840a5e702f66&quot;,
+&quot;spec/acceptance/nodesets/ubuntu-server-10044-x64.yml&quot;: &quot;75e86400b7889888dc0781c0ae1a1297&quot;,
+&quot;spec/acceptance/nodesets/ubuntu-server-12042-x64.yml&quot;: &quot;d30d73e34cd50b043c7d14e305955269&quot;,
+&quot;spec/acceptance/nodesets/ubuntu-server-1404-x64.yml&quot;: &quot;5f0aed10098ac5b78e4217bb27c7aaf0&quot;,
+&quot;spec/acceptance/types/mysql_database_spec.rb&quot;: &quot;20747263d874e5da4a496abad2fd7f77&quot;,
+&quot;spec/acceptance/types/mysql_grant_spec.rb&quot;: &quot;f937987498c01590c666a4e12b49541f&quot;,
+&quot;spec/acceptance/types/mysql_user_spec.rb&quot;: &quot;54e882b41f1664121b9f6f9a0f6b2be4&quot;,
+&quot;spec/acceptance/unsupported_spec.rb&quot;: &quot;5e835e95d32823e6101966ed616c420b&quot;,
+&quot;spec/classes/mysql_bindings_spec.rb&quot;: &quot;b1c61fa450b0416e791312525f0972f7&quot;,
+&quot;spec/classes/mysql_client_spec.rb&quot;: &quot;1849bea122f7282153cbc46ca04aa851&quot;,
+&quot;spec/classes/mysql_server_account_security_spec.rb&quot;: &quot;e223281077baa230fb6b7387f56af6d8&quot;,
+&quot;spec/classes/mysql_server_backup_spec.rb&quot;: &quot;2b8ced7331a91b8bf11022f9d0d07c3f&quot;,
+&quot;spec/classes/mysql_server_monitor_spec.rb&quot;: &quot;2bf20049616769424afd4a5137e25511&quot;,
+&quot;spec/classes/mysql_server_mysqltuner_spec.rb&quot;: &quot;7a098808c21e3f08cd26237a96acc878&quot;,
+&quot;spec/classes/mysql_server_spec.rb&quot;: &quot;f7a4bb4456636a37780847b564489283&quot;,
+&quot;spec/defines/mysql_db_spec.rb&quot;: &quot;a449336350a6ed8eda5240e0adfe8702&quot;,
+&quot;spec/spec.opts&quot;: &quot;a600ded995d948e393fbe2320ba8e51c&quot;,
+&quot;spec/spec_helper.rb&quot;: &quot;92fefec2bd21423ec2aece165375678b&quot;,
+&quot;spec/spec_helper_acceptance.rb&quot;: &quot;c8c15da8567f8e2a8f7361369e27bd6d&quot;,
+&quot;spec/unit/mysql_password_spec.rb&quot;: &quot;7e1f9c635cb9dd4143054e096515006b&quot;,
+&quot;spec/unit/puppet/functions/mysql_deepmerge_spec.rb&quot;: &quot;89741450d6098c7ed30448347c6de535&quot;,
+&quot;spec/unit/puppet/provider/database/mysql_spec.rb&quot;: &quot;3bb92bdaaddfd54e7700012b2418f1ba&quot;,
+&quot;spec/unit/puppet/provider/database_grant/mysql_spec.rb&quot;: &quot;261c22e57374b6651b87fcac86c9b563&quot;,
+&quot;spec/unit/puppet/provider/database_user/mysql_spec.rb&quot;: &quot;50709cf2cf3f852a56de1856222b9b1f&quot;,
+&quot;spec/unit/puppet/provider/mysql_database/mysql_spec.rb&quot;: &quot;ce4a0af08009f1244c97c1b4edf3fd95&quot;,
+&quot;spec/unit/puppet/provider/mysql_user/mysql_spec.rb&quot;: &quot;d59edf286efa51990d0db1c0307e91ea&quot;,
+&quot;spec/unit/puppet/type/mysql_database_spec.rb&quot;: &quot;0b32abc822e7613bdbb46f0a35c5b999&quot;,
+&quot;spec/unit/puppet/type/mysql_grant_spec.rb&quot;: &quot;8e39370dba2a816af287f461d3b044ae&quot;,
+&quot;spec/unit/puppet/type/mysql_user_spec.rb&quot;: &quot;1a20ac660f54f9976bb5a0c03c339efc&quot;,
+&quot;templates/my.cnf.erb&quot;: &quot;10a4e40a3e3aacdb59748c2997a3e5df&quot;,
+&quot;templates/my.cnf.pass.erb&quot;: &quot;30b24a3f29fcc644bd3a73929305cda0&quot;,
+&quot;templates/my.conf.cnf.erb&quot;: &quot;5ebda0d5d774b2a51c25c43fbfed544a&quot;,
+&quot;templates/mysqlbackup.sh.erb&quot;: &quot;2c43dc40e7aef3f2187ad7f4fbc4c4f2&quot;,
+&quot;tests/backup.pp&quot;: &quot;caae4da564c1f663341bbe50915a5f7d&quot;,
+&quot;tests/bindings.pp&quot;: &quot;dda8795d67098b66aa65e81ccc48ed73&quot;,
+&quot;tests/init.pp&quot;: &quot;6b34827ac4731829c8a117f0b3fb8167&quot;,
+&quot;tests/java.pp&quot;: &quot;0ad9de4f9f2c049642bcf08124757085&quot;,
+&quot;tests/mysql_database.pp&quot;: &quot;2a85cd95a9952e3d93aa05f8f236551e&quot;,
+&quot;tests/mysql_db.pp&quot;: &quot;e7ad5ffe51a7e6b508f00d6a9f371343&quot;,
+&quot;tests/mysql_grant.pp&quot;: &quot;cd42336a6c7b2d27f5d5d6d0e310ee1a&quot;,
+&quot;tests/mysql_user.pp&quot;: &quot;3113f355f834459954f38ca3b941bca7&quot;,
+&quot;tests/perl.pp&quot;: &quot;6e496f19eaae83c90ce8b93236d44bca&quot;,
+&quot;tests/python.pp&quot;: &quot;b093828acfed9c14e25ebdd60d90c282&quot;,
+&quot;tests/ruby.pp&quot;: &quot;6c5071fcaf731995c9b8e31e00eaffa0&quot;,
+&quot;tests/server/account_security.pp&quot;: &quot;47f79d7ae9eac2bf2134db27abf1db37&quot;,
+&quot;tests/server/config.pp&quot;: &quot;619b4220138a12c6cb5f10af9867d8a1&quot;,
+&quot;tests/server.pp&quot;: &quot;72e22552a95b9a5e4a349dbfc13639dc&quot;</pre>
+
+<p>}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
